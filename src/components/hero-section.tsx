@@ -46,7 +46,7 @@ export function HeroSection() {
         <div className="text-center md:text-right mx-auto md:mx-0 md:ml-auto max-w-2xl">
           <div className="flex justify-center md:justify-end mb-8">
             <img 
-  src="public/attached_assets/regulusLogo_1755807882562.png" 
+  src="/attached_assets/regulusLogo_1755807882562.png"
   alt="Regulus Films Logo" 
   className="h-60 pb-8 md:pr-12 w-auto" 
   data-testid="hero-logo" 
