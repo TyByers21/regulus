@@ -214,7 +214,7 @@ export default function Home() {
             <div className="group bg-white/95 backdrop-blur-sm rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src="/attached_assets/corporate1.jpg" 
+                  src="/attached_assets/golf.jpg" 
                   alt="Corporate Video Production"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />

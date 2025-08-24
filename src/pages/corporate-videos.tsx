@@ -196,50 +196,70 @@ export default function CorporateVideos() {
       <ReviewsBanner />
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6" data-testid="cta-heading">
-            Ready to Elevate Your Corporate Content?
-          </h2>
-          <p className="text-xl mb-8 text-gray-200 leading-relaxed">
-            Let's create compelling corporate videos that tell your story, engage your audience, and drive business results.
-          </p>
-          <div className="bg-white/10 rounded-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold mb-4">Corporate Video Packages</h3>
-            <ul className="text-left text-gray-200 space-y-2 max-w-2xl mx-auto">
-              <li className="flex items-center">
-                <span className="text-cyan-400 mr-2">✓</span>
-                Custom quotes for enterprise clients
-              </li>
-              <li className="flex items-center">
-                <span className="text-cyan-400 mr-2">✓</span>
-                Volume discounts for multiple videos
-              </li>
-              <li className="flex items-center">
-                <span className="text-cyan-400 mr-2">✓</span>
-                Dedicated project management
-              </li>
-              <li className="flex items-center">
-                <span className="text-cyan-400 mr-2">✓</span>
-                Fast turnaround guaranteed
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/contact" data-testid="button-get-corporate-quote">
-                Get Corporate Quote
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-white text-blue-600 hover:bg-gray-100 hover:bg-white hover:text-blue-600">
-              <a href="tel:786-429-4511" data-testid="button-call-corporate">
-                <Phone className="text-blue-600 hover:bg-gray-100 w-5 h-5 mr-2" />
-                Call: 786-429-4511
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+<section className="relative py-24 bg-gradient-to-br from-blue-700 via-purple-700 to-pink-600 text-white overflow-hidden">
+  {/* Decorative gradient blur */}
+  <div className="absolute inset-0 -z-10">
+    <div className="absolute w-[600px] h-[600px] bg-white/10 rounded-full blur-3xl top-0 left-1/2 -translate-x-1/2"></div>
+  </div>
+
+  <div className="max-w-5xl mx-auto px-6 text-center">
+    <h2
+      className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight drop-shadow-lg"
+      data-testid="cta-heading"
+    >
+      Ready to Elevate Your <span className="text-cyan-300">Corporate Content?</span>
+    </h2>
+
+    <p className="text-lg md:text-xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+      Partner with us to create <span className="font-semibold text-white">compelling corporate videos</span> that tell your story,
+      engage your audience, and deliver measurable business results.
+    </p>
+
+    {/* Card with packages */}
+    <div className="bg-white/10 backdrop-blur-xl rounded-2xl shadow-xl p-10 mb-10 text-left max-w-3xl mx-auto border border-white/20">
+      <h3 className="text-2xl font-semibold mb-6 text-center">✨ Corporate Video Packages</h3>
+      <ul className="space-y-4">
+        {[
+          "Custom quotes for enterprise clients",
+          "Volume discounts for multiple videos",
+          "Dedicated project management",
+          "Fast turnaround guaranteed"
+        ].map((item, idx) => (
+          <li key={idx} className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-cyan-400 text-blue-900 font-bold">✓</span>
+            <span className="text-gray-100">{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* CTA Buttons */}
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <Button
+        asChild
+        size="lg"
+        className="px-8 py-4 bg-cyan-400 text-blue-900 font-bold rounded-xl shadow-lg hover:bg-cyan-300 transition-transform hover:scale-105"
+      >
+        <Link href="/contact" data-testid="button-get-corporate-quote">
+          Get Corporate Quote
+        </Link>
+      </Button>
+
+      <Button
+        asChild
+        size="lg"
+        variant="outline"
+        className="px-8 py-4 border-2 border-white/40 rounded-xl text-cyan-900 hover:bg-white/10 flex items-center transition-transform hover:scale-105"
+      >
+        <a href="tel:786-429-4511" data-testid="button-call-corporate">
+          <Phone className="w-5 h-5 mr-2 text-white-600 hover:text-white " />
+          Call: 786-429-4511
+        </a>
+      </Button>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <Footer />

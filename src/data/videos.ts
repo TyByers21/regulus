@@ -557,27 +557,93 @@ export const musicVideos: VideoData[] = [
 
 export const corporateVideos: VideoData[] = [
   {
-    id: "86",
-    title: "Hannah- Lights Out",
-    vimeoId: "116769922",
-    description: "Dramatic music video with lighting themes and artistic visual storytelling.",
+    id: "200",
+    title: "Dionisio Gutierrez- Television",
+    vimeoId: "322794545",
+    description: "Corporate television production with professional quality and direction.",
     category: "corporate"
   },
   {
-    id: "87",
-    title: "Benito/ Bonafied",
-    vimeoId: "224540355",
-    description: "Authenticity-themed music video with genuine storytelling and professional production.",
+    id: "201",
+    title: "Nike Commercial Example",
+    vimeoId: "322796377",
+    description: "High-end commercial production for global brand Nike.",
     category: "corporate"
   },
   {
-    id: "100",
-    title: "Russian Artist",
-    vimeoId: "221837626",
-    description: "Professional corporate video showcasing international talent and production capabilities.",
+    id: "208",
+    title: "Exec Coach off Camera Interview",
+    vimeoId: "201192485",
+    description: "Executive coaching interview styled corporate video.",
+    category: "corporate"
+  },
+  {
+    id: "209",
+    title: "AT&T Event coverage",
+    vimeoId: "293716644",
+    description: "Corporate event coverage for AT&T.",
+    category: "corporate"
+  },
+  
+  {
+    id: "215",
+    title: "Stratus commercial",
+    vimeoId: "179595094",
+    description: "Professional commercial video production for Stratus.",
+    category: "corporate"
+  },
+  {
+    id: "216",
+    title: "Ace Hardware Commercial",
+    vimeoId: "179595066",
+    description: "Corporate advertising production for Ace Hardware brand.",
+    category: "corporate"
+  },
+
+  {
+    id: "218",
+    title: "Joes Crab Shake Commercial",
+    vimeoId: "179595087",
+    description: "Corporate promotional video for Joe's Crab Shack.",
+    category: "corporate"
+  },
+  {
+    id: "219",
+    title: "Rethink Web Commercial",
+    vimeoId: "128491627",
+    description: "Corporate web commercial production for Rethink.",
+    category: "corporate"
+  },
+  {
+    id: "220",
+    title: "Macaroni Grill TV Commercial",
+    vimeoId: "179595089",
+    description: "Television commercial for Macaroni Grill restaurant.",
+    category: "corporate"
+  },
+  {
+    id: "221",
+    title: "Corporate Skit",
+    vimeoId: "166208399",
+    description: "Creative skit-style corporate video production.",
+    category: "corporate"
+  },
+  {
+    id: "222",
+    title: "Off Commercial",
+    vimeoId: "179595092",
+    description: "Advertising production for Off brand products.",
+    category: "corporate"
+  },
+  {
+    id: "223",
+    title: "NCI shipping Web Commercial",
+    vimeoId: "143002224",
+    description: "Corporate promotional video for NCI shipping services.",
     category: "corporate"
   }
 ];
+
 
 // Featured videos for homepage (first 3 videos)
 export const featuredVideos = musicVideos.slice(0, 3);

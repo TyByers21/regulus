@@ -64,8 +64,13 @@ export function ReviewsBanner() {
           </p>
         </div>
 
-        {/* Seamless Infinite Scroll */}
+        {/* Seamless Infinite Scroll with gradient masks */}
         <div className="relative w-full overflow-hidden">
+          {/* left gradient */}
+          <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-slate-800 to-transparent pointer-events-none z-10" />
+          {/* right gradient */}
+          <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-slate-900 to-transparent pointer-events-none z-10" />
+
           <div className="flex animate-marquee space-x-6">
             {[...reviews, ...reviews].map((review, index) => (
               <div
