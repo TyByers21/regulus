@@ -99,7 +99,7 @@ export default function About() {
                 data-testid="img-production-crew"
               />
               <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-xl animate-pulse-glow">
-                <div className="text-3xl font-bold text-navy">15+</div>
+                <div className="text-3xl font-bold text-navy">20+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
             </div>
