@@ -215,23 +215,37 @@ export default function CorporateVideos() {
       engage your audience, and deliver measurable business results.
     </p>
 
-    {/* Card with packages */}
-    <div className="bg-white/10 backdrop-blur-xl rounded-2xl shadow-xl p-10 mb-10 text-left max-w-3xl mx-auto border border-white/20">
-      <h3 className="text-2xl font-semibold mb-6 text-center">✨ Corporate Video Packages</h3>
-      <ul className="space-y-4">
-        {[
-          "Custom quotes for enterprise clients",
-          "Volume discounts for multiple videos",
-          "Dedicated project management",
-          "Fast turnaround guaranteed"
-        ].map((item, idx) => (
-          <li key={idx} className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-cyan-400 text-blue-900 font-bold">✓</span>
-            <span className="text-gray-100">{item}</span>
-          </li>
-        ))}
-      </ul>
+{/* Card with packages */}
+<div className="bg-white/10 backdrop-blur-xl rounded-2xl shadow-xl p-10 mb-10 max-w-4xl mx-auto border border-white/20">
+  <h3 className="text-4xl font-semibold mb-8 text-center">✨ Corporate Video Packages</h3>
+  
+  <div className="grid md:grid-cols-2 gap-8 items-center">
+    {/* Left: list */}
+    <ul className="space-y-4 text-xl drop-shadow-md">
+      {[
+        "Custom quotes for enterprise clients",
+        "Volume discounts for multiple videos",
+        "Dedicated project management",
+        "Fast turnaround guaranteed"
+      ].map((item, idx) => (
+        <li key={idx} className="flex items-start gap-3">
+          <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-cyan-400 text-blue-900 font-bold">✓</span>
+          <span className="text-gray-100">{item}</span>
+        </li>
+      ))}
+    </ul>
+
+    {/* Right: illustration / image */}
+    <div className="flex justify-center">
+      <img
+        src="/attached_assets/golf.jpg" 
+        alt="Corporate video production"
+        className="max-w-xs w-full rounded-lg shadow-lg"
+      />
     </div>
+  </div>
+</div>
+
 
     {/* CTA Buttons */}
     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
