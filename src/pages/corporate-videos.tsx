@@ -196,7 +196,7 @@ export default function CorporateVideos() {
       <ReviewsBanner />
 
       {/* Call to Action */}
-<section className="relative py-24 bg-gradient-to-br from-blue-700 via-purple-700 to-pink-600 text-white overflow-hidden">
+<section className="relative py-24 bg-gradient-to-r from-blue-900 to-purple-900 text-white overflow-hidden">
   {/* Decorative gradient blur */}
   <div className="absolute inset-0 -z-10">
     <div className="absolute w-[600px] h-[600px] bg-white/10 rounded-full blur-3xl top-0 left-1/2 -translate-x-1/2"></div>
