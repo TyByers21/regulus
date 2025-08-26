@@ -178,20 +178,20 @@ export default function MusicVideos() {
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             Join the hundreds of satisfied artists who have worked with Regulus Films. Let's bring your musical vision to life with professional quality and creative excellence.
           </p>
-          <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-navy mb-4">Special Offers</h3>
-            <ul className="text-left text-gray-600 space-y-2 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-r from-teal-600 to-blue-600 rounded-xl p-8 shadow-lg mb-8">
+            <h3 className="text-3xl font-semibold mb-8 text-center">✨Special Offers</h3>
+            <ul className="text-center text-black space-y-2 max-w-2xl mx-auto">
               <li className="flex items-center">
-                <span className="text-miami-teal mr-2">✓</span>
-                Price match guarantee + 10% off any written quote
+                <span className="flex-shrink-0 w-6 h-6 flex mr-2 items-center justify-center rounded-full bg-cyan-400 text-blue-900 font-bold"> ✓ </span>
+                 Price match guarantee + 10% off any written quote
               </li>
               <li className="flex items-center">
-                <span className="text-miami-teal mr-2">✓</span>
-                Crypto payment accepted with bonus shooting hours
+                <span className="flex-shrink-0 w-6 h-6 flex mr-2 items-center justify-center rounded-full bg-cyan-400 text-blue-900 font-bold"> ✓ </span>
+                 Crypto payment accepted with bonus shooting hours
               </li>
               <li className="flex items-center">
-                <span className="text-miami-teal mr-2">✓</span>
-                Custom packages available for all budgets
+                <span className="flex-shrink-0 w-6 h-6 flex mr-2 items-center justify-center rounded-full bg-cyan-400 text-blue-900 font-bold"> ✓ </span>
+                 Custom packages available for all budgets
               </li>
             </ul>
           </div>

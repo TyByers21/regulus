@@ -6,6 +6,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navigation } from "@/components/navigation";
 import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 import Home from "@/pages/home";
+import HomePage from "./pages/homePage";
+import ServicesPage from "./pages/services";
 import About from "@/pages/about";
 import MusicVideos from "@/pages/music-videos";
 import CorporateVideos from "@/pages/corporate-videos";
@@ -20,10 +22,12 @@ function Router() {
       <Navigation />
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/homePage" component={HomePage} />
         <Route path="/about" component={About} />
         <Route path="/music-videos" component={MusicVideos} />
         <Route path="/corporate-videos" component={CorporateVideos} />
         <Route path="/contact" component={Contact} />
+        <Route path="/services" component={ServicesPage} />
         <Route component={NotFound} />
       </Switch>
     </div>

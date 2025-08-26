@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-navy to-deep-navy text-white">
-        <div className="absolute inset-0 bg-[url('attached_assets/clapboard.jpg')] bg-cover bg-center opacity-35"></div>
+        <div className="absolute inset-0 bg-[url('/attached_assets/clapboard.jpg')] bg-cover bg-center opacity-35"></div>
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl text-white drop-shadow md:text-6xl font-bold mb-6">
             Get In <span className="text-miami-teal">Touch</span>

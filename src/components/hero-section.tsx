@@ -88,6 +88,16 @@ export function HeroSection() {
             </Button>
             <Button
               asChild
+              size="lg"
+              className="bg-miami-teal hover:bg-miami-dark text-white text-lg px-8 py-4"
+            >
+              <Link href="/homePage" data-testid="button-get-quote">
+                Old Homepage
+              </Link>
+            </Button>
+            
+            <Button
+              asChild
               variant="outline"
               size="lg"
               className="border-2 border-white text-black hover:bg-white hover:text-navy text-lg px-8 py-4"
