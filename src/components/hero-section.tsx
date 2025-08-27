@@ -86,16 +86,7 @@ export function HeroSection() {
                 Get Your Quote
               </Link>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              className="bg-miami-teal hover:bg-miami-dark text-white text-lg px-8 py-4"
-            >
-              <Link href="/homePage" data-testid="button-get-quote">
-                Old Homepage
-              </Link>
-            </Button>
-            
+                        
             <Button
               asChild
               variant="outline"
