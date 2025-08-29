@@ -4,6 +4,8 @@ import { ReviewsBanner } from "@/components/reviews-banner";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { corporateVideos } from "@/data/videos";
+import { VideoCard } from '../components/VideoCard';
 
 // ===================== EXISTING PAGES ===================== //
 
@@ -32,6 +34,9 @@ export function AllBudgetsWelcomed() {
         </p>
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
           Our transparent pricing ensures you know exactly what you’re getting, and our decades of experience mean you’ll always get high-quality results. We’re trusted by hundreds of clients worldwide through <strong>musicvideoproduction.guru</strong>.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          Call Us Today At <strong>786-429-4511</strong>. We provide video production services and you can easily find us on google with keywords like Miami video Production | Video Production Miami | Miami video company | Miami video production services | video production fort lauderdale | film production companies in miami | Corporate video production miami | Video production companies in miami | Miami film production companies | Music video production miami | Best video companies in miami | Miami videographer | miami video productions .
         </p>
 
         <div className="text-center mt-8">
@@ -83,6 +88,12 @@ export function MiamiBestVideoTrends() {
           Discover more at <strong>musicvideoproduction.guru</strong> or connect with our creative team to explore how we can bring your next music video project to life.
         </p>
 
+        <p>For Miami Video Production, Visit us : https://musicvideoproduction.guru/miami-music-video-production/ </p>
+
+        <p>For Corporate Video Production, Visit us : https://musicvideoproduction.guru/corporate-video-production/</p>
+
+        <p>For Music Video Production, Visit us : https://musicvideoproduction.guru/miami-music-video-production/</p>
+
         <div className="text-center mt-8">
           <Button asChild size="lg" className="bg-purple-600 text-white hover:bg-purple-700">
             <Link href="/music-videos">View Music Videos</Link>
@@ -116,21 +127,21 @@ export function ColorGrading() {
         {/* Badges Row */}
         <div className="flex flex-wrap items-center gap-4 mb-8 justify-center">
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
+            src="/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
             alt="Miami video production badge – professional videographers Miami"
             width={235}
             height={235}
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2021/07/miami-video-production-companies.png"
+            src="/uploads/2021/07/miami-video-production-companies.png"
             alt="Regulus Films – Miami video production company"
             width={225}
             height={235}
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2021/07/Music-Video-Directors.png"
+            src="/uploads/2021/07/Music-Video-Directors.png"
             alt="High end video companies in Miami – music video production services"
             width={234}
             height={234}
@@ -149,63 +160,33 @@ export function ColorGrading() {
         {/* Full Before/After Gallery */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6161.jpg"
+            src="/uploads/2018/07/IMG_6161.jpg"
             alt="Color grading example 1 – Miami video production company"
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6162.jpg"
+            src="/uploads/2018/07/IMG_6162.jpg"
             alt="Color grading example 2 – professional videographers Miami"
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6163.jpg"
+            src="/uploads/2018/07/IMG_6163.jpg"
             alt="Color grading example 3 – Miami video production services"
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6164.jpg"
+            src="/uploads/2018/07/IMG_6164.jpg"
             alt="Color grading example 4 – cinematic video editing Miami"
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6165.jpg"
+            src="/uploads/2018/07/IMG_6165.jpg"
             alt="Color grading example 5 – creative post production Miami"
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6166.jpg"
+            src="/uploads/2018/07/IMG_6166.jpg"
             alt="Color grading example 6 – high quality video production Miami"
-            loading="lazy"
-          />
-          <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6167.jpg"
-            alt="Color grading example 7 – Regulus Films Miami"
-            loading="lazy"
-          />
-          <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6168.jpg"
-            alt="Color grading example 8 – Miami post production studio"
-            loading="lazy"
-          />
-          <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6169.jpg"
-            alt="Color grading example 9 – music video production services"
-            loading="lazy"
-          />
-          <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6170.jpg"
-            alt="Color grading example 10 – film production Miami"
-            loading="lazy"
-          />
-          <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6171.jpg"
-            alt="Color grading example 11 – Miami videographers"
-            loading="lazy"
-          />
-          <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2018/07/IMG_6157.jpg"
-            alt="Color grading example 12 – professional video production Miami"
             loading="lazy"
           />
         </div>
@@ -226,6 +207,7 @@ export function ColorGrading() {
 // Corporate Video Production Miami
 export function CorporateVideoProductionMiami() {
   const { ref: sectionRef, inView } = useScrollAnimation();
+    const { ref: portfolioRef, inView: portfolioInView } = useScrollAnimation();
 
   return (
     <div className="min-h-screen">
@@ -274,70 +256,46 @@ export function CorporateVideoProductionMiami() {
           </div>
 
           <div className="space-y-8">
-            <div>
-              <h1 className="text-xl font-semibold mb-2">Rethink Web Commercial</h1>
-              <div className="relative w-full pt-[56.25%]">
-                <iframe
-                  className="absolute inset-0 w-full h-full rounded-xl"
-                  src="https://player.vimeo.com/video/156696737"
-                  title="Rethink Web Commercial – corporate video production Miami"
-                  loading="lazy"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-
-            <div>
-              <h1 className="text-xl font-semibold mb-2">Macaroni Grill TV Commercial</h1>
-              <div className="relative w-full pt-[56.25%]">
-                <iframe
-                  className="absolute inset-0 w-full h-full rounded-xl"
-                  src="https://player.vimeo.com/video/156696736"
-                  title="Macaroni Grill TV Commercial – corporate video production Miami"
-                  loading="lazy"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-
-            <div>
-              <h1 className="text-xl font-semibold mb-2">Corporate Skit</h1>
-              <div className="relative w-full pt-[56.25%]">
-                <iframe
-                  className="absolute inset-0 w-full h-full rounded-xl"
-                  src="https://player.vimeo.com/video/156696735"
-                  title="Corporate Skit – corporate video production Miami"
-                  loading="lazy"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-
-            <div>
-              <h1 className="text-xl font-semibold mb-2">Off Commercial</h1>
-              <div className="relative w-full pt-[56.25%]">
-                <iframe
-                  className="absolute inset-0 w-full h-full rounded-xl"
-                  src="https://player.vimeo.com/video/156696734"
-                  title="Off Commercial – corporate video production Miami"
-                  loading="lazy"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-
-            <div>
-              <h1 className="text-xl font-semibold mb-2">NCI Shipping Web Commercial</h1>
-              <div className="relative w-full pt-[56.25%]">
-                <iframe
-                  className="absolute inset-0 w-full h-full rounded-xl"
-                  src="https://player.vimeo.com/video/156696733"
-                  title="NCI Shipping Web Commercial – corporate video production Miami"
-                  loading="lazy"
-                  allowFullScreen
-                />
-              </div>
-            </div>
+            {/* Corporate Videos Portfolio */}
+                  <section 
+                    ref={portfolioRef}
+                    className={`py-20 bg-gray-50 transition-all duration-1000 ${
+                      portfolioInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                    }`}
+                  >
+                    <div className="max-w-7xl mx-auto px-4">
+                      <div className="text-center mb-12">
+                        <h2 className="text-4xl font-bold text-navy mb-4" data-testid="portfolio-heading">
+                          Our Corporate Video Portfolio
+                        </h2>
+                        <p className="text-xl text-gray-600">Examples of our professional corporate video production</p>
+                      </div>
+            
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {corporateVideos.map((video, index) => (
+                          <div
+                            key={video.id}
+                            className={`transition-all duration-500 ${
+                              portfolioInView 
+                                ? 'opacity-100 translate-y-0' 
+                                : 'opacity-0 translate-y-10'
+                            }`}
+                            style={{ transitionDelay: `${index * 100}ms` }}
+                          >
+                            <VideoCard video={video} />
+                          </div>
+                        ))}
+                      </div>
+            
+                      <div className="text-center mt-12">
+                        <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                          <Link href="/contact" data-testid="button-view-more">
+                            Discuss Your Corporate Project
+                          </Link>
+                        </Button>
+                      </div>
+                    </div>
+                  </section>
           </div>
         </div>
 
@@ -423,3 +381,1426 @@ export function FloridaVideoProductionCompany() {
     </div>
   );
 }
+
+// Music Video Production Company Atlanta
+export function MusicVideoProductionCompanyAtlanta() {
+  const { ref: sectionRef, inView } = useScrollAnimation();
+
+  return (
+    <div className="min-h-screen">
+      <HeroSection />
+
+      <section
+        ref={sectionRef}
+        className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
+          inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
+        <h1 className="text-4xl font-bold text-navy mb-6">
+          Music Video Production Company Atlanta
+        </h1>
+
+        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          <strong>Regulus Films</strong> and <strong>The Miami Studio</strong> proudly extend our{" "}
+          <em>music video production services</em> to Atlanta, GA. Our Atlanta music video
+          production team delivers cinematic visuals, professional crews, and unmatched creativity.
+        </p>
+
+        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          From concept to final cut, we bring the same award-winning expertise trusted in Miami to
+          Atlanta artists and brands. Our portfolio includes music videos, commercials, and branded
+          content filmed in Atlanta’s vibrant locations.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-navy mt-8 mb-4">
+          Atlanta Music Video Portfolio
+        </h2>
+
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Atlanta Artist Spotlight Video</h3>
+            <div className="relative w-full pt-[56.25%]">
+              <iframe
+                className="absolute inset-0 w-full h-full rounded-xl"
+                src="https://player.vimeo.com/video/156696737"
+                title="Atlanta music video production example"
+                loading="lazy"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Cinematic Performance Video</h3>
+            <div className="relative w-full pt-[56.25%]">
+              <iframe
+                className="absolute inset-0 w-full h-full rounded-xl"
+                src="https://player.vimeo.com/video/156696736"
+                title="Cinematic music video – Atlanta production"
+                loading="lazy"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+
+        <p className="text-lg text-gray-700 leading-relaxed mt-6">
+          Call <strong>786-429-4511</strong> today or visit{" "}
+          <strong>musicvideoproduction.guru</strong> to discuss your Atlanta music video project.
+        </p>
+
+        <div className="text-center mt-8">
+          <Button
+            asChild
+            size="lg"
+            className="bg-miami-teal text-white hover:bg-miami-dark"
+          >
+            <Link href="/contact">Request an Atlanta Quote</Link>
+          </Button>
+        </div>
+      </section>
+
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+// Music Video Production Company Los Angeles
+export function MusicVideoProductionCompanyLosAngeles() {
+  const { ref: sectionRef, inView } = useScrollAnimation();
+
+  return (
+    <div className="min-h-screen">
+      <HeroSection />
+
+      <section
+        ref={sectionRef}
+        className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
+          inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
+        <h1 className="text-4xl font-bold text-navy mb-6">
+          Music Video Production Company Los Angeles
+        </h1>
+
+        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          Los Angeles is the heart of the entertainment industry, and{" "}
+          <strong>Regulus Films</strong> and <strong>The Miami Studio</strong> bring our world-class{" "}
+          <em>music video production services</em> directly to LA artists and brands. We deliver
+          cinematic visuals that rival Hollywood productions.
+        </p>
+
+        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          Our directors, cinematographers, and editors create dynamic visuals that highlight your
+          artistry. From Hollywood backlots to Venice Beach, our Los Angeles productions stand out
+          with bold creativity and stunning cinematography.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-navy mt-8 mb-4">
+          Los Angeles Music Video Portfolio
+        </h2>
+
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Hollywood Cinematic Video</h3>
+            <div className="relative w-full pt-[56.25%]">
+              <iframe
+                className="absolute inset-0 w-full h-full rounded-xl"
+                src="https://player.vimeo.com/video/322817247"
+                title="Hollywood music video production example"
+                loading="lazy"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          
+        </div>
+
+        <p className="text-lg text-gray-700 leading-relaxed mt-6">
+          Visit <strong>musicvideoproduction.guru</strong> or call <strong>786-429-4511</strong> to
+          start your Los Angeles music video project today.
+        </p>
+
+        <div className="text-center mt-8">
+          <Button
+            asChild
+            size="lg"
+            className="bg-purple-600 text-white hover:bg-purple-700"
+          >
+            <Link href="/contact">Request an LA Quote</Link>
+          </Button>
+        </div>
+      </section>
+
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+
+// Miami Video Production
+export function MiamiVideoProduction() {
+  const { ref: sectionRef, inView } = useScrollAnimation();
+  return (
+    <div className="min-h-screen">
+      <HeroSection />
+      <section ref={sectionRef} className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+       <section>
+      <p>
+        <strong>Miami Video Production</strong>, <strong>Video Production Miami</strong> |{" "}
+        <strong>Video Production Company in Miami</strong> &#8211; #Regulus #Films,{" "}
+        <strong>Miami Video Production Company offers</strong> Music Video Production Services
+        Miami, Florida. #RegulusFilms is one of Best #Miami #Video #Production #Companies |{" "}
+        <a
+          href="https://musicvideoproduction.guru/miami-video-production-company/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Miami Video Production
+        </a>{" "}
+        Company | Music #Video #Production #Companies #Miami | #Miami #Video #Production #Services
+        | #Music #Video #Directors. We Specialize In High End Best Music Video Production that will
+        surly get any artist seen by the big wigs in the industry.
+      </p>
+
+      <p>
+        When making a video for music that you have created,{" "}
+        <strong>
+          <a
+            href="https://musicvideoproduction.guru/music-video-companies/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Music Video Production Companies
+          </a>
+        </strong>{" "}
+        such as ours specialize in developing high quality video for the Internet and network
+        broadcast. We also coverage live shows, video post production editing, and the writing
+        treatments. Regulus Films is Known as one of the{" "}
+        <strong>Best Music Video Production Companies in Miami</strong>.
+      </p>
+
+      <p>
+        Music video creation is our passion and we consider it an art. As for any undertaking,
+        creation of music videos starts with appropriate planning and design and the understanding
+        of what our client vision is. A choice must be made regarding the kind theme, location,
+        models and so much more and thats why we are experts in the creation of music videos.
+        Depending on the type of music video being developed, music video companies such as ours
+        determine the equipment, lights and crew which may be needed for shooting the video
+        according to the clients needs and wants. When a person search for{" "}
+        <a
+          href="https://musicvideoproduction.guru/music-video-production-miami"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Music Video Production Companies in Miami</strong>
+        </a>
+        .
+      </p>
+
+      <p>
+        <iframe
+          src="https://player.vimeo.com/video/192165825"
+          className="absolute inset-0 w-full h-full rounded-xl"
+          frameBorder="0"
+          allowFullScreen
+        />
+      </p>
+
+      <p>
+        They often find our company to be the best for their project. So when looking for{" "}
+        <strong>
+          <span style={{ textDecoration: "underline" }}>
+            Music Video Production Companies in Miami
+          </span>
+        </strong>{" "}
+        call Regulus Films and see what all the hypes about.
+      </p>
+
+      <p>
+        Clients normally wonder why{" "}
+        <span style={{ textDecoration: "underline" }}>
+          Miami music production companies in Miami
+        </span>{" "}
+        is one of the first choices people make when wanting to do some great video production? It
+        &#8217;s simple really lots of sunshine and the atmosphere of making it big!. Regulus Films
+        has crews in New York City, Los Angeles, Dallas TX, Atlanta GA and of course Miami Fl .{" "}
+        <strong>
+          Since 2000, When a person mention- Music Video Production Companies, Regulus is at the top
+          of the list.
+        </strong>{" "}
+        With many of our music videos making it to networks such as BET, MTV, VH1 and so many more
+        its no wonder why we are the preferred choice of <b><i>indie and Major artist alike.</i></b>{" "}
+        Now what are you waiting for? dig deeper into our site and see what a real{" "}
+        <a
+          href="https://musicvideoproduction.guru/music-video-companies/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>
+            <span style={{ textDecoration: "underline" }}>Miami video production company</span>
+          </strong>
+        </a>{" "}
+        looks like.
+      </p>
+
+      <p>
+        If you feeling overwhelmed by a stressful situation to find the best music video production
+        company for your project, give your stress wings and let it fly away because we are the best
+        to provide{" "}
+        <strong>
+          <a
+            href="https://musicvideoproduction.guru/miami-video-production-services/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Miami video production services
+          </a>
+        </strong>
+        . This is not something we say, behind this a huge list of clients with wide variety of
+        music video production that makes us superior from other music video production companies.
+        Being hard is not enough for any <strong>music video production</strong>; you must be smart
+        enough to make your project appealing and viral. And each{" "}
+        <strong>music video director</strong> working with us is smart enough to provide you such
+        platform. Contact us now and make us as your first choice for best{" "}
+        <strong>
+          <a
+            href="https://www.productionhub.com/directory/profiles/production-companies-video/us/florida/miami"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            video production Miami
+          </a>
+        </strong>
+        .
+      </p>
+
+      <h2>Top-Notch Miami Video Production Services – Regulus Films</h2>
+
+      <p style={{ textAlign: "justify" }}>
+        They say – “Actions speak louder than words” and being the top-notch{" "}
+        <strong>Miami Video Production Company</strong>, we at Regulus Films sets the perfect
+        example for this. We are creative commercial <strong>video production Miami</strong> experts
+        providing <strong>video production services</strong> for any corporate video, commercial,
+        music video, training video, real estate showcase video or marketing needs you may have. At
+        Regulus <strong>Video Production Miami</strong>, the ardent cinematographers and filmmakers
+        create top-notch media products with a cinematic look, giving you film quality without any
+        hidden cost. Starting from the creative brainstorming followed by actual production to all
+        the post production stuff, we stay with you until you are satisfied. Our job is to put full
+        creativity behind every project and our mission is to satisfy you with the final video
+        production.
+      </p>
+
+      <p style={{ textAlign: "justify" }}>
+        According to the recent study, video is the fastest way to tell your audience how you can
+        help them to grow their business. Also the videos have emerged as the best marketing tool to
+        increase the ROI of business. So if you are not having a video yet, you are losing your
+        business over time as videos connect, educate customers, and sell better than any other
+        medium. Stop wondering and contact #Regulus #Films right now as we are full service award
+        winning{" "}
+        <a
+          href="https://musicvideoproduction.guru/miami-video-production-services/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Miami video production company</strong>
+        </a>
+        . Once the <strong>video production</strong> is done, start telling your business stories to
+        your customers and increase your business brand value.
+      </p>
+
+      <p style={{ textAlign: "justify" }}>
+        We suggest you not to create video by your own and not to choose any amateur{" "}
+        <strong>video production Miami service</strong> provider. People trust us because we are
+        transparent and welcome any budget. <strong>Contact us today at +1 (786) 429-4511</strong>{" "}
+        to find the best <strong>Miami Video Production</strong> package for your next{" "}
+        <strong>video production</strong>.
+      </p>
+
+      <h3>Tips At Different Stages Of Music Video Production in Miami</h3>
+
+      <p style={{ textAlign: "justify" }}>
+        Video content plays an important role in your inbound marketing. According to the Google
+        statistics, 90% of the internet traffic is expected to be video. To engage the audience on
+        your videos can be challenging, considering one-third of the audience is not interested and
+        leave the video after 30 seconds. Approximately one-third loses their interest while
+        watching video and consequently leaves the video. So your video must be good enough to
+        engage the audience with full interest and it’s not possible without the quality in the
+        content, presentation, production and the valuable information. And it’s not possible
+        without the professional music video production company in Miami.
+      </p>
+
+      <p>
+        <strong>Pre-Production Tips:</strong>
+      </p>
+      <ul>
+        <li>Be creative and don’t try to copy others.</li>
+        <li>Plan everything properly during this phase from writing a script to creating a storyboard.</li>
+        <li>Cast the actors and actresses for your project very carefully.</li>
+        <li>Use proper set and don’t try to fool your audience by simulating the set.</li>
+      </ul>
+
+      <p>
+        <strong>Production Tips:</strong>
+      </p>
+      <ul>
+        <li>Be careful while recording the sounds because 90% of the videos go wrong with poor sound recording quality.</li>
+        <li>Set up the lights properly to avoid any unwanted shadows.</li>
+        <li>Use tripod to prevent camera movement.</li>
+        <li>Make sure the camera is in focus.</li>
+        <li>Obey the rule of thirds while shooting video.</li>
+      </ul>
+
+      <p>
+        Still amateur in music video production, hire the professional Miami video production
+        companies like{" "}
+        <a
+          href="https://www.productionhub.com/profiles/details/216807"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Regulus Films
+        </a>{" "}
+        and get the quality video done without any stress.
+      </p>
+
+      <h4>
+        Read Why Regulus Films &#8211;{" "}
+        <a
+          href="http://regulusfilms.weebly.com/blog/regulus-films-miami-video-production-company"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Miami Video Production
+        </a>{" "}
+        Company is best in Video Production.
+      </h4>
+    </section>
+        <div className="text-center mt-8">
+          <Button asChild size="lg" className="bg-miami-teal text-white hover:bg-miami-dark">
+            <Link href="/contact">Get a Miami Quote</Link>
+          </Button>
+        </div>
+      </section>
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+import { CheckCircle } from "lucide-react";
+import { title } from "process";
+
+export default function MiamiVideoProductionMain() {
+  return (
+    <div
+      id="main-content"
+      className="wrap ha-waypoint"
+      data-animate-up="ha-header-hide"
+      data-animate-down="ha-header-small"
+    >
+      <a className="ut-offset-anchor" id="to-main-content" />
+      <HeroSection />
+
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6 lg:px-12">
+          <header className="text-center mb-12">
+            <h1 className="text-4xl font-bold mb-4 text-gray-900">
+              Miami Video Production Company
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Regulus Films creates captivating music videos, commercials, and
+              brand films that engage, inspire, and bring your vision to life.
+            </p>
+          </header>
+
+          <div className="max-w-3xl mx-auto prose prose-lg text-gray-700">
+            <h2>Looking for an Expert Miami Video Production Company?</h2>
+            <p>
+              Regulus Films, a{" "}
+              <a
+                href="https://musicvideoproduction.guru/music-video-production-companies-in-miami/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline"
+              >
+                Music Video Production Company in Miami, FL
+              </a>
+              , is a group of ambitious and creative storytellers recognized as
+              one of the <strong>best video production companies in Miami</strong>.
+            </p>
+
+            <p>
+              Beyond music videos, our team also produces commercials, brand
+              films, and documentaries. With a detailed, cinematic approach, we
+              transform concepts into stunning visual stories.
+            </p>
+            <p>In case you are looking for someone to make a music video of highest quality for you, you need to avail the <a
+                href="https://musicvideoproduction.guru/miami-music-video-production/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline"
+              >
+                Miami music video production services
+              </a> from Regulus Films.
+
+Now the question arises that why should you go for Regulus Films from amongst many video production companies in Miami?</p>
+
+            <h2>Why Choose Regulus Films?</h2>
+            <ul className="space-y-3">
+              {[
+                "Cinematic and stylish cinematography",
+                "Talented directors, cinematographers, and producers",
+                "Flexible to accommodate all budgets",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-1" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <h2>How We Help Bring Your Vision to Life</h2>
+            <ul className="space-y-3">
+              {[
+                "Scouting the perfect filming locations",
+                "Green screen production for unique visuals",
+                "Vehicle rentals for your sequences",
+                "Casting talent and extras",
+                "Professional costumes, makeup, and styling",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-blue-600 mt-1" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p>
+              Whether your dream is a cinematic music video or a professional
+              brand film, our team ensures every detail is perfected.
+            </p>
+
+            <p className="mt-8 font-semibold">
+              Ready to start your project?{" "}
+              <a
+                href="https://musicvideoproduction.guru/contact-us/"
+                className="text-blue-600 underline"
+              >
+                Contact us today
+              </a>{" "}
+              or call <span className="text-gray-900">786-429-4511</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact-section"
+        data-effect="fadeIn"
+        className="animated contact-section dark py-12"
+      >
+        <div className="grid-container parallax-content text-center text-white">
+          <h2 className="text-3xl font-bold mb-2">
+            Creative and Stylish Cinematography At Its Finest
+          </h2>
+          <p className="text-lg">Call Us Today At: 786-429-4511</p>
+        </div>
+      </section>
+
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+
+// Movies Page
+
+export  function MoviesPage() {
+  return (
+    <div className="wrap ha-waypoint" id="main-content">
+      <a className="ut-offset-anchor" id="to-main-content" />
+      <HeroSection />
+
+      {/* Movies Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6 lg:px-12">
+          <header className="text-center mb-12">
+            <h1 className="text-4xl font-bold mb-4 text-gray-900">Movies</h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              When you hire <strong>Regulus Films and Entertainment</strong>, you
+              are hiring the best. In this section, you’ll find{" "}
+              <span className="font-semibold">
+                movies directed by our extremely talented team
+              </span>
+              .
+            </p>
+          </header>
+
+          {/* Content */}
+          <div className="max-w-3xl mx-auto prose prose-lg text-gray-700">
+            <p>
+              At Regulus Films, our passion lies in telling stories through
+              captivating cinema. Each project is crafted with precision,
+              creativity, and attention to detail — making sure your vision is
+              translated beautifully on screen.
+            </p>
+
+            <p>
+              From independent films to feature-length projects, our directors,
+              cinematographers, and production crew deliver{" "}
+              <strong>world-class results</strong> that stand out in both style
+              and substance.
+            </p>
+
+            <p>
+              Explore our portfolio below and see why Regulus Films is
+              recognized as a leader in{" "}
+              <span className="font-semibold">Miami film production</span>.
+            </p>
+<div className="entry-content">
+      <p>
+        When you hire Regulus Films and Entertainment you are hiring the best!
+        Here in this section you will you find movies directed by the extremely
+        talented Antwan Smith. Antwan is one of the best directors that we have
+        employed with us so If you are looking for a great director that is easy
+        to work with and can take your ideal and convey it to film then please
+        do not hesitate to contact us today at 786-429-4511 ext 305.
+      </p>
+
+      <p>
+        <iframe
+          src="https://player.vimeo.com/video/255802338"
+         width="800"
+                height="450"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </p>
+
+      <p>
+        <iframe
+          src="https://player.vimeo.com/video/255813964"
+          width="800"
+                height="450"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </p>
+
+      <h1>
+        <span style={{ color: "#000000" }}>
+          Bloodline 2007
+          <br />
+          <iframe
+            src="https://player.vimeo.com/video/255817309"
+            width="800"
+                height="450"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
+        </span>
+      </h1>
+    </div>
+            
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-black text-white py-16 text-center">
+        <div className="container mx-auto px-6 lg:px-12">
+          <h2 className="text-3xl font-bold mb-4">
+            Creative Cinematography at Its Finest
+          </h2>
+          <p className="text-lg">
+            Ready to start your next movie project? Call us today at{" "}
+            <span className="font-semibold">786-429-4511</span>
+          </p>
+        </div>
+      </section>
+
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+
+
+// Music Video Production
+export function MusicVideoProduction() {
+  const { ref: sectionRef, inView } = useScrollAnimation();
+  return (
+    <div className="min-h-screen">
+      <HeroSection />
+      <section ref={sectionRef} className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+        <h1 className="text-4xl font-bold text-navy mb-6">Music Video Production</h1>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          With decades of experience, <strong>Regulus Films</strong> and <strong>The Miami Studio</strong> specialize in <em>music video production</em> that combines cinematic visuals and powerful storytelling. We’ve produced videos for independent artists and global brands alike.
+        </p>
+        <div className="text-center mt-8">
+          <Button asChild size="lg" className="bg-purple-600 text-white hover:bg-purple-700">
+            <Link href="/contact">Start Your Music Video</Link>
+          </Button>
+        </div>
+      </section>
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+export function MusicVideoProductionMiami() {
+  return (
+    <div id="main-content" className="wrap ha-waypoint">
+      <a className="ut-offset-anchor" id="to-main-content" />
+      <HeroSection />
+
+      {/* Main Content */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6 lg:px-12">
+          <header className="text-center mb-12">
+            <h1 className="text-4xl font-bold mb-4 text-gray-900">
+              Music Video Production Companies in Miami
+            </h1>
+          </header>
+
+          <div className="max-w-3xl mx-auto prose prose-lg text-gray-700">
+            <p className="text-center">
+              <iframe
+                src="https://player.vimeo.com/video/202152748?title=0&byline=0&portrait=0"
+                width="800"
+                height="450"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </p>
+
+            <h1>
+              Regulus Films – An Unbeatable Miami Video Production | Video
+              Production Miami Company
+            </h1>
+            <p>
+              Anybody can craft a video today just like anyone can inscribe an ad
+              or design a brochure. Knowing how to create a video delivering a
+              significant message that resonates with your target viewers – that
+              is what is valuable and that is what production should be
+              paying for. Many{" "}
+              <a
+                href="https://musicvideoproduction.guru"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                miami video production companies
+              </a>{" "}
+              are producing award-winning videos. The problem is that following
+              awards they have no thought whether the video sold a product or
+              service. Some awards even don’t bothered what was actually conveyed through the video. Moreover, awards compel attention and traffic to a video but that traffic may or may not be your target audiences. The main objective for corporate video is to sell client’s product, service or idea. Hence, the most victorious videos are the ones that vend both ideas and products and are of highest quality. Among various Miami Video Production Companies, Regulus films is in eminence to offer most powerful scheme to allure more and more clients at a simple pace. We will show the products and services in the way clients love to see and accept.
+            </p>
+
+            <h2>
+              Video Production Miami | Video Production Companies in Miami |
+              Miami Video Production Miami
+            </h2>
+            <p>
+              We, the{" "}
+              <a
+                href="https://musicvideoproduction.guru"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Miami Video Production Company
+              </a>{" "}
+              comprise of a unique blend of talented innovative minds that have
+              deep content, business-related, and broadcast production
+              experience and is known for stylish Miami film cinematography. Our company is a combination of directors, cinematographers, film producers and makeup artist that have a shared love of craftsmanship in the work we do. We believe that a persistent attention makes the distinction between good and great. We will take care of all the changing video technology like hardware, software, and delivery systems that offer best production. Through Regulus Films, regulars acquire the corporate video production that will help them to save a lot and offer quality result to reach business goal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="bg-black text-white py-16 text-center">
+        <div className="container mx-auto px-6 lg:px-12">
+          <h2 className="text-3xl font-bold mb-4">
+            Creative and Stylish Cinematography At Its Finest.
+          </h2>
+          <p className="text-lg">
+            Call Us Today At: <span className="font-semibold">786-429-4511</span>
+          </p>
+        </div>
+      </section>
+
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+// Music Video Production Company New York
+export function MusicVideoProductionCompanyNewYork() {
+  const { ref: sectionRef, inView } = useScrollAnimation();
+  return (
+    <div className="min-h-screen">
+      <HeroSection />
+      <section ref={sectionRef} className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+        <h1 className="text-4xl font-bold text-navy mb-6">Music Video Production Company New York</h1>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          In the city that never sleeps, <strong>Regulus Films</strong> and <strong>The Miami Studio</strong> deliver <em>New York music video production</em> services that stand out. From Brooklyn rooftops to Manhattan streets, we create cinematic music videos that match NYC’s energy.
+        </p>
+        <div className="text-center mt-8">
+          <Button asChild size="lg" className="bg-miami-teal text-white hover:bg-miami-dark">
+            <Link href="/contact">Request a New York Quote</Link>
+          </Button>
+        </div>
+      </section>
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+// Music Video Companies page
+
+export  function MusicVideoCompaniesPage() {
+  return (
+    <div id="main-content" className="wrap ha-waypoint">
+      <a className="ut-offset-anchor" id="to-main-content" />
+      <HeroSection />
+
+      {/* Main Content */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6 lg:px-12">
+          <header className="text-center mb-12">
+            <h1 className="text-4xl font-bold mb-4 text-gray-900">
+              Music Video Companies
+            </h1>
+            <p className="text-lg font-semibold text-gray-700">
+              Regulus Films: Transforming Dreams To A Visual Reality
+            </p>
+          </header>
+
+          <div className="max-w-3xl mx-auto prose prose-lg text-gray-700">
+            <p className="text-center">
+              <iframe
+                width="800"
+                height="450"
+                src="//www.youtube.com/embed/MedTAEaTcHw"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </p>
+
+            <p>
+              <strong>Regulus Films</strong> is a leading Video and Film Production
+              Company in Miami that does music video production for all types of
+              budgets, high or low. We are #1{" "}
+              <a
+                href="https://musicvideoproduction.guru/music-video-production-miami"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                music video production company
+              </a>{" "}
+              specialized in Corporate, Educational, TV, 3D Graphics, Animation
+              and Music Video Production in Miami, Florida, New York and all
+              across US.
+            </p>
+
+            <p>We believe in letting our work speak for itself!</p>
+
+            <p>
+              At Regulus, we have been creating all{" "}
+              <a
+                href="https://musicvideoproduction.guru/music-videos/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                types of music videos
+              </a>
+              , be it of any genre, we assist you with making your song into a
+              film. Wondering how? We help you in some of the following ways:
+            </p>
+
+            <ul>
+              <li>Doing the legwork for finding right locations for the shoot</li>
+              <li>Using green screen for certain sequences</li>
+              <li>Hiring talent extras</li>
+              <li>Picking up costumes, makeup</li>
+            </ul>
+
+            <p>
+              We work with a mission, that is, to be one of the finest music
+              video companies and prepare the highest quality videos. Since we
+              stand amongst premier music video production companies, we aim at
+              pursuing excellence and working with integrity. From song to its
+              development to the final product which is an amazing music video,
+              we are by your side throughout.
+            </p>
+
+            <h2>Why Us?</h2>
+            <p>
+              A music video is generally created for promotion purposes – music
+              or the artist, or both. Given that this{" "}
+              <strong>Music Video Production Company</strong> like ours has been
+              able to stand beyond other companies hands down. We can provide to
+              you creative music video directors, high-end cameras, functional
+              studios, lights and everything else from A-Z. We prove to be the
+              best choice if you are looking for a{" "}
+              <strong>
+                Music Video Production Company in Florida, Miami or New York
+              </strong>
+              . What else do we have for you? Our love for music and impeccably
+              produced music videos!
+            </p>
+
+            <h2>How Can Regulus Assist You?</h2>
+            <p>
+              Besides turning your dream into a finely made visual reality, we
+              also host your video on social media platforms, such as YouTube,
+              Vimeo and many others platforms. Our staff delivers your video in
+              a variety of formats to fit your needs.
+            </p>
+
+            <h2>Benefits With Us?</h2>
+            <p>
+              There are many{" "}
+              <a
+                href="https://musicvideoproduction.guru/miami-video-production-services/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Miami Video Production Companies</strong>
+              </a>
+              , online music production sites, professional recording studios
+              and online recording studios, but what is distinct about us is
+              that we give each of our clients that intimate relationship that
+              you deserve.
+            </p>
+
+            <p>
+              <strong>With us you get:</strong>
+            </p>
+            <ul>
+              <li>Complete attention</li>
+              <li>Guaranteed satisfaction</li>
+              <li>Beneficial relationship</li>
+              <li>Specialist music video director</li>
+              <li>Trained and skilled staff</li>
+              <li>State-of-the-art equipment</li>
+              <li>Memorable and useful content</li>
+              <li>Enjoyable experience</li>
+            </ul>
+
+            <p>
+              <a
+                href="https://musicvideoproduction.guru/music-video-directors-in-miami/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hire Music Video Director
+              </a>
+              , Just Call us at <strong>786-429-4511</strong> and speak to one of
+              our producers today!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="bg-black text-white py-16 text-center">
+        <div className="container mx-auto px-6 lg:px-12">
+          <h2 className="text-3xl font-bold mb-4">
+            Creative and Stylish Cinematography At Its Finest.
+          </h2>
+          <p className="text-lg">
+            Call Us Today At: <span className="font-semibold">786-429-4511</span>
+          </p>
+        </div>
+      </section>
+
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+// Packages
+export  function PackagesPage() {
+  return (
+    <div id="main-content" className="wrap ha-waypoint">
+      <a className="ut-offset-anchor" id="to-main-content" />
+      <HeroSection />
+
+      {/* Main Content */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="text-center space-y-6">
+            {/* Badges */}
+            <div className="flex flex-wrap justify-center gap-6">
+              <img
+                src="https://musicvideoproduction.guru/wp-content/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
+                alt="Miami Video Production Badge"
+                width={250}
+                height={250}
+              />
+              <img
+                src="https://musicvideoproduction.guru/wp-content/uploads/2019/09/badge-2019-local-excellence-full-e1567895448794.png"
+                alt="Music Video Directors Badge"
+                width={250}
+                height={250}
+              />
+            </div>
+
+            <h1 className="text-4xl font-bold text-gray-900">786-429-4511</h1>
+
+            <p className="max-w-3xl mx-auto text-lg text-gray-700">
+              When you hire <strong>Regulus Films</strong> you are not just hiring
+              some guy with a camera & his friend to help out — you are hiring a{" "}
+              <strong>fully staffed professional production team</strong> where
+              each person has a specific job to do in order to bring your video
+              to its maximum potential...
+            </p>
+
+            <h2 className="text-2xl font-semibold text-blue-700">
+              Only Production Company in Florida with over 200 REAL 5 Star Google
+              Reviews! We Also Travel Worldwide!
+            </h2>
+            <h3 className="text-xl font-semibold text-green-700">
+              We Have Many Packages To Choose From and Can Create One Within Your
+              Budget. Call Us Today! 786-429-4511
+            </h3>
+            <h3 className="text-xl font-semibold text-rose-900">
+              We Will Match Any Written Quote From a “Reputable Production
+              Company” and Give You an Extra 10% Off.
+            </h3>
+
+            {/* Crypto Section */}
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold text-gray-800">
+                Along With Traditional Methods Of Payment, Regulus Films Also
+                Accepts Crypto Currencies As Payment. Pay With Crypto and Get
+                Hours Added To Your Shoot Free.
+              </h4>
+              <img
+                src="https://musicvideoproduction.guru/wp-content/uploads/2019/01/Screen-Shot-2019-01-02-at-4.55.46-PM.png"
+                alt="Companies that accept Crypto"
+                className="mx-auto"
+                width={725}
+                height={97}
+              />
+            </div>
+          </div>
+
+          {/* Diamond Package */}
+          <div className="mt-16 text-center space-y-6">
+            <h1 className="text-3xl font-bold text-yellow-700">
+              Diamond Music Video Examples
+            </h1>
+            <p>
+              Diamond Quality Example — we have many examples of this quality:
+            </p>
+            <div className="space-y-8">
+              <iframe
+                src="https://player.vimeo.com/video/220217177"
+                width="560"
+                height="315"
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto"
+              ></iframe>
+              <iframe
+                src="https://player.vimeo.com/video/213939736"
+                width="560"
+                height="315"
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto"
+              ></iframe>
+            </div>
+            <p>
+              Different props, location, and talent will cause the budget to
+              fluctuate. Please call us for more info.
+            </p>
+          </div>
+
+          {/* Platinum Package */}
+          <div className="mt-16 text-center space-y-6">
+            <h1 className="text-3xl font-bold text-yellow-700">
+              Platinum Music Video Examples
+            </h1>
+            <h2 className="text-2xl font-semibold text-red-600">
+              *** Our Most Popular Package ***
+            </h2>
+            <div className="space-y-8">
+              <iframe
+                src="https://player.vimeo.com/video/216103631"
+                width="560"
+                height="315"
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto"
+              ></iframe>
+              <iframe
+                src="https://player.vimeo.com/video/95622524"
+                width="560"
+                height="315"
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto"
+              ></iframe>
+            </div>
+            <p>
+              Different props, location, and talent will cause the budget to
+              fluctuate. Please call us for more info.
+            </p>
+          </div>
+
+          {/* Gold Package */}
+          <div className="mt-16 text-center space-y-6">
+            <h1 className="text-3xl font-bold text-yellow-700">
+              Gold Music Video Examples
+            </h1>
+            <h2 className="text-2xl font-semibold text-red-600">
+              *** Our 2nd Most Popular Package ***
+            </h2>
+            <div className="space-y-8">
+              <iframe
+                src="https://player.vimeo.com/video/265839882"
+                width="560"
+                height="315"
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto"
+              ></iframe>
+              <iframe
+                src="https://player.vimeo.com/video/268820264"
+                width="560"
+                height="315"
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto"
+              ></iframe>
+            </div>
+            <p>
+              Different props, location, and talent will cause the budget to
+              fluctuate. Please call us for more info.
+            </p>
+          </div>
+
+          {/* Silver Package */}
+          <div className="mt-16 text-center space-y-6">
+            <h1 className="text-3xl font-bold text-yellow-700">
+              Silver Music Video Examples
+            </h1>
+            <div className="space-y-8">
+              <iframe
+                src="https://player.vimeo.com/video/218561883"
+                width="560"
+                height="315"
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto"
+              ></iframe>
+              <iframe
+                src="https://player.vimeo.com/video/219622672"
+                width="560"
+                height="315"
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto"
+              ></iframe>
+            </div>
+            <p>
+              Different props, location, and talent will cause the budget to
+              fluctuate. Please call us for more info.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="bg-black text-white py-16 text-center">
+        <div className="container mx-auto px-6 lg:px-12">
+          <h2 className="text-3xl font-bold mb-4">
+            Creative and Stylish Cinematography At Its Finest.
+          </h2>
+          <p className="text-lg">
+            Call Us Today At: <span className="font-semibold">786-429-4511</span>
+          </p>
+        </div>
+      </section>
+
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+//Phantom Camera
+
+export function PhantomCameraPage() {
+  return (
+    <>
+      {/* Hero */}
+      <HeroSection
+        title="Phantom Camera"
+        subtitle="The Phantom Flex 2.5K"
+        backgroundImage="/images/hero-phantom.jpg" // update path if needed
+      />
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-12">
+        <article className="max-w-4xl mx-auto">
+          {/* Video */}
+          <div className="aspect-video w-full mb-8">
+            <iframe
+              src="https://player.vimeo.com/video/17600290?title=0&byline=0&portrait=0&color=ff0179"
+              width="640"
+              height="360"
+              frameBorder="0"
+              allowFullScreen
+              className="w-full h-full"
+              title="Phantom Flex 2.5K Demo"
+            />
+          </div>
+
+          {/* Title */}
+          <h1
+            className="text-center text-3xl md:text-4xl font-bold mb-6"
+            style={{ color: "#cd9b1d" }}
+          >
+            The Phantom Flex 2.5K
+          </h1>
+
+          {/* Body */}
+          <div className="prose max-w-none">
+          
+            <p>
+              The Phantom Flex 2.5k is a state of the art digital cinematic
+              camera that delivers unmatched flexibility and quality imagery in
+              high speed capture. This revolutionary camera can shoot anywhere
+              between 5 frames per second (fps) to more than 10,750 (fps). The
+              Phantom Flex provides two different user customized shooting modes
+              which can be changed to the shooting environment.
+            </p>
+
+            <p>
+              In standard mode, the Phantom Flex is similar to just about any
+              other Phantom Digital camera. However, it is a powerhouse with the
+              capability to shoot resolutions up to 2560×1600 pixels from 10 fps
+              up to 1,455 fps. As the resolution goes down, the maximum speed
+              increases with speeds and resolutions up to 25,760 fps and
+              1920×1080.
+            </p>
+
+            <p>
+              In Phantom HQ Mode, the camera delivers higher dynamic range, low
+              noise, repeatable shots at all settings, electronic image stability
+              for stable blacks, and repeatable shots that don’t require pre-shot
+              black references. The Phantom Flex supports a wide variety of
+              workflows including video, raw digital, and hybrid workflows to
+              provide maximum flexibility and control.
+            </p>
+
+            {/* Package Includes */}
+            <h2 className="mt-10">Phantom Flex 2.5K Camera Package Includes:</h2>
+            <ul className="list-disc pl-6">
+              <li>Phantom Flex 2K Body featuring 32GB internal RAM</li>
+              <li>Canon and PL Mount</li>
+              <li>A Certified Phantom Tech</li>
+              <li>512 Gb Cinemag</li>
+              <li>Phantom PCU2 Wireless Control Unit – Bluetooth</li>
+              <li>Anton Battery Hytron Power System (4 Batteries and Charger)</li>
+              <li>Arri Bridgeplate &amp; Phantom Bottom Plate (15mm and 19mm)</li>
+              <li>Matte Box and Filter Set (IR, ND)</li>
+              <li>
+                Portable Handheld Package – Riser, Shoulder Mount, Rail System
+              </li>
+              <li>Follow Focus (ARRI or REDROCK)</li>
+              <li>Phantom Power Supply</li>
+              <li>10GB/Sec Cinemag Reader</li>
+              <li>Dedicated Apple Computer and Thunderbolt Transfer System</li>
+              <li>7 Inch SMALL HD SDI Monitor</li>
+              <li>17 Inch SDI Panasonic Monitor</li>
+              <li>Sachtler Tripod</li>
+            </ul>
+
+            {/* Camera Overview */}
+            <h2 className="mt-10">Camera Overview:</h2>
+            <ul className="list-disc pl-6">
+              <li>35mm depth-of-field</li>
+              <li>35mm field-of-view at 2560×1440</li>
+              <li>2.5K RAW Capture — Up to 2,560fps at 1920×1080</li>
+              <li>12-bit pixel depth — 800 ISO rating</li>
+              <li>
+                HQ Mode provides ultimate image stability under changing shooting
+                conditions
+              </li>
+              <li>
+                Internal mechanical shutter for hands-free and remote Black
+                Balances
+              </li>
+            </ul>
+          </div>
+        </article>
+      </main>
+
+      {/* Reviews & Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </>
+  );
+};
+
+export function RedDragonPage(){
+  return (
+    <>
+      {/* Hero */}
+      <HeroSection
+        title="RED DRAGON Rentals"
+        subtitle="Creative and Stylish Cinematography At Its Finest"
+        backgroundImage="/images/hero-red-dragon.jpg" // replace with your asset path
+      />
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-12">
+        <article className="prose max-w-5xl mx-auto">
+          {/* Video */}
+          <div className="aspect-video w-full mb-8">
+            <iframe
+              src="https://player.vimeo.com/video/104575759?title=0&byline=0&portrait=0&color=ff0179"
+              width="560"
+              height="315"
+              frameBorder="0"
+              allowFullScreen
+              className="w-full h-full"
+              title="RED DRAGON Rentals"
+            />
+          </div>
+
+          <p>
+            <strong>RED DRAGON Rentals – In Miami Florida USA</strong>
+          </p>
+
+          <p>
+            Every 6K frame is a 19 megapixel RAW image, which is up to 9x more
+            pixels than 1080p HD. The amount of picture detail found in a 6K
+            image goes beyond that of 35mm, comparing only to 65mm in image
+            density. This means more precise VFX plates, reframing flexibility,
+            and less aliasing artifacts and moiré. Even when outputting 6K
+            footage to 4K or HD, your images will be cleaner and crisper
+            compared to those captured at lower resolutions. When it comes to
+            resolution, bigger is better.
+          </p>
+
+          <p>
+            Our RED DRAGON Rental comes with everything a professional DP or
+            Cinematographer will need for a shoot. Plus a number of add-ons if
+            required. We also have the connections to provide any prime lens set
+            or zoom lens you may need on a shoot. Simply Inquire.
+          </p>
+
+          <p>
+            Anamorphic Lenses + Leica lenses + MOVI M10 + Wireless Monitoring +
+            Wireless FF + Arri Superspeeds
+          </p>
+          <p>
+            If you are interested in renting or using us to shoot on this
+            camera, contact us for pricing today.
+          </p>
+
+          {/* Production Package */}
+          <h2 className="mt-10">Production Package Includes:</h2>
+          <ul className="list-disc pl-6">
+            <li>RED DRAGON-X w/ PL Mount or Canon EF Mount</li>
+            <li>SONY OLED 17 inch Pro Director’s Monitor w/ Stand</li>
+            <li>Matthews High Hat</li>
+            <li>Touch LCD (5.6 inch) w/ Camera Hood</li>
+            <li>ARRI LMB-25 Clamp On Matte Box – 3-filter holder</li>
+            <li>6 RED VOLT Batteries with 2 Chargers</li>
+            <li>REDMOTE</li>
+            <li>IR/ND Filters 0.9, 1.2, 1.5 + TRUECUT IR Filter</li>
+            <li>2 × 256 GB SSD Cards w/ SSD Reader</li>
+            <li>Sachtler 20 – 100mm Ball</li>
+            <li>ARRI FF4 Follow Focus</li>
+            <li>
+              RED BRICK Battery Package w/ Battery Mount, 2 RED Bricks, Charger,
+              AC Power
+            </li>
+            <li>RED Handheld Rig with Carbon Fiber Rail Set</li>
+            <li>RED Side Handle (DSMC)</li>
+            <li>Sachtler Fluid Head Tripod – 3 Stage</li>
+            <li>RED EVF w/ Zacuto Mount</li>
+          </ul>
+
+          <p>
+            <em>
+              1st AC, 2nd AC, and DIT available upon request –
+              RegulusFilms@TheMiamiStudio.com
+            </em>
+          </p>
+
+          {/* Additionals */}
+          <h2 className="mt-10">Additionals with RED DRAGON Rental:</h2>
+          <ul className="list-disc pl-6">
+            <li>7 inch SMALLHD Monitor</li>
+            <li>
+              Arri Super Speed Lens Set F1.3 (18mm – 25mm – 35mm – 50mm – 85mm)
+            </li>
+            <li>Wireless Video System (3 receivers, 1 Transmitter)</li>
+            <li>REDROCK Swingaway Matte Box – 2 Filter Holder</li>
+            <li>
+              Leica R Lens Set – Canon Mount / 80mm Fronts / Focus Gears
+              (28mm–135mm)
+            </li>
+            <li>
+              ServiceVision FIZ “Scorpio” Remote Wireless Follow Focus (3
+              motors)
+            </li>
+            <li>KOWA Anamorphic Lens Set – (40mm, 50mm, 75mm, 100mm)</li>
+            <li>MOVI M10 Setup – Full Package</li>
+            <li>
+              REDROCK MicroRemote Wireless Follow Focus Kit with Heden Motor
+            </li>
+            <li>
+              Wireless Video System – With Director’s Monitor Yoke and AC/Focus
+              Puller Monitor Kit
+            </li>
+            <li>Production Car Mount</li>
+            <li>RED Zoom 18–85mm T2.8</li>
+          </ul>
+
+          <p>
+            * Other lens options available <br />
+            ** Crew and full Services Available — Director of Photography,
+            Camera Operators, Directors, Producer, DIT, AC and Production
+            Assistant available upon request!
+          </p>
+
+          {/* About */}
+          <h2 className="mt-10">About the RED DRAGON</h2>
+          <p>
+            Shooting at 6K resolution and RAW format, armed with the 6K RED
+            DRAGON sensor, you can easily capture over 9x more pixels than HD
+            alone. Unrivaled detail and impressive native exposure eclipse 35mm
+            film in both latitude and image density. Industry leading specs
+            distinguish the EPIC DRAGON as a model for image innovation, helming
+            the evolution of digital cinema technology. Call Us or email us to
+            Rent the RED DRAGON Today.
+          </p>
+        </article>
+      </main>
+
+      {/* Reviews & Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </>
+  );
+};
+
