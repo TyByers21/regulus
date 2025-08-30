@@ -180,6 +180,74 @@ export default function About() {
         </div>
       </section>
 
+            {/* Meet The Team */}
+      <section className="py-16 bg-gradient-to-br from-navy to-deep-navy text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy to-deep-navy "></div>
+        <div className="max-w-7xl mx-auto px-4 relative">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Meet The Team
+            </h2>
+            <p className="text-xl text-gray-300">
+              The creative minds behind Regulus Films
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 ">
+            {[
+              {
+                name: "Gary",
+                title: "CEO",
+                quote: "Vision is everything.",
+                img: "/images/garyProfile.png",
+                    special: true, // <-- flag for custom styling
+              },
+              {
+                name: "Antwan",
+                title: "Lead Cinematographer",
+                quote: "Every frame tells a story.",
+                img: "/images/twanProfile.png",
+              },
+              {
+                name: "Vadeem",
+                title: "Chief Editor",
+                quote: "Editing is the hidden art of film.",
+                img: "/images/vadeemProfile.jpg",
+              },
+              {
+                name: "Tanya",
+                title: "Director",
+                quote: "Creativity meets precision.",
+                img: "/images/tanyaProfile2.png",
+                    special: true, // <-- flag for custom styling
+              },
+            ].map((member) => (
+  <div
+    key={member.name}
+    className="group text-white bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg rounded-2xl hover:shadow-2xl overflow-hidden transition-all duration-500 transform hover:-translate-y-2"
+  >
+    <div className="overflow-hidden h-72">
+      <img
+        src={member.img}
+        alt={member.name}
+        className={`h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 
+          ${member.special ? "object-top" : ""}`} 
+      />
+    </div>
+    <div className="p-6 text-center">
+      <h3 className="text-2xl font-bold text-navy mb-1">
+        {member.name}
+      </h3>
+      <p className="text-white drop-shadow-md font-medium mb-3">{member.title}</p>
+      <p className="text-gray-900 drop-shadow-sm italic">"{member.quote}"</p>
+    </div>
+  </div>
+))}
+          </div>
+        </div>
+      </section>
+
+
       {/* Our Expertise */}
       <section 
         ref={expertiseRef}

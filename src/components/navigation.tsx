@@ -12,6 +12,7 @@ export function Navigation() {
     { href: "/about", label: "About" },
     { href: "/music-videos", label: "Music Videos" },
     { href: "/corporate-videos", label: "Corporate Videos" },
+    { href: "/movies", label: "Movies" },
     { href: "/contact", label: "Contact" },
   ];
 
