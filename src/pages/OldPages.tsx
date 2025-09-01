@@ -14,8 +14,8 @@ export function AllBudgetsWelcomed() {
   const { ref: sectionRef, inView } = useScrollAnimation();
 
   return (
-    <div className="min-h-screen">
-          <section
+    <div className="min-h-screen pt-32">
+      <section
         ref={sectionRef}
         className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -55,7 +55,7 @@ export function MiamiBestVideoTrends() {
   const { ref: sectionRef, inView } = useScrollAnimation();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen  pt-32">
 
 
       <section
@@ -116,7 +116,7 @@ export function ColorGrading() {
   const { ref: sectionRef, inView } = useScrollAnimation();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-32">
 
       <section
         ref={sectionRef}
@@ -212,7 +212,7 @@ export function CorporateVideoProductionMiami() {
     const { ref: portfolioRef, inView: portfolioInView } = useScrollAnimation();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen  pt-32">
 
       <section
         ref={sectionRef}
@@ -318,7 +318,7 @@ export function FloridaVideoProductionCompany() {
   const { ref: sectionRef, inView } = useScrollAnimation();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen  pt-32">
 
       <section
         ref={sectionRef}
@@ -389,7 +389,7 @@ export function MusicVideoProductionCompanyAtlanta() {
   const { ref: sectionRef, inView } = useScrollAnimation();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen  pt-32">
       <section
         ref={sectionRef}
         className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
@@ -493,66 +493,111 @@ export function MusicVideoProductionCompanyLosAngeles() {
 
   return (
     <div className="min-h-screen">
-      <section
-        ref={sectionRef}
-        className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
-          inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
-      >
-        <h1 className="text-4xl font-bold text-navy mb-6">
+      {/* Main Content */}
+      <div className="container mx-auto pt-32 px-6 md:px-12 max-w-7xl">
+        
+        {/* Heading */}
+        <h1 className="text-3xl text-center md:text-4xl font-bold mb-6">
           Music Video Production Company Los Angeles
         </h1>
-
-        <p className="text-lg text-gray-700 leading-relaxed mb-4">
-          Los Angeles is the heart of the entertainment industry, and{" "}
-          <strong>Regulus Films</strong> and <strong>The Miami Studio</strong> bring our world-class{" "}
-          <em>music video production services</em> directly to LA artists and brands. We deliver
-          cinematic visuals that rival Hollywood productions.
+        <p className="mb-6 text-lg text-center font-semibold text-blue-700">
+          Call Us today for a Free Quote: 786-262-5972
         </p>
 
-        <p className="text-lg text-gray-700 leading-relaxed mb-4">
-          Our directors, cinematographers, and editors create dynamic visuals that highlight your
-          artistry. From Hollywood backlots to Venice Beach, our Los Angeles productions stand out
-          with bold creativity and stunning cinematography.
-        </p>
+        {/* Embedded Video */}
+                <div className="flex justify-center mb-8">
+  <div className="w-full max-w-[640px] aspect-video rounded-lg shadow-md overflow-hidden">
+    <iframe
+      className="w-full h-full"
+      src="https://player.vimeo.com/video/322817247"
+      frameBorder="0"
+      allow="autoplay; fullscreen"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
 
-        <h2 className="text-2xl font-semibold text-navy mt-8 mb-4">
-          Los Angeles Music Video Portfolio
-        </h2>
 
-        <div className="space-y-8">
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Hollywood Cinematic Video</h3>
-            <div className="relative w-full pt-[56.25%]">
-              <iframe
-                className="absolute inset-0 w-full h-full rounded-xl"
-                src="https://player.vimeo.com/video/322817247"
-                title="Hollywood music video production example"
-                loading="lazy"
-                allowFullScreen
-              />
-            </div>
-          </div>
-
-          
-        </div>
-
-        <p className="text-lg text-gray-700 leading-relaxed mt-6">
-          Visit <strong>musicvideoproduction.guru</strong> or call <strong>786-429-4511</strong> to
-          start your Los Angeles music video project today.
-        </p>
-
-        <div className="text-center mt-8">
-          <Button
-            asChild
-            size="lg"
-            className="bg-purple-600 text-white hover:bg-purple-700"
+        {/* Intro Paragraph */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          <strong>Music Video Production Los Angeles</strong>:{" "}
+          <a
+            href="https://musicvideoproduction.guru/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
           >
-            <Link href="/contact">Request an LA Quote</Link>
-          </Button>
-        </div>
-      </section>
+            Regulus Films
+          </a>{" "}
+          is a professional{" "}
+          <strong>music video production company in Los Angeles</strong>{" "}
+          providing visually stunning and engaging content that captures 
+          the hearts of your audience. Our goal is to produce world-class 
+          music videos while keeping budgets reasonable, making us the 
+          perfect choice for projects of any size. Our talented crew 
+          brings years of experience to music videos, short films, TV 
+          commercials, and corporate videos. We’ll take your vision from 
+          dream to reality with top-level production talent.
+        </p>
 
+        {/* Services Section */}
+        <h2 className="text-2xl font-bold mb-4">Services</h2>
+        <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+          <li>
+            We operate not only in <strong>Los Angeles</strong>, but also in 
+            New York, Miami, Atlanta, and across the U.S.
+          </li>
+          <li>
+            We’re the only <strong>Los Angeles production company</strong> 
+            that provides full production services from pre-production to 
+            post-production at an affordable price.
+          </li>
+          <li>
+            We offer luxury cars, models, and yachts to enhance your video 
+            production.
+          </li>
+        </ul>
+
+        {/* Full Service Section */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Creating a music video involves countless moving parts—it can 
+          be overwhelming to manage them all. That’s why we’re a true 
+          one-stop shop for{" "}
+          <strong>video production in Los Angeles</strong>, handling every 
+          aspect of pre-production and post-production. Using the latest 
+          software and equipment, we bring your vision to life with 
+          creativity, teamwork, and technical expertise.
+        </p>
+
+        {/* Closing CTA */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Are you ready to work with the best{" "}
+          <strong>Los Angeles production company</strong>? Let’s talk today 
+          and delight your customers with professional, engaging video 
+          content. Get a tailored{" "}
+          <a
+            href="https://musicvideoproduction.guru/miami-video-production/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            music video production quote
+          </a>{" "}
+          that fits your budget and experience why Regulus Films is the{" "}
+          #1{" "}
+          <a
+            href="https://musicvideoproduction.guru/music-video-production-companies-in-miami/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            video production company in Los Angeles
+          </a>
+          .
+        </p>
+      </div>
+
+      {/* Reviews & Footer */}
       <ReviewsBanner />
       <Footer />
     </div>
@@ -560,11 +605,12 @@ export function MusicVideoProductionCompanyLosAngeles() {
 }
 
 
+
 // Miami Video Production
 export function MiamiVideoProduction() {
   const { ref: sectionRef, inView } = useScrollAnimation();
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen  pt-32">
 
       <section ref={sectionRef} className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
        <section>
@@ -829,7 +875,7 @@ export default function MiamiVideoProductionMain() {
       <a className="ut-offset-anchor" id="to-main-content" />
 
 
-      <section className="bg-gray-50 py-16 ">
+      <section className="bg-gray-50 pt-32 py-16 ">
         <div className="container max-w-full mx-auto px-6 lg:px-12">
           <header className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4 text-gray-900">
@@ -953,7 +999,7 @@ export  function MoviesPage() {
       <a className="ut-offset-anchor" id="to-main-content" />
 
       {/* Movies Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 pt-32 py-32">
         <div className="container mx-auto max-w-5xl px-6 lg:px-12">
           <header className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4 text-gray-900">Movies</h1>
@@ -1062,7 +1108,7 @@ export function MusicVideoProduction() {
     <div className="min-h-screen">
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 md:px-12 max-w-5xl pt-12">
+      <div className="container mx-auto px-6 md:px-12 max-w-5xl pt-32">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">Music Video Production Companies In Miami</h1>
         {/* Video */}
         <div className="flex justify-center mb-8">
@@ -1157,7 +1203,7 @@ export function MusicVideoProductionMiami() {
     <div id="main-content" className="wrap ha-waypoint">
       <a className="ut-offset-anchor" id="to-main-content" />
       {/* Main Content */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 pt-32 py-16">
         <div className="container mx-auto px-6 lg:px-12">
           <header className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4 text-gray-900">
@@ -1240,25 +1286,123 @@ export function MusicVideoProductionMiami() {
 // Music Video Production Company New York
 export function MusicVideoProductionCompanyNewYork() {
   const { ref: sectionRef, inView } = useScrollAnimation();
-  return (
-    <div className="min-h-screen">
 
-      <section ref={sectionRef} className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-        <h1 className="text-4xl font-bold text-navy mb-6">Music Video Production Company New York</h1>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          In the city that never sleeps, <strong>Regulus Films</strong> and <strong>The Miami Studio</strong> deliver <em>New York music video production</em> services that stand out. From Brooklyn rooftops to Manhattan streets, we create cinematic music videos that match NYC’s energy.
+  return (
+    <div className="min-h-screen pt-32">
+      {/* Main Content */}
+      <div className="container mx-auto px-6 md:px-12 max-w-7xl">
+        
+        {/* Heading */}
+        <h1 className="text-3xl text-center md:text-4xl font-bold mb-6">
+          Music Video Production Companies New York – Hire #Regulus #Films Music Video Directors in New York
+        </h1>
+        <p className="mb-6 text-center text-lg font-semibold text-blue-700">
+          Call Us today for a Free Quote: 786-262-5972
         </p>
-        <div className="text-center mt-8">
-          <Button asChild size="lg" className="bg-miami-teal text-white hover:bg-miami-dark">
-            <Link href="/contact">Request a New York Quote</Link>
-          </Button>
-        </div>
-      </section>
+
+        {/* Embedded Video */}
+        <div className="flex justify-center mb-8">
+  <div className="w-full max-w-[640px] aspect-video rounded-lg shadow-md overflow-hidden">
+    <iframe
+      className="w-full h-full"
+      src="https://player.vimeo.com/video/298485055"
+      frameBorder="0"
+      allow="autoplay; fullscreen"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
+
+        {/* Intro Paragraph */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Talent can be found all over the world, and many people wish to 
+          climb the stairs of success through it. Artists are building their 
+          own brands by creating unique music videos, while businesses often 
+          look for corporate videos to advertise their products. Budgets can 
+          sometimes be a barrier, but if you’re looking for an affordable{" "}
+          <a
+            href="https://musicvideoproduction.guru/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            <strong>Regulus Films</strong>
+          </a>{" "}
+          is the right stop for you in New York.
+        </p>
+
+        {/* About Section */}
+        <h2 className="text-2xl font-bold mb-4">About the Company</h2>
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Regulus Films is well known for cinematic and trendy filmmaking. 
+          We understand that new artists or small business owners may not 
+          have the budget for high-end productions, but maintaining good 
+          quality is essential for growth. That’s why we plan budgets with 
+          clients in mind and work as a team to deliver strong, professional 
+          productions.
+        </p>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          As a leading production company in the U.S., Regulus has become 
+          recognized as a strong{" "}
+          <strong>New York Music Video Production Company</strong>. With a 
+          powerful combination of directors, producers, cinematographers, and 
+          makeup artists, we make professional video production affordable.
+        </p>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Our <strong>Music Video Directors in New York</strong> are highly 
+          skilled and can deliver quality productions on a variety of budgets.
+        </p>
+
+        {/* Services Section */}
+        <h2 className="text-2xl font-bold mb-4">Services</h2>
+        <p className="mb-4 text-gray-700 leading-relaxed">
+          We provide a wide range of services:
+        </p>
+        <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+          <li>
+            Branches across the U.S., so you can create music or corporate 
+            videos in New York, Miami, Atlanta, or Texas.
+          </li>
+          <li>
+            Skilled <strong>New York music video directors</strong> who 
+            balance affordability with quality.
+          </li>
+          <li>
+            Access to luxury cars, models, and yachts for video shoots.
+          </li>
+          <li>
+            Full-service production: color grading, 3D graphics, and animation.
+          </li>
+        </ul>
+
+        {/* Closing Paragraph */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          If you’re planning a high-quality music or corporate video at an 
+          affordable price, Regulus Films is the right place for you. We’ll 
+          produce videos that fulfill your creative vision while staying 
+          within your budget. Call us today for your next{" "}
+          <a
+            href="https://musicvideoproduction.guru/music-video-production-miami/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Music Video Production
+          </a>{" "}
+          in Miami, New York, or beyond: <strong>786-429-4511</strong>.
+        </p>
+      </div>
+
+      {/* Reviews & Footer */}
       <ReviewsBanner />
       <Footer />
     </div>
   );
 }
+
 
 // Music Video Companies page
 
@@ -1267,7 +1411,7 @@ export  function MusicVideoCompaniesPage() {
     <div id="main-content" className="wrap ha-waypoint">
       <a className="ut-offset-anchor" id="to-main-content" />
       {/* Main Content */}
-      <section className="bg-gray-50 py-16 ">
+      <section className="bg-gray-50 py-16 pt-32">
         <div className="container mx-auto max-w-6xl px-6 lg:px-12">
           <header className="text-center  mb-12">
             <h1 className="text-4xl font-bold mb-4 text-gray-900">
@@ -1430,7 +1574,7 @@ export  function PackagesPage() {
     <div id="main-content" className="wrap ha-waypoint">
       <a className="ut-offset-anchor" id="to-main-content" />
       {/* Main Content */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 pt-32 py-16">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center space-y-6">
             {/* Badges */}
@@ -1640,7 +1784,7 @@ export function PhantomCameraPage() {
   return (
     <> 
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-12">
+      <main className="container pt-40 mx-auto px-4 py-12">
         <article className="max-w-4xl mx-auto">
           {/* Video */}
           <div className="aspect-video w-full mb-8">
@@ -1747,7 +1891,7 @@ export function RedDragonPage(){
   return (
     <>   
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto pt-32 px-4 py-12">
         <article className="prose max-w-5xl mx-auto">
           {/* Video */}
           <div className="aspect-video w-full mb-8">
@@ -1886,7 +2030,7 @@ export function RedDragonPage(){
 
 export function MiamiVideoProductionServices()  {
   return (
-    <div className="flex text-center flex-col min-h-screen">
+    <div className="flex pt-32 text-center flex-col min-h-screen">
       {/* Main Content */}
       <main className="flex-1 container mx-auto px-6 py-12 prose prose-lg max-w-6xl">
       <h1>Miami Video Production Services</h1>
@@ -2021,7 +2165,7 @@ export function MiamiVideoProductionServices()  {
 
 export  function MusicVideoDirectorsMiamiPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex pt-32 flex-col min-h-screen">
        {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-12 prose prose-lg">
       <h1 className="text-4xl font-bold text-center">Music Video Directors in Miami</h1>
@@ -2121,7 +2265,7 @@ Call Us today for a Free Quote 786-429-4511</h2>
 
 export  function MusicVideoProductionCompanies() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex pt-32 flex-col min-h-screen">
          {/* Main Content */}
       <main className="flex-1 bg-white py-12">
         <div className="container mx-auto px-6 md:px-12 max-w-5xl">
@@ -2270,7 +2414,7 @@ export function FilmProductionCompanies() {
   return (
     <div className="min-h-screen">
       {/* Main Content */}
-      <div className="container pt-12 mx-auto px-6 md:px-12 max-w-5xl">        
+      <div className="container pt-32 mx-auto px-6 md:px-12 max-w-5xl">
         {/* Heading */}
         <h1 className="text-4xl text-center md:text-4xl font-bold mb-6">
           Video Production – Miami Film Production Companies

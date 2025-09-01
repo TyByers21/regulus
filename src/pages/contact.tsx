@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-navy to-deep-navy text-white">
+      <section className="relative py-20 pt-32 bg-gradient-to-br from-navy to-deep-navy text-white">
         <div className="absolute inset-0 bg-[url('/attached_assets/clapboard.jpg')] bg-cover bg-center opacity-35"></div>
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl text-white drop-shadow md:text-6xl font-bold mb-6">

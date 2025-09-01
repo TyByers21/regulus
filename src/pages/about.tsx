@@ -21,7 +21,7 @@ export default function About() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-navy to-deep-navy text-white">
+      <section className="relative pt-32 py-20 bg-gradient-to-br from-navy to-deep-navy text-white">
         <div className="absolute inset-0 bg-[url('/attached_assets/miami-bridge.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">

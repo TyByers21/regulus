@@ -15,7 +15,7 @@ export default function CorporateVideos() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-black text-white">
+      <section className="relative py-20 pt-32 bg-gradient-to-br from-blue-900 to-black text-white">
         <div className="absolute inset-0 bg-[url('/attached_assets/corporate2.jpg')] bg-cover bg-center opacity-40"></div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl drop-shadow-lg text-shadow-lg md:text-6xl font-bold mb-6" data-testid="corporate-videos-title">

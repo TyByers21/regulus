@@ -21,15 +21,16 @@ export function Navigation() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-white/95 via-white/90 to-white/95 backdrop-blur-xl border-b border-gray-200/50 shadow-xl sticky top-0 z-50">
+    <nav className="backdrop-blur-lg bg-white/10 border-b border-white/20 shadow-xl fixed top-0 left-0 w-full z-50">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="group">
-              <img 
-                src="/attached_assets/regulusLogo_1755807882562.png" 
-                alt="Regulus Films & Entertainment Logo" 
+              <img
+                src="/attached_assets/regulusLogo_1755807882562.png"
+                alt="Regulus Films & Entertainment Logo"
                 className="h-14 w-auto transition-transform duration-300 group-hover:scale-105"
                 data-testid="logo-image"
               />
@@ -38,7 +39,7 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-2">
+            <div className="ml-10 flex items-center space-x-2 backdrop-blur-md bg-white/30 border border-white/20 rounded-2xl px-4 py-2 shadow-lg">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -46,9 +47,11 @@ export function Navigation() {
                   className={`relative px-6 py-3 font-semibold transition-all duration-300 rounded-xl ${
                     location === item.href
                       ? "text-white bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/30 scale-105"
-                      : "text-gray-700 hover:text-miami-teal hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:shadow-md hover:scale-105"
+                      : "text-black hover:text-miami-teal hover:bg-white/10"
                   }`}
-                  data-testid={`nav-link-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
+                  data-testid={`nav-link-${item.label
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")}`}
                 >
                   {location === item.href && (
                     <div className="absolute inset-0 bg-gradient-to-r from-miami-teal to-miami-dark rounded-xl opacity-20 animate-pulse"></div>
@@ -59,9 +62,12 @@ export function Navigation() {
             </div>
           </div>
 
-          {/* Phone Number */}
+          {/* Desktop Phone */}
           <div className="hidden md:block">
-            <Button asChild className="bg-gradient-to-r from-miami-teal to-miami-dark hover:from-miami-dark hover:to-miami-teal text-white shadow-lg shadow-miami-teal/30 transition-all duration-300 hover:scale-105 rounded-xl px-6 py-3">
+            <Button
+              asChild
+              className="bg-gradient-to-r from-miami-teal to-miami-dark hover:from-miami-dark hover:to-miami-teal text-white shadow-lg shadow-miami-teal/30 transition-all duration-300 hover:scale-105 rounded-xl px-6 py-3"
+            >
               <a href="tel:786-429-4511" data-testid="phone-button">
                 <Phone className="w-4 h-4 mr-2" />
                 786-429-4511
@@ -69,19 +75,20 @@ export function Navigation() {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Hamburger */}
           <div className="md:hidden">
             <Button
               variant="ghost"
               size="icon"
               onClick={toggleMobileMenu}
-              className="hover:bg-miami-teal/10 hover:scale-110 transition-all duration-300 rounded-xl"
+              className="rounded-xl p-2 bg-gray-500/10 backdrop-blur-md border border-black/50 shadow-lg 
+                         hover:bg-white/80 hover:scale-110 transition-all duration-300"
               data-testid="mobile-menu-button"
             >
               {isMobileMenuOpen ? (
-                <X className="h-6 w-6 text-gray-900" />
+                <X className="h-7 w-7 text-black drop-shadow-[0_0_8px_rgba(20,184,166,0.7)]" />
               ) : (
-                <Menu className="h-6 w-6 text-gray-900" />
+                <Menu className="h-7 w-7 text-black drop-shadow-[0_0_8px_rgba(20,184,166,0.7)]" />
               )}
             </Button>
           </div>
@@ -90,32 +97,37 @@ export function Navigation() {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-gradient-to-b from-white/95 to-white/90 backdrop-blur-xl border-t border-gray-200/50 shadow-2xl">
-          <div className="px-4 pt-4 pb-6 space-y-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`relative block px-6 py-4 font-semibold rounded-xl transition-all duration-300 ${
-                  location === item.href
-                    ? "text-white bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/30"
-                    : "text-gray-700 hover:text-miami-teal hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:shadow-md"
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-                data-testid={`mobile-nav-link-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
-              >
-                {location === item.href && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-miami-teal to-miami-dark rounded-xl opacity-20 animate-pulse"></div>
-                )}
-                <span className="relative z-10">{item.label}</span>
-              </Link>
-            ))}
-            <Button asChild className="w-full mt-6 bg-gradient-to-r from-miami-teal to-miami-dark hover:from-miami-dark hover:to-miami-teal text-white shadow-lg shadow-miami-teal/30 transition-all duration-300 rounded-xl py-4">
-              <a href="tel:786-429-4511" data-testid="mobile-phone-button">
-                <Phone className="w-4 h-4 mr-2" />
-                786-429-4511
-              </a>
-            </Button>
+        <div className="fixed inset-0 z-40 md:hidden">
+          {/* Dimmed background */}
+          <div
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+
+          {/* Slide-out panel */}
+          <div
+            className="absolute top-20 right-0 h-full w-2/3 sm:w-1/2  backdrop-blur-xl 
+                       border-l border-white/20 opacity-10 shadow-2xl p-6 animate-slideInRight flex flex-col"
+          >
+            <div className="flex flex-col items-end  space-y-4  bg-navy border backdrop-blur-xl border-white/20 rounded-2xl p-6 shadow-xl">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`w-full text-center text-lg font-semibold px-5 py-3 rounded-xl backdrop-blur-xl transition-all duration-300 ${
+                    location === item.href
+                      ? "text-white bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/40"
+                      : "text-white hover:text-gray-900 hover:bg-white/40"
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  data-testid={`mobile-nav-link-${item.label
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")}`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       )}

@@ -26,7 +26,7 @@ export default function MusicVideos() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-navy to-deep-navy text-white">
+      <section className="relative py-20 pt-32 bg-gradient-to-br from-navy to-deep-navy text-white">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')] bg-cover bg-center opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl drop-shadow md:text-6xl font-bold mb-6" data-testid="music-videos-title">
