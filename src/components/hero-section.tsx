@@ -32,27 +32,27 @@ export function HeroSection() {
   }, [cities.length]);
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center">
-      {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/attached_assets/musicVideo_1755890638812.jpg')",
-        }}
-      />
-      <div className="absolute inset-0 bg-black/50" />
-
-      <div className="relative z-10 text-white max-w-7xl mx-auto px-4 w-full">
-        <div className="text-center md:text-right mx-auto md:mx-0 md:ml-auto max-w-2xl">
-         {/* Logo */}
-<div className="hidden md:flex justify-center md:justify-end">
-  <img
-    src="/attached_assets/regulusLogo_1755807882562.png"
-    alt="Regulus Films Logo"
-    className="h-28 sm:h-40 md:h-60 w-auto pb-4 md:pb-8 md:pr-12"
-    data-testid="hero-logo"
+    <section className="relative min-h-[60vh] md:min-h-[90vh] flex items-center justify-center">
+  {/* Background */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: "url('/attached_assets/musicVideo_1755890638812.jpg')",
+    }}
   />
-</div>
+  <div className="absolute inset-0 bg-black/50" />
+
+  <div className="relative z-10 text-white max-w-7xl mx-auto px-4 w-full">
+    <div className="text-center md:text-right mx-auto md:mx-0 md:ml-auto max-w-2xl">
+      {/* Logo */}
+      <div className="hidden md:flex justify-center md:justify-end">
+        <img
+          src="/attached_assets/regulusLogo_1755807882562.png"
+          alt="Regulus Films Logo"
+          className="h-28 sm:h-40 md:h-60 w-auto pb-4 md:pb-8 md:pr-12"
+          data-testid="hero-logo"
+        />
+      </div>
 
 
           {/* Heading */}
