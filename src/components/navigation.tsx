@@ -44,10 +44,10 @@ export function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`relative px-6 py-3 font-semibold transition-all duration-300 rounded-xl ${
+                  className={`relative px-6 py-2 font-semibold transition-all duration-300 mr-2 rounded-xl ${
                     location === item.href
                       ? "text-white bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/30 scale-105"
-                      : "text-yellow-600 hover:text-miami-teal hover:bg-white/10"
+                      : "text-yellow-500 drop-shadow-md hover:text-miami-teal hover:bg-white/10"
                   }`}
                   data-testid={`nav-link-${item.label
                     .toLowerCase()
