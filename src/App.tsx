@@ -57,7 +57,7 @@ function Router() {
         <Route path="/red-dragon" component={RedDragonPage} />
         <Route path="/miami-video-production-services" component={MiamiVideoProductionServices} />
         <Route path="/music-video-directors-in-miami" component={MusicVideoDirectorsMiamiPage} />
-        <Route path="/music-video-production-companies-miami" component={MusicVideoProductionCompanies} />
+        <Route path="/music-video-production-miami" component={MusicVideoProductionCompanies} />
         <Route path="/video-production-miami-film-production-companies/" component={FilmProductionCompanies} />
         <Route component={NotFound} />
       </Switch>
