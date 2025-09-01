@@ -15,15 +15,13 @@ export function AllBudgetsWelcomed() {
 
   return (
     <div className="min-h-screen">
-      <HeroSection />
-
-      <section
+          <section
         ref={sectionRef}
         className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-4xl font-bold text-navy mb-6">
+        <h1 className="text-4xl text-center font-bold text-navy mb-6">
           All Budgets Welcomed – Miami Video Production
         </h1>
         <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -58,7 +56,7 @@ export function MiamiBestVideoTrends() {
 
   return (
     <div className="min-h-screen">
-      <HeroSection />
+
 
       <section
         ref={sectionRef}
@@ -66,9 +64,11 @@ export function MiamiBestVideoTrends() {
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-4xl font-bold text-navy mb-6">
+        <h1 className="text-3xl text-center font-bold text-navy mb-6">
           Miami’s Best Music Video Production Company – Trends & Insights
         </h1>
+        <h3 className="text-center text-2xl font-bold stroke-orange-700">Best Miami Music Video Production Company – Changing Video Shoot Trends</h3>
+        <br />
         <p className="text-lg text-gray-700 leading-relaxed mb-4">
           The music video industry in Miami is constantly evolving, and <strong>Regulus Films</strong> has remained at the forefront by embracing new trends, technology, and creative storytelling.
         </p>
@@ -93,6 +93,8 @@ export function MiamiBestVideoTrends() {
         <p>For Corporate Video Production, Visit us : https://musicvideoproduction.guru/corporate-video-production/</p>
 
         <p>For Music Video Production, Visit us : https://musicvideoproduction.guru/miami-music-video-production/</p>
+        <br/>
+        <h1 className="text-3xl text-center font-bold text-navy mb-6">Creative and Stylish Cinematography At It's Finest.</h1>
 
         <div className="text-center mt-8">
           <Button asChild size="lg" className="bg-purple-600 text-white hover:bg-purple-700">
@@ -115,7 +117,7 @@ export function ColorGrading() {
 
   return (
     <div className="min-h-screen">
-      <HeroSection />
+
       <section
         ref={sectionRef}
         className={`py-16 max-w-6xl mx-auto px-4 transition-all duration-1000 ${
@@ -211,10 +213,10 @@ export function CorporateVideoProductionMiami() {
 
   return (
     <div className="min-h-screen">
-      <HeroSection />
+
       <section
         ref={sectionRef}
-        className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
+        className={`py-16 max-w-6xl text-center mx-auto px-4 transition-all duration-1000 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -271,7 +273,7 @@ export function CorporateVideoProductionMiami() {
                         <p className="text-xl text-gray-600">Examples of our professional corporate video production</p>
                       </div>
             
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                         {corporateVideos.map((video, index) => (
                           <div
                             key={video.id}
@@ -282,7 +284,7 @@ export function CorporateVideoProductionMiami() {
                             }`}
                             style={{ transitionDelay: `${index * 100}ms` }}
                           >
-                            <VideoCard video={video} />
+                            <VideoCard2 video={video} />
                           </div>
                         ))}
                       </div>
@@ -317,10 +319,10 @@ export function FloridaVideoProductionCompany() {
 
   return (
     <div className="min-h-screen">
-      <HeroSection />
+
       <section
         ref={sectionRef}
-        className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
+        className={`py-16 max-w-6xl mx-auto text-center px-4 transition-all duration-1000 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -334,7 +336,7 @@ export function FloridaVideoProductionCompany() {
           <p>
             <strong>Best Florida Video Production Companies:</strong> Regulus Films is known for{" "}
             <a
-              className="underline"
+              className="text-orange-500"
               href="https://musicvideoproduction.guru/music-video-production-miami"
               target="_blank"
               rel="noopener noreferrer"
@@ -355,14 +357,14 @@ export function FloridaVideoProductionCompany() {
           </div>
 
           <p>
-            Our creativity and knowledge of <strong>video production</strong> sets us apart from other Florida video production companies. U.S. and international clients appreciate our flexible, creative, and affordable{" "}
+            Our creativity and knowledge of <strong>Video Production</strong> sets us apart from other Florida video production companies. U.S. and international clients appreciate our flexible, creative, and affordable{" "}
             <a
-              className="underline"
+              className="text-orange-500"
               href="https://musicvideoproduction.guru/miami-video-production-services/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              music video production services
+              Music Video Production Services
             </a>
             . We deliver extraordinary results on time and on budget. If you’re seeking a trusted <em>Miami video production company</em> for brand films or <em>music video production services</em>, we’re here to help.
           </p>
@@ -388,18 +390,16 @@ export function MusicVideoProductionCompanyAtlanta() {
 
   return (
     <div className="min-h-screen">
-      <HeroSection />
-
       <section
         ref={sectionRef}
         className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-4xl font-bold text-navy mb-6">
+        <h1 className="text-4xl text-center font-bold text-navy mb-6">
           Music Video Production Company Atlanta
         </h1>
-
+<h2 className="text-center text-xl font-bold">Music Video Production Companies Atlanta – Hire #Regulus #Films Music Video Directors Atlanta-Call Us today for a Free Quote 786-262-5972</h2>
         <p className="text-lg text-gray-700 leading-relaxed mb-4">
           <strong>Regulus Films</strong> and <strong>The Miami Studio</strong> proudly extend our{" "}
           <em>music video production services</em> to Atlanta, GA. Our Atlanta music video
@@ -412,9 +412,7 @@ export function MusicVideoProductionCompanyAtlanta() {
           content filmed in Atlanta’s vibrant locations.
         </p>
 
-        <h2 className="text-2xl font-semibold text-navy mt-8 mb-4">
-          Atlanta Music Video Portfolio
-        </h2>
+     
 
         <div className="space-y-8">
           <div>
@@ -429,19 +427,42 @@ export function MusicVideoProductionCompanyAtlanta() {
               />
             </div>
           </div>
+        <h2 className="font-bold">About the Company</h2>
+         <p>Welcome to Regulus Films, one of the leading creative <strong>production companies in Atlanta GA</strong>. We are here to fulfill your dreams by providing the trendy video production. There are lot of talented people who want to achieve success by creating music videos like Hollywood. Also there are some people who want to make their corporate videos to promote their business. Whether you are a small artist or a small business owner, we understand that at times you have budget constraints but at the same you don’t want to compromise with the quality of your video production because that will be a ladder for your success and your career growth. So we plan the budget keeping your constraints in mind and work closely as a team to deliver the best video production quality. We have a group of Directors, Producers, Cinematographers and Makeup artists, hence making us the <strong>top production company in Atlanta</strong>.Let Us Share Your Brand’s Story Through Our Creative, Cinematic Videos. Free Consultation. {" "}
+            <a
+              className="text-orange-500"
+              href="https://musicvideoproduction.guru/"
+              target="_blank"
+              rel="noopener noreferrer"
+            ><strong>Regulus Films</strong> </a>is one of the reputed video companies in Atlanta. We are <strong>#1 Studio in Atlanta for{" "}
+            <a
+              className="text-orange-500"
+              href="https://musicvideoproduction.guru/"
+              target="_blank"
+              rel="noopener noreferrer"
+            > Music Video Production.</a></strong></p>
+         <h2 className="font-bold">Services -</h2>
+         <ul className="list-disc list-outside ml-6 space-y-2">
+         <li>We not only deal in <strong>Atlanta video production</strong> but also throughout the United States.</li>
+         <li>We are only the <strong>production company in Atlanta</strong> that provide music or <strong>corporate videos</strong> with high quality, good production and affordable price.</li>
+         <li>We have luxury cars, models, and yachts available for <strong>video production</strong>.</li>
+         </ul>
+          <p>We are known for our high end music video production services. We have worked with many artists and business owners to create their music videos and corporate videos. We have a team of experienced professionals who are passionate about their work and strive to deliver the best results. Our team is dedicated to making your vision a reality. We use the latest technology and equipment to ensure that your video is of the highest quality. We also offer a wide range of services including script writing, storyboarding, casting, location scouting, and post-production editing. We are committed to providing our clients with the best possible service and ensuring that they are completely satisfied with the final product.</p>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Cinematic Performance Video</h3>
-            <div className="relative w-full pt-[56.25%]">
-              <iframe
-                className="absolute inset-0 w-full h-full rounded-xl"
-                src="https://player.vimeo.com/video/156696736"
-                title="Cinematic music video – Atlanta production"
-                loading="lazy"
-                allowFullScreen
-              />
-            </div>
-          </div>
+          <p>Whether you’ve got a project that’s ready to shoot or you’re starting from just a concept, we bring your vision to life. Creating a video for your brand or event can be daunting as there are so many steps involved, and, in some cases, you need someone to handle the whole thing from start to finish. You need not to worry because we are one stop <strong>Atlanta video production company</strong> which facilitates every phase of <strong>video production</strong>. You can rely on us and pick our creative brains for the <strong>best music video production Atlanta</strong>.</p>
+          <p>We are passionate about {" "}
+            <a
+              className="text-orange-500"
+              href="https://musicvideoproduction.guru/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >  Video Production</a> and rest assured that we will take your video to a level better than you ever imagined. Contact us right away for any <strong>music video production in Atlanta</strong> and leverage the creativity of <strong>#1 Atlanta production company</strong>. Get a custom {" "}
+            <a
+              className="text-orange-500"
+              href="video-production-miami-film-production-companies/"
+              target="_blank"
+              rel="noopener noreferrer"
+            > corporate video production</a> quote within your budget. Hire what you need: full crew, casting, location , scouting and production manager. Call Today.</p>
         </div>
 
         <p className="text-lg text-gray-700 leading-relaxed mt-6">
@@ -472,8 +493,6 @@ export function MusicVideoProductionCompanyLosAngeles() {
 
   return (
     <div className="min-h-screen">
-      <HeroSection />
-
       <section
         ref={sectionRef}
         className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${
@@ -546,18 +565,20 @@ export function MiamiVideoProduction() {
   const { ref: sectionRef, inView } = useScrollAnimation();
   return (
     <div className="min-h-screen">
-      <HeroSection />
+
       <section ref={sectionRef} className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
        <section>
-      <p>
-        <strong>Miami Video Production</strong>, <strong>Video Production Miami</strong> |{" "}
-        <strong>Video Production Company in Miami</strong> &#8211; #Regulus #Films,{" "}
-        <strong>Miami Video Production Company offers</strong> Music Video Production Services
-        Miami, Florida. #RegulusFilms is one of Best #Miami #Video #Production #Companies |{" "}
+       <h1 className="text-4xl text-center font-bold text-navy mb-4">Miami Video Production</h1>
+       <br/>
+       <h1 className="text-2xl font-bold text-navy mb-4 text-center">Miami Video Production | Video Production Miami Like Regulus is Known For it’s Professionalism .</h1>
+       <p className="font-bold">Miami Video Production, Video Production Miami | Video Production Company in Miami</p>
+      <p className=" text-gray-700 leading-relaxed mb-4">
+         – #Regulus #Films, <strong>Miami Video Production Company</strong> offers Music Video Production Services Miami, Florida. #RegulusFilms is one of Best #Miami #Video #Production #Companies|{" "}
         <a
           href="https://musicvideoproduction.guru/miami-video-production-company/"
           target="_blank"
-          rel="noopener noreferrer"
+          
+          className="text-orange-500 hover:underline"
         >
           Miami Video Production
         </a>{" "}
@@ -573,6 +594,7 @@ export function MiamiVideoProduction() {
             href="https://musicvideoproduction.guru/music-video-companies/"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
           >
             Music Video Production Companies
           </a>
@@ -601,14 +623,14 @@ export function MiamiVideoProduction() {
         .
       </p>
 
-      <p>
-        <iframe
-          src="https://player.vimeo.com/video/192165825"
-          className="absolute inset-0 w-full h-full rounded-xl"
-          frameBorder="0"
-          allowFullScreen
-        />
-      </p>
+      <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-xl shadow-lg">
+  <iframe
+    src="https://player.vimeo.com/video/192165825"
+    className="absolute top-0 left-0 w-full h-full"
+    frameBorder="0"
+    allowFullScreen
+  />
+</div>
 
       <p>
         They often find our company to be the best for their project. So when looking for{" "}
@@ -634,9 +656,9 @@ export function MiamiVideoProduction() {
         </strong>{" "}
         With many of our music videos making it to networks such as BET, MTV, VH1 and so many more
         its no wonder why we are the preferred choice of <b><i>indie and Major artist alike.</i></b>{" "}
-        Now what are you waiting for? dig deeper into our site and see what a real{" "}
+        Now what are you waiting for? Dig deeper into our site and see what a real{" "}
         <a
-          href="https://musicvideoproduction.guru/music-video-companies/"
+          href="/music-video-companies/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -646,16 +668,17 @@ export function MiamiVideoProduction() {
         </a>{" "}
         looks like.
       </p>
-
+<br/>
       <p>
         If you feeling overwhelmed by a stressful situation to find the best music video production
         company for your project, give your stress wings and let it fly away because we are the best
         to provide{" "}
         <strong>
           <a
-            href="https://musicvideoproduction.guru/miami-video-production-services/"
+            href="/miami-video-production-services/"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
           >
             Miami video production services
           </a>
@@ -671,14 +694,15 @@ export function MiamiVideoProduction() {
             href="https://www.productionhub.com/directory/profiles/production-companies-video/us/florida/miami"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
           >
             video production Miami
           </a>
         </strong>
         .
       </p>
-
-      <h2>Top-Notch Miami Video Production Services – Regulus Films</h2>
+<br/>
+      <h2 className="text-2xl font-bold text-navy mb-4">Top-Notch Miami Video Production Services – Regulus Films</h2>
 
       <p style={{ textAlign: "justify" }}>
         They say – “Actions speak louder than words” and being the top-notch{" "}
@@ -702,7 +726,7 @@ export function MiamiVideoProduction() {
         medium. Stop wondering and contact #Regulus #Films right now as we are full service award
         winning{" "}
         <a
-          href="https://musicvideoproduction.guru/miami-video-production-services/"
+          href="/miami-video-production-services/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -732,27 +756,26 @@ export function MiamiVideoProduction() {
         content, presentation, production and the valuable information. And it’s not possible
         without the professional music video production company in Miami.
       </p>
+<br/>
+<p className="font-bold">Pre-Production Tips:</p>
+<ul className="list-disc list-outside ml-6 space-y-2">
+  <li>Be creative and don’t try to copy others.</li>
+  <li>Plan everything properly during this phase from writing a script to creating a storyboard.</li>
+  <li>Cast the actors and actresses for your project very carefully.</li>
+  <li>Use proper sets and don’t try to fool your audience by simulating the set.</li>
+</ul>
 
-      <p>
-        <strong>Pre-Production Tips:</strong>
-      </p>
-      <ul>
-        <li>Be creative and don’t try to copy others.</li>
-        <li>Plan everything properly during this phase from writing a script to creating a storyboard.</li>
-        <li>Cast the actors and actresses for your project very carefully.</li>
-        <li>Use proper set and don’t try to fool your audience by simulating the set.</li>
-      </ul>
+<p className="font-bold mt-6">Production Tips:</p>
+<ul className="list-disc list-outside ml-6 space-y-2">
+  <li>Be careful while recording sounds because 90% of videos go wrong with poor sound recording quality.</li>
+  <li>Set up the lights properly to avoid any unwanted shadows.</li>
+  <li>Use a tripod to prevent camera movement.</li>
+  <li>Make sure the camera is in focus.</li>
+  <li>Obey the rule of thirds while shooting video.</li>
+</ul>
 
-      <p>
-        <strong>Production Tips:</strong>
-      </p>
-      <ul>
-        <li>Be careful while recording the sounds because 90% of the videos go wrong with poor sound recording quality.</li>
-        <li>Set up the lights properly to avoid any unwanted shadows.</li>
-        <li>Use tripod to prevent camera movement.</li>
-        <li>Make sure the camera is in focus.</li>
-        <li>Obey the rule of thirds while shooting video.</li>
-      </ul>
+
+
 
       <p>
         Still amateur in music video production, hire the professional Miami video production
@@ -793,20 +816,21 @@ export function MiamiVideoProduction() {
 
 import { CheckCircle } from "lucide-react";
 import { title } from "process";
+import { VideoCard2 } from "@/components/VideoCard2";
 
 export default function MiamiVideoProductionMain() {
   return (
     <div
       id="main-content"
-      className="wrap ha-waypoint"
+      className="wrap max-w-full ha-waypoint"
       data-animate-up="ha-header-hide"
       data-animate-down="ha-header-small"
     >
       <a className="ut-offset-anchor" id="to-main-content" />
-      <HeroSection />
 
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6 lg:px-12">
+
+      <section className="bg-gray-50 py-16 ">
+        <div className="container max-w-full mx-auto px-6 lg:px-12">
           <header className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4 text-gray-900">
               Miami Video Production Company
@@ -817,21 +841,24 @@ export default function MiamiVideoProductionMain() {
             </p>
           </header>
 
-          <div className="max-w-3xl mx-auto prose prose-lg text-gray-700">
-            <h2>Looking for an Expert Miami Video Production Company?</h2>
+          <div className="max-w-6xl mx-auto prose prose-lg text-gray-700">
+            <h2>Looking for an expert Miami Video Production Company?
+Miami Video Production Company | Miami Video Production | Video Production Miami | film Video Production Company Miami | Music Video Production Company</h2>
             <p>
               Regulus Films, a{" "}
               <a
                 href="https://musicvideoproduction.guru/music-video-production-companies-in-miami/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 underline"
+                className="text-orange-600 underline"
               >
                 Music Video Production Company in Miami, FL
               </a>
               , is a group of ambitious and creative storytellers recognized as
               one of the <strong>best video production companies in Miami</strong>.
             </p>
+            <p>
+            Besides music videos, this <strong>Miami video production company</strong> as well creates commercials, brand films, and documentaries, to list a few, and justifies itself as a capable contender amongest <strong>Miami Film production companies</strong>. Given the attention to precision and detailed approach to videos, this <strong>music video production house in Miami, Fl</strong> never fails to bring out the best of you in the films. They tie together all the elements which as per you could have never worked together, in order to turn your dream video into a reality.</p>
 
             <p>
               Beyond music videos, our team also produces commercials, brand
@@ -847,7 +874,7 @@ export default function MiamiVideoProductionMain() {
                 Miami music video production services
               </a> from Regulus Films.
 
-Now the question arises that why should you go for Regulus Films from amongst many video production companies in Miami?</p>
+Now the question arises that why should you go for Regulus Films from amongst many Miami <strong> video production companies in Miami?</strong></p>
 
             <h2>Why Choose Regulus Films?</h2>
             <ul className="space-y-3">
@@ -924,14 +951,13 @@ export  function MoviesPage() {
   return (
     <div className="wrap ha-waypoint" id="main-content">
       <a className="ut-offset-anchor" id="to-main-content" />
-      <HeroSection />
 
       {/* Movies Section */}
       <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6 lg:px-12">
+        <div className="container mx-auto max-w-5xl px-6 lg:px-12">
           <header className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4 text-gray-900">Movies</h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-5xl mx-auto">
               When you hire <strong>Regulus Films and Entertainment</strong>, you
               are hiring the best. In this section, you’ll find{" "}
               <span className="font-semibold">
@@ -942,7 +968,7 @@ export  function MoviesPage() {
           </header>
 
           {/* Content */}
-          <div className="max-w-3xl mx-auto prose prose-lg text-gray-700">
+          <div className="max-w-5xl mx-auto prose prose-lg text-gray-700">
             <p>
               At Regulus Films, our passion lies in telling stories through
               captivating cinema. Each project is crafted with precision,
@@ -975,8 +1001,7 @@ export  function MoviesPage() {
       <p>
         <iframe
           src="https://player.vimeo.com/video/255802338"
-         width="800"
-                height="450"
+ className="w-full h-96"
           frameBorder="0"
           allowFullScreen
         ></iframe>
@@ -985,8 +1010,7 @@ export  function MoviesPage() {
       <p>
         <iframe
           src="https://player.vimeo.com/video/255813964"
-          width="800"
-                height="450"
+        className="w-full h-96"
           frameBorder="0"
           allowFullScreen
         ></iframe>
@@ -998,8 +1022,7 @@ export  function MoviesPage() {
           <br />
           <iframe
             src="https://player.vimeo.com/video/255817309"
-            width="800"
-                height="450"
+           className="w-full h-96"
             frameBorder="0"
             allowFullScreen
           ></iframe>
@@ -1037,30 +1060,102 @@ export function MusicVideoProduction() {
   const { ref: sectionRef, inView } = useScrollAnimation();
   return (
     <div className="min-h-screen">
-      <HeroSection />
-      <section ref={sectionRef} className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-        <h1 className="text-4xl font-bold text-navy mb-6">Music Video Production</h1>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          With decades of experience, <strong>Regulus Films</strong> and <strong>The Miami Studio</strong> specialize in <em>music video production</em> that combines cinematic visuals and powerful storytelling. We’ve produced videos for independent artists and global brands alike.
-        </p>
-        <div className="text-center mt-8">
-          <Button asChild size="lg" className="bg-purple-600 text-white hover:bg-purple-700">
-            <Link href="/contact">Start Your Music Video</Link>
-          </Button>
+
+      {/* Main Content */}
+      <div className="container mx-auto px-6 md:px-12 max-w-5xl pt-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">Music Video Production Companies In Miami</h1>
+        {/* Video */}
+        <div className="flex justify-center mb-8">
+          <iframe
+            className="w-full md:w-[640px] h-[360px] rounded-lg shadow-md"
+            src="https://player.vimeo.com/video/202152748?title=0&byline=0&portrait=0"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
         </div>
-      </section>
+
+        {/* Heading */}
+        <h1 className="text-3xl md:text-4xl font-bold mb-6">
+          Regulus Films – An Unbeatable Miami Video Production | Video Production Miami Company
+        </h1>
+
+        {/* Paragraph */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Anybody can craft a video today just like anyone can inscribe an ad or
+          design a brochure. Knowing how to create a video delivering a
+          significant message that resonates with your target viewers – that is
+          what is valuable and that is what production should be paying for.
+          Many{" "}
+          <a
+            href="https://musicvideoproduction.guru"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-600 underline"
+          >
+            Miami video production companies
+          </a>{" "}
+          are producing award-winning videos. The problem is that following
+          awards they have no thought whether the video sold a product or
+          service. Some awards even don’t bother with what was actually conveyed
+          through the video.
+        </p>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Moreover, awards compel attention and traffic to a video but that
+          traffic may or may not be your target audiences. The main objective for
+          corporate video is to sell a client’s product, service, or idea.
+          Hence, the most victorious videos are the ones that vend both ideas and
+          products and are of the highest quality. Among various Miami Video
+          Production Companies, Regulus Films is in eminence to offer the most
+          powerful scheme to allure more and more clients at a simple pace. We
+          will show the products and services in the way clients love to see and
+          accept.
+        </p>
+
+        {/* Subheading */}
+        <h2 className="text-2xl font-semibold mb-4">
+          Video Production Miami | Video Production Companies in Miami | Miami Video Production
+        </h2>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          We, the{" "}
+          <a
+            href="https://musicvideoproduction.guru"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-600 underline"
+          >
+            Miami Video Production Company
+          </a>{" "}
+          comprise a unique blend of talented innovative minds that have deep
+          content, business-related, and broadcast production experience and are
+          known for stylish Miami film cinematography. Our company is a
+          combination of directors, cinematographers, film producers, and makeup
+          artists that share a love of craftsmanship in the work we do.
+        </p>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          We believe that persistent attention makes the distinction between
+          good and great. We take care of all the changing video technology like
+          hardware, software, and delivery systems that offer the best
+          production. Through Regulus Films, clients acquire corporate video
+          production that saves money while delivering high-quality results to
+          reach business goals.
+        </p>
+      </div>
+
+      {/* Reviews & Footer */}
       <ReviewsBanner />
       <Footer />
     </div>
   );
 }
 
+
 export function MusicVideoProductionMiami() {
   return (
     <div id="main-content" className="wrap ha-waypoint">
       <a className="ut-offset-anchor" id="to-main-content" />
-      <HeroSection />
-
       {/* Main Content */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-6 lg:px-12">
@@ -1070,18 +1165,17 @@ export function MusicVideoProductionMiami() {
             </h1>
           </header>
 
-          <div className="max-w-3xl mx-auto prose prose-lg text-gray-700">
+          <div className="max-w-6xl mx-auto prose prose-lg text-gray-700">
             <p className="text-center">
               <iframe
                 src="https://player.vimeo.com/video/202152748?title=0&byline=0&portrait=0"
-                width="800"
-                height="450"
+                className="w-full h-96"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
             </p>
 
-            <h1>
+            <h1 className="text-4xl font-bold text-navy text-center mb-4">
               Regulus Films – An Unbeatable Miami Video Production | Video
               Production Miami Company
             </h1>
@@ -1095,6 +1189,7 @@ export function MusicVideoProductionMiami() {
                 href="https://musicvideoproduction.guru"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-orange-500 hover:underline"
               >
                 miami video production companies
               </a>{" "}
@@ -1113,6 +1208,7 @@ export function MusicVideoProductionMiami() {
                 href="https://musicvideoproduction.guru"
                 target="_blank"
                 rel="noopener noreferrer"
+                  className="text-orange-500 hover:underline"
               >
                 Miami Video Production Company
               </a>{" "}
@@ -1135,7 +1231,6 @@ export function MusicVideoProductionMiami() {
           </p>
         </div>
       </section>
-
       <ReviewsBanner />
       <Footer />
     </div>
@@ -1147,7 +1242,7 @@ export function MusicVideoProductionCompanyNewYork() {
   const { ref: sectionRef, inView } = useScrollAnimation();
   return (
     <div className="min-h-screen">
-      <HeroSection />
+
       <section ref={sectionRef} className={`py-16 max-w-5xl mx-auto px-4 transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
         <h1 className="text-4xl font-bold text-navy mb-6">Music Video Production Company New York</h1>
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -1171,12 +1266,10 @@ export  function MusicVideoCompaniesPage() {
   return (
     <div id="main-content" className="wrap ha-waypoint">
       <a className="ut-offset-anchor" id="to-main-content" />
-      <HeroSection />
-
       {/* Main Content */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6 lg:px-12">
-          <header className="text-center mb-12">
+      <section className="bg-gray-50 py-16 ">
+        <div className="container mx-auto max-w-6xl px-6 lg:px-12">
+          <header className="text-center  mb-12">
             <h1 className="text-4xl font-bold mb-4 text-gray-900">
               Music Video Companies
             </h1>
@@ -1185,11 +1278,10 @@ export  function MusicVideoCompaniesPage() {
             </p>
           </header>
 
-          <div className="max-w-3xl mx-auto prose prose-lg text-gray-700">
+          <div className="max-w-5xl mx-auto prose prose-lg text-gray-700">
             <p className="text-center">
               <iframe
-                width="800"
-                height="450"
+                className="w-full h-96 rounded-md"
                 src="//www.youtube.com/embed/MedTAEaTcHw"
                 frameBorder="0"
                 allowFullScreen
@@ -1204,6 +1296,7 @@ export  function MusicVideoCompaniesPage() {
                 href="https://musicvideoproduction.guru/music-video-production-miami"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-orange-500"
               >
                 music video production company
               </a>{" "}
@@ -1220,6 +1313,7 @@ export  function MusicVideoCompaniesPage() {
                 href="https://musicvideoproduction.guru/music-videos/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-orange-500"
               >
                 types of music videos
               </a>
@@ -1335,8 +1429,6 @@ export  function PackagesPage() {
   return (
     <div id="main-content" className="wrap ha-waypoint">
       <a className="ut-offset-anchor" id="to-main-content" />
-      <HeroSection />
-
       {/* Main Content */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-6 lg:px-12">
@@ -1546,14 +1638,7 @@ export  function PackagesPage() {
 
 export function PhantomCameraPage() {
   return (
-    <>
-      {/* Hero */}
-      <HeroSection
-        title="Phantom Camera"
-        subtitle="The Phantom Flex 2.5K"
-        backgroundImage="/images/hero-phantom.jpg" // update path if needed
-      />
-
+    <> 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
         <article className="max-w-4xl mx-auto">
@@ -1660,14 +1745,7 @@ export function PhantomCameraPage() {
 
 export function RedDragonPage(){
   return (
-    <>
-      {/* Hero */}
-      <HeroSection
-        title="RED DRAGON Rentals"
-        subtitle="Creative and Stylish Cinematography At Its Finest"
-        backgroundImage="/images/hero-red-dragon.jpg" // replace with your asset path
-      />
-
+    <>   
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
         <article className="prose max-w-5xl mx-auto">
@@ -1804,3 +1882,486 @@ export function RedDragonPage(){
   );
 };
 
+// Miami Video Production Services
+
+export function MiamiVideoProductionServices()  {
+  return (
+    <div className="flex text-center flex-col min-h-screen">
+      {/* Main Content */}
+      <main className="flex-1 container mx-auto px-6 py-12 prose prose-lg max-w-6xl">
+      <h1>Miami Video Production Services</h1>
+      <h2>Miami Video Production | Miami Video Production Services – Regulus Films</h2>
+        <p>
+          Regulus Films –{" "}
+          <a
+            href="http://musicvideoproduction.guru/miami-music-video-production/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
+          >
+            Miami video production company
+          </a>{" "}
+          that puts full creativity, talent, experience and passion behind every
+          project.
+        </p>
+
+        <p>
+          Regulus Films is a film &amp; Video Production Company located in
+          Miami, Florida with a focus in Commercials, TV commercials, Business
+          Videos.
+        </p>
+
+        <h4>How Regulus Films, #1 Miami Video Production Company help your business?</h4>
+        <p>
+          You can’t deny the fact that videos create a drastic effect on human
+          mind. Different gestures contain a wealth of information you want to
+          communicate to someone. Video enables you to tell your story OR
+          services to your customers in a much simpler way. Even according to a
+          research video creates more than 70% impact to the customer’s mind.
+          It’s only a video which can create a lasting effect on potential
+          customers.
+        </p>
+
+        <p>
+          Having only a video can’t help you to reach your customers. YouTube is
+          most widely used after Google, which means you can target your
+          potential customers from here. So once you are done with your video,
+          post it on YouTube. After publishing the video on YouTube, optimize it
+          with the help of digital marketing company to place it on the top of
+          the Google so that customers can find you easily.
+        </p>
+
+        <p>
+          Regulus Films, #1{" "}
+          <a
+            href="http://musicvideoproduction.guru/music-video-production-companies-in-miami/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
+          >
+            Miami Video Production Company
+          </a>{" "}
+          is ready to help you to tell your story to your customers.
+        </p>
+
+        {/* Embedded YouTube Video */}
+        <div className="my-8 flex justify-center">
+          <iframe
+            src="//www.youtube.com/embed/uv8ukq9hrfU"
+         
+            frameBorder="0"
+            allowFullScreen
+            className="rounded-xl  h-screen w-full shadow-lg"
+          ></iframe>
+        </div>
+
+        <p>
+          <a
+            href="http://musicvideoproduction.guru/music-video-directors-in-miami/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
+          >
+            Music Video Directors in Miami
+          </a>{" "}
+          | Regulus Films | Music Video Directors | Music Video Directors in
+          Miami
+        </p>
+
+        <p>
+          Regulus Films is one of the best leading production companies when it
+          comes to music{" "}
+          <a
+            href="http://www.wattpad.com/80446626-regulus-films-miami-music-video-production-company"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
+          >
+            video production Miami
+          </a>
+          .
+        </p>
+
+        <p>
+          <strong>Regulus Films</strong> – Video Production Miami | Miami Video
+          Production |{" "}
+          <a
+            href="http://musicvideoproduction.guru/music-video-production-miami/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
+          >
+            Music Video Production Companies
+          </a>{" "}
+          | Corporate Video Production Miami | Video Production Companies in
+          Miami. Contact{" "}
+          <a
+            href="http://musicvideoproduction.guru/regulus-films/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
+          >
+            Regulus Films
+          </a>{" "}
+          now for <strong>affordable Miami video production</strong> and start
+          promoting your business! Call <strong>786-429-4511</strong> Now!
+        </p>
+      </main>
+
+      {/* Reviews Banner */}
+      <ReviewsBanner />
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+};
+
+// Music Video Directors In Miami
+
+export  function MusicVideoDirectorsMiamiPage() {
+  return (
+    <div className="flex flex-col min-h-screen">
+       {/* Main Content */}
+      <main className="max-w-4xl mx-auto px-4 py-12 prose prose-lg">
+      <h1 className="text-4xl font-bold text-center">Music Video Directors in Miami</h1>
+
+      <h2 className="text-center font-bold">Affordable Music Video Directors in Miami-
+Call Us today for a Free Quote 786-429-4511</h2>
+        <h2 className="text-md">MYTH #1: Film Video Production is Expensive.</h2>
+        <p className="">
+          Incorrect! Regulus Films has many different packages that can fit any
+          budget large or small.
+        </p>
+
+        <h2 className="text-md">
+          MYTH #2: You need to live near Hollywood, New York, or London, to work
+          with a Music Video Director.
+        </h2>
+        <p>
+          Incorrect! Regulus Films is a traveling crew. We travel all around the
+          United States for clients who can’t get to Miami. Our{" "}
+          <span className="underline">best music video directors in Miami</span> often
+          go directly to the artist’s location to create a visual masterpiece.
+          <strong> Music Video Directors in Miami</strong> come from all over the world work with Regulus because of our
+          international reputation.
+        </p>
+
+        <img
+          src="/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
+          alt="Music Video Directors in Miami"
+          className="rounded-2xl shadow-lg mx-auto my-8"
+        />
+
+        <h2 className="text-md">
+          MYTH #3: Music Video Director production is a hopeless business to
+          break into.
+        </h2>
+        <p>
+          Incorrect! If you’re looking to be a Video Director, go for it! With a
+          little creativity and determination, you can do it. If not, Regulus
+          Films is here to do the hard work for you. We’re a coalition of some
+          of the best{" "}
+          <span className="underline">music video directors</span> in the
+          industry.
+        </p>
+
+        <div className="aspect-w-16 aspect-h-9 my-8">
+          <iframe
+            src="https://player.vimeo.com/video/286964151"
+            className="w-full h-96 rounded-lg"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        <h2 className="text-md">MYTH #4: Music Production is very hard to understand.</h2>
+        <p>
+          Incorrect! Everything feels difficult at first, but at Regulus we’re
+          happy to answer any and all questions about music video production.
+          Remember: a true <strong>Music Video Director</strong> keeps an open
+          mind and thinks outside the box. That’s why we’re well known in the
+          marketplace for creative and stylish productions.
+        </p>
+
+        <img
+          src="https://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-12.58.16-PM.png"
+          alt="Music Video Directors in Miami"
+          className="rounded-2xl shadow-lg mx-auto my-8"
+        />
+
+        <p>
+          YES! More than ever, there’s a demand for{" "}
+          <a
+            href="https://musicvideoproduction.guru/music-video-production-miami/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-500 hover:underline"
+          >
+            Miami music video production
+          </a>
+          . This creates a fantastic opportunity for creative, up-and-coming
+          directors. The importance of originality and quality work is greater
+          now than ever before.
+        </p>
+      </main>
+
+      {/* Reviews */}
+      <ReviewsBanner />
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+}
+
+
+//Music Video Production Companies Miami
+
+export  function MusicVideoProductionCompanies() {
+  return (
+    <div className="flex flex-col min-h-screen">
+         {/* Main Content */}
+      <main className="flex-1 bg-white py-12">
+        <div className="container mx-auto px-6 md:px-12 max-w-5xl">
+          <h1 className="text-4xl text-center md:text-4xl font-bold mb-6">
+            Music Video Production Companies Miami
+          </h1>
+          <h1 className="text-2xl text-center font-bold mb-6">
+            Choosing The Best <strong>Music Video Production Miami</strong> Companies
+          </h1>
+
+          <p className="mb-6 font-semibold">
+            After you’ve finished your due diligence in the searching phase, it’s
+            time to hire a capable and creative Music Video Production Company to
+            execute your vision.
+          </p>
+
+          {/* YouTube Video */}
+          <div className="flex justify-center mb-8">
+            <iframe
+              className="w-full h-96 rounded-lg shadow-md"
+              src="//www.youtube.com/embed/MUT_yPPcdvs"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          <p className="mb-6">
+            You should locate an organization that not only comprehends your
+            vision, but also can take your thoughts into a top-notch degree
+            through today’s top technology and expertise. Try to find an
+            organization that can provide you more than just a single cameraman
+            calling himself a company.{" "}
+            <strong>Regulus Films</strong> is a group of skillful and creative
+            employees using the newest techniques in editing and{" "}
+            <a
+              href="https://musicvideoproduction.guru/miami-music-video-production/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600"
+            >
+              Music Video Production Miami
+            </a>{" "}
+            technology.
+          </p>
+
+          <p className="mb-6">
+            There have already been many new improvements in video editing, video
+            capture technology, and ways that video is delivered such as
+            interactive videos online.
+          </p>
+
+          {/* Image with caption */}
+          <figure className="mb-8 text-center">
+            <img
+              src="https://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
+              alt="Music Video Production Miami, Fl"
+              className="rounded-lg shadow-lg mx-auto"
+            />
+            <figcaption className="text-sm text-gray-600 mt-2">
+              Music Video Production Miami, Fl
+            </figcaption>
+          </figure>
+
+          {/* Bulleted List */}
+          <ul className="list-disc pl-8 space-y-4 mb-8">
+            <li>
+              <strong>
+                Below are a few ideas to keep in mind when seeking out the best
+                Film Production Miami Company to work with:
+              </strong>
+            </li>
+            <li>
+              Select a company that you trust and enjoy working with.{" "}
+              <strong>Music Video Production Miami</strong> is a creative
+              process—find a team you love collaborating with.
+            </li>
+            <li>
+              <strong>
+                Look for a firm knowledgeable about the newest developments in{" "}
+                <a
+                  href="https://musicvideoproduction.guru/miami-music-video-production/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600"
+                >
+                  Video Production Miami
+                </a>
+                .
+              </strong>{" "}
+              These improvements may save you time and money while helping your
+              video stand out.
+            </li>
+            <li>
+              <strong>Review their past work and track record.</strong> Even if
+              their style doesn’t perfectly match yours, ensure they can adapt to
+              your vision.
+            </li>
+            <li>
+              <strong>
+                Work with a company experienced in broadcasting videos.
+              </strong>{" "}
+              They should understand your marketing goals and audience, and
+              reflect that in your video.
+            </li>
+            <li>
+              <strong>Discuss budget openly.</strong> Don’t just choose the
+              cheapest option—quality matters when your brand’s reputation is at
+              stake.
+            </li>
+          </ul>
+
+          {/* Second Image with caption */}
+          <figure className="mb-8 text-center">
+            <img
+              src="https://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
+              alt="Miami Music Video Production Companies"
+              className="rounded-lg shadow-lg mx-auto"
+            />
+            <figcaption className="text-sm text-gray-600 mt-2">
+              Miami Music Video Production Companies
+            </figcaption>
+          </figure>
+
+          <p className="mb-6">
+            There are several factors to consider when selecting the right{" "}
+            <span className="underline">Music Video Production Company</span>.
+            Once you find the proper fit, the process flows smoothly—and you’ll
+            end up with a powerful and engaging video. When we say “they,” we
+            mean <strong>Regulus Films and Entertainment</strong>!
+          </p>
+        </div>
+      </main>
+
+      {/* Reviews + Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+// Video Production Miami Film Production Companies
+// Film Production Companies Page
+export function FilmProductionCompanies() {
+  const { ref: sectionRef, inView } = useScrollAnimation();
+
+  return (
+    <div className="min-h-screen">
+      {/* Main Content */}
+      <div className="container pt-12 mx-auto px-6 md:px-12 max-w-5xl">        
+        {/* Heading */}
+        <h1 className="text-4xl text-center md:text-4xl font-bold mb-6">
+          Video Production – Miami Film Production Companies
+        </h1>
+        <h1 className="text-2xl text-center md:text-2xl font-bold mb-6">
+          Best Film Production Companies in Miami
+        </h1>
+
+        {/* Intro Paragraph */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Amusement comes in many different forms, and in every genre of 
+          entertainment, there are two groups of individuals: the{" "}
+          <strong>Miami Film Video Production companies</strong> and the 
+          consumer audience. The regular crowd member will judge the picture 
+          they see based on memories of pain, pleasure, and feelings, while 
+          acknowledging unique performers they’ve seen before. Yet, even the 
+          best performer is just one part of what makes a truly satisfying 
+          entertainment experience.
+        </p>
+
+        {/* Embedded Video */}
+        <div className="flex justify-center mb-8">
+          <iframe
+            className="w-full h-96 rounded-lg shadow-md"
+            src="https://www.youtube.com/embed/MUT_yPPcdvs"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        {/* Paragraphs */}
+        <p className="mb-6 text-gray-700 leading-relaxed font-semibold">
+          I am not attempting to downplay the need for the performer. Anyone 
+          who has acted in live theatre will tell you how essential the players are.
+        </p>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          <strong>Film production companies in Miami</strong> are the 
+          performers, but there are also numerous supporting roles: set 
+          designers, costume creators, and makeup artists. While these people 
+          prepare everything before the curtain rises, once the performance 
+          begins, it’s the performer who must carry the show.
+        </p>
+
+        {/* Image with Caption */}
+        <div className="my-8 text-center">
+          <a href="https://musicvideoproduction.guru/wp-content/uploads/2018/09/log-transparent-background-1024x751.png">
+            <img
+              src="https://musicvideoproduction.guru/wp-content/uploads/2018/09/log-transparent-background-1024x751.png"
+              alt="Miami film production companies"
+              className="mx-auto rounded-lg shadow-md w-[443px] h-[325px] object-contain"
+            />
+          </a>
+          <p className="text-sm text-gray-600 mt-2">
+            <a
+              href="https://musicvideoproduction.guru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Video Production Miami
+            </a>{" "}
+            film production companies
+          </p>
+        </div>
+
+        {/* More Paragraphs */}
+        <p className="mb-6 text-gray-700 leading-relaxed font-semibold">
+          The performer’s occupation begins months or even years before a movie 
+          reaches the box office.
+        </p>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          While <strong>Miami film production companies</strong> are not always 
+          recognized in the history of film, the toughest and most 
+          underappreciated jobs in Hollywood are often behind the scenes—those 
+          who work beyond the glamour of the camera.
+        </p>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          If you’ve got digital media experience with{" "}
+          <strong>film production companies in Miami</strong>, along with 
+          educational and professional qualifications, then networking can be 
+          the key to landing the job you want in{" "}
+          <strong>film production Miami</strong>.
+        </p>
+      </div>
+
+      {/* Reviews & Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}

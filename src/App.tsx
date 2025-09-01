@@ -12,7 +12,7 @@ import About from "@/pages/about";
 import MusicVideos from "@/pages/music-videos";
 import CorporateVideos from "@/pages/corporate-videos";
 import Contact from "@/pages/contact";
-import {MiamiBestVideoTrends, MusicVideoCompaniesPage, PackagesPage, PhantomCameraPage, RedDragonPage} from "@/pages/OldPages";
+import {FilmProductionCompanies, MiamiBestVideoTrends, MusicVideoCompaniesPage, MusicVideoDirectorsMiamiPage, MusicVideoProductionCompanies, PackagesPage, PhantomCameraPage, RedDragonPage} from "@/pages/OldPages";
 import { AllBudgetsWelcomed } from "@/pages/OldPages";
 import { ColorGrading } from "@/pages/OldPages";
 import { CorporateVideoProductionMiami } from "@/pages/OldPages";
@@ -20,7 +20,7 @@ import { FloridaVideoProductionCompany } from "@/pages/OldPages";
 import MiamiVideoProductionMain from "@/pages/OldPages";
 import { MoviesPage } from "@/pages/OldPages";
 import { MusicVideoProductionMiami } from "@/pages/OldPages";
-
+import { MiamiVideoProductionServices } from "@/pages/OldPages";
 import NotFound from "@/pages/not-found";
 import { MusicVideoProductionCompanyAtlanta, MusicVideoProductionCompanyLosAngeles, MusicVideoProductionCompanyNewYork, MiamiVideoProduction, MusicVideoProduction } from './pages/OldPages';
 
@@ -55,6 +55,10 @@ function Router() {
         <Route path="/packages" component={PackagesPage} />
         <Route path="/phantom-camera" component={PhantomCameraPage} />
         <Route path="/red-dragon" component={RedDragonPage} />
+        <Route path="/miami-video-production-services" component={MiamiVideoProductionServices} />
+        <Route path="/music-video-directors-in-miami" component={MusicVideoDirectorsMiamiPage} />
+        <Route path="/music-video-production-companies-miami" component={MusicVideoProductionCompanies} />
+        <Route path="/video-production-miami-film-production-companies/" component={FilmProductionCompanies} />
         <Route component={NotFound} />
       </Switch>
     </div>

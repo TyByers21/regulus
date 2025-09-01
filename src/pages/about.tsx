@@ -204,19 +204,19 @@ export default function About() {
               },
               {
                 name: "Antwan",
-                title: "Lead Cinematographer",
+                title: "LEAD CINEMATOGRAPHER",
                 quote: "Every frame tells a story.",
                 img: "/images/twanProfile.png",
               },
               {
                 name: "Vadeem",
-                title: "Chief Editor",
+                title: "CHIEF EDITOR",
                 quote: "Editing is the hidden art of film.",
                 img: "/images/vadeemProfile.jpg",
               },
               {
                 name: "Tanya",
-                title: "Director",
+                title: "DIRECTOR",
                 quote: "Creativity meets precision.",
                 img: "/images/tanyaProfile2.png",
                     special: true, // <-- flag for custom styling
