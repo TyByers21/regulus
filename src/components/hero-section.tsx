@@ -56,7 +56,7 @@ export function HeroSection() {
 
 
           {/* Heading */}
-          <h1 className="text-4xl sm:text-7xl drop-shadow-lg font-bold mb-4 sm:mb-6 leading-snug sm:leading-tight">
+          <h1 className="text-4xl sm:text-7xl drop-shadow-lg font-bold mb-4 pt-12 sm:mb-6 leading-snug sm:leading-tight">
             Premium Video Production in
             <br />
             <span
