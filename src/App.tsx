@@ -12,7 +12,7 @@ import About from "@/pages/about";
 import MusicVideos from "@/pages/music-videos";
 import CorporateVideos from "@/pages/corporate-videos";
 import Contact from "@/pages/contact";
-import {FilmProductionCompanies, MiamiBestVideoTrends, MusicVideoCompaniesPage, MusicVideoDirectorsMiamiPage, MusicVideoProductionCompanies, PackagesPage, PhantomCameraPage, RedDragonPage} from "@/pages/OldPages";
+import {BehindTheScenes, FilmProductionCompanies, MiamiBestVideoTrends, MusicVideoCompaniesPage, MusicVideoDirectorsMiamiPage, MusicVideoProductionCompanies, PackagesPage, PhantomCameraPage, RedDragonPage, RegulusFilmsMiami} from "@/pages/OldPages";
 import { AllBudgetsWelcomed } from "@/pages/OldPages";
 import { ColorGrading } from "@/pages/OldPages";
 import { CorporateVideoProductionMiami } from "@/pages/OldPages";
@@ -23,6 +23,7 @@ import { MusicVideoProductionMiami } from "@/pages/OldPages";
 import { MiamiVideoProductionServices } from "@/pages/OldPages";
 import NotFound from "@/pages/not-found";
 import { MusicVideoProductionCompanyAtlanta, MusicVideoProductionCompanyLosAngeles, MusicVideoProductionCompanyNewYork, MiamiVideoProduction, MusicVideoProduction } from './pages/OldPages';
+import { RegulusFilms, AboutRegulus, VideoProductionMiami, MusicVideoPromotion } from "@/pages/OldPages";
 
 function Router() {
   useScrollToTop();
@@ -59,6 +60,11 @@ function Router() {
         <Route path="/music-video-directors-in-miami" component={MusicVideoDirectorsMiamiPage} />
         <Route path="/music-video-production-miami" component={MusicVideoProductionCompanies} />
         <Route path="/video-production-miami-film-production-companies/" component={FilmProductionCompanies} />
+        <Route path="/regulus-films" component={RegulusFilms} />
+        <Route path="/about-regulus" component={AboutRegulus} />
+        <Route path="/miami-music-video-production" component={VideoProductionMiami} />
+        <Route path="/music-video-promotion" component={MusicVideoPromotion} />
+        <Route path="/behind-the-scenes" component={BehindTheScenes} />
         <Route component={NotFound} />
       </Switch>
     </div>

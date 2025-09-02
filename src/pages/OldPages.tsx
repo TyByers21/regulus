@@ -544,12 +544,12 @@ export function MusicVideoProductionCompanyLosAngeles() {
         <h2 className="text-2xl font-bold mb-4">Services</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
           <li>
-            We operate not only in <strong>Los Angeles</strong>, but also in 
+            We not only deal in <strong>video production LA</strong>, but also in 
             New York, Miami, Atlanta, and across the U.S.
           </li>
           <li>
-            We’re the only <strong>Los Angeles production company</strong> 
-            that provides full production services from pre-production to 
+            We are the only <strong>Los Angeles production company </strong> 
+             that provides full production services from pre-production to 
             post-production at an affordable price.
           </li>
           <li>
@@ -560,10 +560,8 @@ export function MusicVideoProductionCompanyLosAngeles() {
 
         {/* Full Service Section */}
         <p className="mb-6 text-gray-700 leading-relaxed">
-          Creating a music video involves countless moving parts—it can 
-          be overwhelming to manage them all. That’s why we’re a true 
-          one-stop shop for{" "}
-          <strong>video production in Los Angeles</strong>, handling every 
+          There are lot of things involved while creating videos and it would be challenging for you to handle all things from start to finish. Not a problem, we are truly a one stop shop for{" "}
+          <strong>video productions Los Angeles</strong>, handling every 
           aspect of pre-production and post-production. Using the latest 
           software and equipment, we bring your vision to life with 
           creativity, teamwork, and technical expertise.
@@ -1398,9 +1396,9 @@ export function MusicVideoProductionCompanyNewYork() {
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
-            Music Video Production
+            Music Video Production in Miami
           </a>{" "}
-          in Miami, New York, or beyond: <strong>786-429-4511</strong>.
+          , New York, or beyond: <strong>786-429-4511</strong>.
         </p>
       </div>
 
@@ -2516,4 +2514,502 @@ export function FilmProductionCompanies() {
       <Footer />
     </div>
   );
+}
+
+
+//Regulus Films
+
+// Regulus Films (Miami) Page
+export function RegulusFilms() {
+  return (
+    <div className="min-h-screen pt-32">
+      {/* Main Content */}
+      <div className="container mx-auto px-6 md:px-12 max-w-5xl">
+        
+        {/* Heading */}
+        <h1 className="text-3xl text-center md:text-4xl font-bold mb-6">Regulus Films</h1>
+
+        {/* Intro Paragraph */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Miami! Awesome city — and that’s the biggest reason we are proud 
+          to be a Miami-based <strong>Music Video Production Company</strong>. 
+          We frequently travel worldwide to create music videos at affordable 
+          costs. In addition, we provide <strong>Miami Florida RED EPIC 
+          rentals</strong> and <strong>RED Camera Rentals</strong>. Rent a 
+          full production package with RED EPIC rentals, including cinema 
+          packages and camera support at competitive prices.
+        </p>
+
+        {/* About Section */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          <strong>Regulus Films</strong> is one of the leading{" "}
+          <a
+            href="http://www.themiamistudio.com/media/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            full-service music video production companies in Miami
+          </a>
+          , Florida. Founded by creative director Gary Brown, Regulus 
+          Films brings together a talented team of professional directors, 
+          photographers, producers, and editors. With this combination of 
+          experience, we deliver high-quality videos at affordable prices.
+        </p>
+
+        {/* Experience Section */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          We’ve worked on shooting music videos, live content, and behind-the-scenes 
+          footage for numerous artists. Our creative team handles editing and 
+          every other aspect of production, ensuring your project is smooth and 
+          professional from start to finish.
+        </p>
+
+        {/* Call to Action */}
+        <p className="mb-6 text-lg font-semibold text-blue-700">
+          Call us today for your next Music Video: <span className="font-bold">786-429-4511</span>
+        </p>
+      </div>
+
+      {/* Reviews & Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+// About Regulus Page
+export function AboutRegulus() {
+  return (
+    <div className="min-h-screen pt-32">
+      {/* Main Content */}
+      <div className="container mx-auto px-6 md:px-12 max-w-5xl">
+        
+        {/* Heading */}
+        <h1 className="text-3xl md:text-4xl text-center font-bold mb-6">About Regulus</h1>
+
+        {/* Intro Paragraph */}
+        <p className="mb-6 text-gray-700 leading-relaxed text-justify">
+          <strong>Regulus Films</strong> is well known for our cinematic and stylish 
+          Miami Video Production Services. We top the list of{" "}
+          <a
+            href="https://musicvideoproduction.guru/video-production-miami-film-production-companies/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            film production companies in Miami
+          </a>{" "}
+          as our company is a coalition of directors, cinematographers, film producers, 
+          and makeup artists that can accommodate any size budget. It takes a team 
+          to create a beautiful music video production, and that’s exactly what we deliver. 
+          We are a full-service Miami video production company passionate about video 
+          production from start to end.
+        </p>
+
+        {/* Services */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Our services include: Miami Video Production | Corporate Video Production | 
+          Film Production Companies in Miami | Music Video Production | Video Production 
+          Fort Lauderdale | Miami Videographer | Best Video Companies in Miami.
+        </p>
+
+        {/* Subheading */}
+        <h2 className="text-2xl font-semibold mb-4">
+          Achieve Quality Video Production with Regulus Films
+        </h2>
+
+        {/* Facts Section */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          With the vast improvement in mobile devices, video has started dominating 
+          search engines and social media. Let’s look at some facts below:
+        </p>
+        <ul className="list-disc list-inside mb-6 text-gray-700 leading-relaxed">
+          <li>Video views on mobile devices have increased 5× in the past three years.</li>
+          <li>YouTube has become the most popular search engine for videos, with half of its traffic from mobile only.</li>
+          <li>80% of online visitors watch video content compared to just 20% who read text.</li>
+          <li>Video content has much higher potential to go viral.</li>
+          <li>Videos are more engaging and provide more information in less time.</li>
+        </ul>
+
+        {/* Quality Section */}
+        <p className="mb-6 text-gray-700 leading-relaxed text-justify">
+          Looking at the facts above, you might be thinking of creating video content 
+          to showcase your product and services. But remember: if you compromise with 
+          quality, your video will be of no use. To ensure high-quality video production, 
+          you must hire a Miami video production company capable of creating videos that 
+          leave a lasting impression.
+        </p>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          <a
+            href="https://themiamistudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Regulus Films - #1 Miami Video Production
+          </a>{" "}
+          has decades of experience and provides expert consulting to help you 
+          avoid pitfalls and create a solid structure early in the process. 
+          Our job is to stay on top of current technology, trends, and styles 
+          so your video stands out.
+        </p>
+
+        {/* Call to Action */}
+        <p className="mb-6 text-lg font-semibold text-blue-700">
+          Contact us at <span className="font-bold">786-429-4511</span> for any{" "}
+          <a
+            href="https://musicvideoproduction.guru/regulus-films-best-miami-video-production-company/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Miami video production
+          </a>{" "}
+          needs, and let us help you create powerful, engaging videos that 
+          grow your brand.
+        </p>
+      </div>
+
+      {/* Parallax Callout Section */}
+      <section className="bg-gray-900 text-white py-12 text-center">
+        <div className="container mx-auto px-6 md:px-12 max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Creative and Stylish Cinematography At Its Finest.
+          </h2>
+          <p className="text-lg">
+            Call Us Today At: <span className="font-bold">786-429-4511</span>
+          </p>
+        </div>
+      </section>
+
+      {/* Reviews & Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+
+// Video Production Miami Page
+export function VideoProductionMiami() {
+  return (
+    <div className="min-h-screen pt-32">
+      {/* Main Content */}
+      <div className="container text-center mx-auto px-6 md:px-12 max-w-5xl">
+        
+        {/* Heading */}
+        <h1 className="text-3xl md:text-4xl font-bold mb-6">Video Production Miami</h1>
+
+        {/* Intro Paragraph */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          When browsing the web for <strong>Miami Music Video Production</strong>, 
+          people are often surprised at the level of production we provide. 
+          Clients often think it costs an arm and a leg for great{" "}
+          <span className="underline">Miami Music Video Production</span> — but 
+          that’s not the case.
+        </p>
+
+        {/* Embedded Video */}
+        <div className="mb-6 aspect-video">
+          <iframe
+            src="https://www.youtube.com/embed/MUT_yPPcdvs"
+            title="Miami Music Video Production"
+            allowFullScreen
+            className="w-full h-full rounded-lg shadow-md"
+          />
+        </div>
+
+        {/* Budget-Friendly Section */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          While it’s true that you get what you pay for, we often work with client 
+          budgets as much as possible while never sacrificing quality. Here are some 
+          techniques we use to maximize impact:
+        </p>
+
+        {/* Techniques List */}
+        <ul className="list-disc list-inside mb-6 text-gray-700 leading-relaxed space-y-2">
+          <li><strong>#1. Slow motion</strong> creates a deep emotional impact for music videos or commercials.</li>
+          <li><strong>#2. Smooth camera movement</strong> adds substance and production value to any scene.</li>
+          <li><strong>#3. Stable camera work</strong> draws the audience into action sequences like walking, running, or skating.</li>
+          <li>
+            <strong>#4. Airborne footage with drones</strong> allows us to capture shots once only possible with planes 
+            or helicopters. Learn more about our{" "}
+            <a
+              href="http://musicvideoproduction.guru/miami-video-production-services/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600"
+            >
+              Miami video production services
+            </a>.
+          </li>
+          <li><strong>#5. Color correction</strong> ensures your video has professional-grade tone and vibrancy.</li>
+        </ul>
+
+        {/* Image Example */}
+        <div className="mb-6 text-center">
+          <a
+            href="http://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="http://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
+              alt="Miami Music Video Production"
+              className="rounded-lg shadow-md mx-auto"
+            />
+          </a>
+          <p className="mt-2 text-sm text-gray-500">Miami Music Video Production</p>
+        </div>
+
+        {/* Mobile Video Importance */}
+        <h2 className="text-2xl font-semibold mb-4">Cellular Video</h2>
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Mobile video consumption is skyrocketing. Companies must optimize 
+          their videos for smartphones and tablets to ensure smooth playback 
+          and accessibility.
+        </p>
+
+        {/* Email Marketing */}
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          <strong>Email us at Regulusfilms@themiamistudio.com</strong> for Video Production Miami.  
+          Video in email marketing has proven to be highly effective — with over 
+          65% of marketers using video in email campaigns. With advancements in 
+          HTML5, embedded video is becoming more common and engaging.
+        </p>
+
+        {/* Explainer Videos */}
+        <h2 className="text-2xl font-semibold mb-4">Explainer Videos</h2>
+        <div className="mb-6 text-center">
+          <a
+            href="http://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="http://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
+              alt="Music Video Production Miami, FL"
+              className="rounded-lg shadow-md mx-auto"
+            />
+          </a>
+          <p className="mt-2 text-sm text-gray-500">Music Video Production Miami, FL</p>
+        </div>
+
+        <p className="mb-6 text-gray-700 leading-relaxed">
+          Explainer videos are short, clear, and engaging — usually found front 
+          and center on company homepages. They effectively describe what a 
+          business does and how a product works in a captivating way.
+        </p>
+
+        {/* Closing CTA */}
+        <p className="mb-6 text-lg font-semibold text-blue-700">
+          Not sure where to start? Give us a call today at{" "}
+          <span className="font-bold">786-429-4511</span> and let our team 
+          handle your next production.
+        </p>
+      </div>
+
+      {/* Parallax Callout Section */}
+      <section className="bg-gray-900 text-white py-12 text-center">
+        <div className="container mx-auto px-6 md:px-12 max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Creative and Stylish Cinematography At Its Finest.
+          </h2>
+          <p className="text-lg">
+            Call Us Today At: <span className="font-bold">786-429-4511</span>
+          </p>
+        </div>
+      </section>
+
+      {/* Reviews & Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  );
+}
+
+
+// Music Video Promotion Page
+export function MusicVideoPromotion() {
+  return (
+    <div className="min-h-screen pt-32">
+      {/* Main Content */}
+      <div className="max-w-5xl mx-auto px-6 py-16">
+        <h1 className="text-4xl font-bold text-center mb-8">
+          Music Video Promotion
+        </h1>
+
+        <p className="text-center text-lg mb-6">
+          ***This is live feed from our Music Video Channel on TV. Our Music
+          video channel provides artists a new outlet for promotion that is seen
+          by millions of viewers worldwide. Our TV channel is on over 200
+          million connected devices such as Roku, Android TV, Amazon Fire, Apple
+          TV, Smart TVs and many others. We provide you guaranteed TV placement
+          playing your music video once every 4 hours, 24 hours a day for 1
+          month. If you need more aggressive marketing, we have bigger packages.
+          The price for this package mentioned above is only $300. If you would
+          like to see your music video on TV please contact us today!***
+        </p>
+
+        {/* Video Embed */}
+        <div className="relative pb-[56.25%] h-0 mb-8">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://embed.cdn01.net/player.php?responsive=1&skinColor=000000&autoStart=0&playlistPos=inside&playlistSize=350&tvButtonID=regulus&id=17330&type=live&playerVersion=2"
+            frameBorder="0"
+            allowFullScreen
+          />
+        </div>
+
+        <h2 className="text-2xl font-semibold text-center mt-8">
+          Search for our channel Today. MVC
+        </h2>
+
+        <p className="text-center text-blue-600 mt-10 text-lg font-medium">
+          Call us today and let’s make your music video shine worldwide.
+        </p>
+      </div>
+
+      {/* Parallax Callout Section */}
+      <section className="bg-gray-900 text-white py-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Creative and Stylish Cinematography At Its Finest.
+          </h2>
+          <p className="text-lg">Call Us Today At: 786-429-4511</p>
+        </div>
+      </section>
+
+      {/* Reviews + Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  )
+}
+
+// BehindTheScenes.tsx
+
+export function BehindTheScenes() {
+  const videos = [
+    { title: "Symphony / Crazy B - Behind The Scenes", src: "https://player.vimeo.com/video/591818131?h=e4d4756449" },
+    { title: "Emmanuel / It’s Not Me - Behind The Scenes", src: "https://player.vimeo.com/video/277899466" },
+    { title: "Tim Terrentino / Million Dollar Dream - Behind The Scenes", src: "https://player.vimeo.com/video/167973403" },
+    { title: "Dmage Ft: Paulo Cabonda / Boa Vibe - Behind the Scenes", src: "https://player.vimeo.com/video/116920449" },
+    { title: "Hannah / Lots Out - Behind the Scenes", src: "https://player.vimeo.com/video/117008080" },
+    { title: "KAL / What I Need Is Love - Behind the Scenes", src: "https://www.youtube.com/embed/ZmH-X2ye0Sw?rel=0" },
+    { title: "Stylez / Employer - Behind the Scenes", src: "https://www.youtube.com/embed/vpF7449E3Sk?rel=0" },
+    { title: "Shaton / Gone - Behind the Scenes", src: "https://www.youtube.com/embed/R29Ek-joxLs?rel=0" },
+    { title: "Kewyane / Nobody - Behind the Scenes", src: "https://www.youtube.com/embed/Npuztz2S7NU?rel=0" },
+    { title: "Peter G / Too Much - Behind the Scenes", src: "https://www.youtube.com/embed/Iwjer63uj9U?rel=0" },
+    { title: "Sy’Rai / Good Time - Behind the Scenes", src: "https://www.youtube.com/embed/KwzasXXP7Zs" },
+    { title: "Ibrahim / Amina - Behind the Scenes", src: "https://www.youtube.com/embed/NstllhkUNNA?rel=0" },
+    { title: "Robert Wayne - Behind the Scenes", src: "https://www.youtube.com/embed/OO4Xap811XA?rel=0" },
+    { title: "Champain Life / Taking Off - Behind the Scenes", src: "https://www.youtube.com/embed/-MrKQoEpnyk?rel=0" },
+    { title: "Kimbell Hooker / Sexy Senorita - Behind the Scenes", src: "https://www.youtube.com/embed/_OXows4SYyI?rel=0" },
+    { title: "ChizMac / That Action - Behind the Scenes", src: "https://www.youtube.com/embed/he4FlmY_JDo?rel=0" },
+    { title: "Prinz / The One - Behind the Scenes", src: "https://www.youtube.com/embed/mas0TP64FBQ?rel=0" },
+    { title: "Zaena / Come Get It - Behind the Scenes", src: "https://www.youtube.com/embed/UFr_xmtfjyY" },
+    { title: "Joe Squires / Come Home - Behind the Scenes", src: "https://www.youtube.com/embed/N-TcUBurLAI?rel=0" },
+    { title: "Dave Wayne / Guy Like Me - Behind the Scenes", src: "https://www.youtube.com/embed/l9Boy-4WScE?rel=0" },
+    { title: "J R Pinchers Fet. Amanda / Strong Temtations - Behind the Scenes", src: "https://www.youtube.com/embed/mdBAwBhe13Y?rel=0" },
+    { title: "Ysimonis / Donald Duck - Behind the Scenes", src: "https://www.youtube.com/embed/xgzLAYkTQ3w?rel=0" },
+    { title: "Santa Baby - Behind the Scenes", src: "https://www.youtube.com/embed/52oMsW4Snh4" },
+    { title: "I’m Just Trying 2 Chill - Behind the Scenes", src: "https://www.youtube.com/embed/XPENS9TPsFg" },
+    { title: "Loyalty Now - Behind the Scenes", src: "https://www.youtube.com/embed/fqjDFJmI9DE?rel=0" },
+    { title: "Tears Fall Now - Behind the Scenes", src: "https://www.youtube.com/embed/Yzl__yAqTG4" },
+    { title: "Turn Me On - Behind the Scenes", src: "https://www.youtube.com/embed/kKU-k1MlOeM?rel=0" },
+    { title: "NeckBreaker - Behind the Scenes", src: "https://www.youtube.com/embed/LMiDsgmPWKI" },
+    { title: "Kopiko - Behind the Scenes", src: "https://www.youtube.com/embed/KOEixl0m6eQ" },
+    { title: "Conmigo Quiere - Behind the Scenes", src: "https://www.youtube.com/embed/2LgchqfqBT4" },
+    { title: "TOP - Behind the Scenes", src: "https://www.youtube.com/embed/NyTqIEAxaPI" },
+    { title: "Oluwa - Behind the Scenes", src: "https://www.youtube.com/embed/8k4B4oP0NJ0" },
+    { title: "Padon - Behind the Scenes", src: "https://www.youtube.com/embed/8TNf7tc4WeM" },
+    { title: "Hunt Me Down - Behind the Scenes", src: "https://www.youtube.com/embed/i7MAf28zLDs" },
+    { title: "It Feels Good - Behind the Scenes", src: "https://www.youtube.com/embed/gZfIB-bStqc" },
+    { title: "Dusk Til Dawn - Behind the Scenes", src: "https://www.youtube.com/embed/82sSVSfE_3I" },
+    { title: "I WONI - Behind the Scenes", src: "https://www.youtube.com/embed/gi_5UEfXtnk" },
+    { title: "100 MPH - Behind the Scenes", src: "https://www.youtube.com/embed/QAj1asOx_bw" },
+    { title: "Let Me Be Your B*tch - Behind the Scenes", src: "https://www.youtube.com/embed/-V8ifiyOr8Y?rel=0" },
+    { title: "Extra Clip", src: "https://www.youtube.com/embed/WSx9dGdltGc" },
+    { title: "Yes I’m Is - Behind the Scenes", src: "https://www.youtube.com/embed/PO14iOJDcW4" },
+    { title: "BIZ - Behind the Scenes", src: "https://www.youtube.com/embed/BSJGJrCmQzs" },
+    { title: "Sweet Palm Wine - Behind the Scenes", src: "https://www.youtube.com/embed/z3I6uain0BE?rel=0" },
+    { title: "Segarra feat. Busta Rhymes / 5150 - Behind the Scenes", src: "https://www.youtube.com/embed/DbPr8l1tuTg?rel=0" },
+    { title: "Not The Life - Behind the Scenes", src: "https://www.youtube.com/embed/LbE2ZlTQ9KA?rel=0" },
+    { title: "Drop It - Behind the Scenes", src: "https://www.youtube.com/embed/Ccn5lVQ4zB0?rel=0" },
+    { title: "Jack - Behind the Scenes", src: "https://www.youtube.com/embed/r8STmvJ5qI4?rel=0" },
+    { title: "Luna Llena - Behind the Scenes", src: "https://www.youtube.com/embed/BGHnafN3E-4?rel=0" },
+    { title: "Mother I - Behind the Scenes", src: "https://www.youtube.com/embed/9L4RMgvL4oU" },
+  ]
+
+  return (
+    <div className="min-h-screen pt-32">
+      {/* Main Content */}
+      <div className="max-w-5xl mx-auto px-6 py-16">
+        <h1 className="text-4xl font-bold text-center mb-12">
+          Behind the Scenes
+        </h1>
+
+        {/* Badges */}
+        <div className="flex flex-wrap justify-center gap-6 mb-12">
+          <img
+            src="https://musicvideoproduction.guru/wp-content/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
+            alt="Miami Video Production"
+            width={235}
+            height={235}
+            className="rounded-lg shadow-md"
+          />
+          <img
+            src="https://musicvideoproduction.guru/wp-content/uploads/2021/07/miami-video-production-companies.png"
+            alt="Regulus Films"
+            width={225}
+            height={235}
+            className="rounded-lg shadow-md"
+          />
+          <img
+            src="https://musicvideoproduction.guru/wp-content/uploads/2021/07/Music-Video-Directors.png"
+            alt="High end video companies in Miami"
+            width={234}
+            height={234}
+            className="rounded-lg shadow-md"
+          />
+        </div>
+
+        {/* Videos */}
+        <div className="space-y-16">
+          {videos.map((video, i) => (
+            <div key={i}>
+              <h2 className="text-2xl font-semibold mb-4 text-center">
+                {video.title}
+              </h2>
+              <div className="relative pb-[56.25%] h-0">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                  src={video.src}
+                  frameBorder="0"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Parallax Callout Section */}
+      <section className="bg-gray-900 text-white py-16 mt-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Creative and Stylish Cinematography At Its Finest.
+          </h2>
+          <p className="text-lg">Call Us Today At: 786-429-4511</p>
+        </div>
+      </section>
+
+      {/* Reviews + Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  )
 }
