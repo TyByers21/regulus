@@ -3013,3 +3013,113 @@ export function BehindTheScenes() {
     </div>
   )
 }
+
+// FortLauderdaleVideoProduction.tsx
+
+export function FortLauderdaleVideoProduction() {
+  return (
+    <div className="min-h-screen pt-32">
+      {/* Main Content */}
+      <div className="max-w-5xl mx-auto px-6 py-16">
+        <h1 className="text-4xl font-bold text-center mb-8">
+          Fort Lauderdale Video Production | Video Production Fort Lauderdale
+        </h1>
+
+        <p className="text-lg mb-6 text-justify">
+          <strong>Regulus Films</strong> – A leader in video production &amp;
+          video marketing. Based in Fort Lauderdale and Miami with a reach
+          through Florida, across the country and around the world, we commit
+          our full talent and energy to each assignment, creating imaginative
+          and inventive videos that stay focused on your goals and true to your
+          message.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-center my-8">
+          Video Production Fort Lauderdale
+        </h2>
+
+        <p className="mb-6">
+          From creative brainstorming to post production, we see projects
+          through from start to finish. And we stay on the job until you are
+          completely satisfied – guaranteed. We believe our work speaks for
+          itself. Visit our{" "}
+          <a
+            href="https://musicvideoproduction.guru/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Music Video Page
+          </a>{" "}
+          to see why we have been rated as one of the <strong>Best Video
+          Companies</strong> in the U.S. and why you must hire us for your next
+          video production Fort Lauderdale.
+        </p>
+
+        <p className="mb-6">
+          Still wondering why your business needs video production? YouTube is
+          the 2nd largest search engine after Google, which means with the help
+          of video presence on YouTube you can reach an entire community of
+          consumers you weren’t otherwise marketing to. Google also ranks
+          quality YouTube videos very high. Businesses often have complicated
+          processes that can be explained in a self-contained, shareable video.
+          Video is the easiest and fastest way to show your audience why they
+          should do business with you. The experience video provides will turn
+          them into loyal customers. Share your story, answer questions, and be
+          a valuable resource for your potential customers.
+        </p>
+
+        <p className="mb-6">
+          Brand Storytelling is a powerful way to give your audience a sense of
+          your brand’s purpose and values. There is no better way to demonstrate
+          a problem being solved than with video. As a full-service creative{" "}
+          <strong>video production Fort Lauderdale</strong> agency, let us help
+          you tell your brand story. We see projects through from start to
+          finish and stay until you are completely satisfied.
+        </p>
+
+        <p className="mb-6">
+          Our team of superb directors, cinematographers, film producers, and
+          makeup artists produces videos that are creative, distinctive, and
+          effective for TV commercials, marketing, and public relations
+          campaigns in all budgets. The play button of your video can be the
+          best way to increase client conversions. With over a decade of
+          experience as a{" "}
+          <a
+            href="https://musicvideoproduction.guru/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Miami Video Production
+          </a>
+          , we’re here for businesses big or small. If you have a product that
+          needs to be shown in video,{" "}
+          <a
+            href="https://musicvideoproduction.guru/contact-us/"
+            className="text-blue-600 underline"
+          >
+            contact us today
+          </a>
+          .
+        </p>
+      </div>
+
+      {/* Parallax Callout Section */}
+      <section className="bg-gray-900 text-white py-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Creative and Stylish Cinematography At Its Finest.
+          </h2>
+          <p className="text-lg">Call Us Today At: 786-429-4511</p>
+        </div>
+      </section>
+
+      {/* Reviews + Footer */}
+      <ReviewsBanner />
+      <Footer />
+    </div>
+  )
+}
+
+

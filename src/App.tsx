@@ -12,7 +12,7 @@ import About from "@/pages/about";
 import MusicVideos from "@/pages/music-videos";
 import CorporateVideos from "@/pages/corporate-videos";
 import Contact from "@/pages/contact";
-import {BehindTheScenes, FilmProductionCompanies, MiamiBestVideoTrends, MusicVideoCompaniesPage, MusicVideoDirectorsMiamiPage, MusicVideoProductionCompanies, PackagesPage, PhantomCameraPage, RedDragonPage, RegulusFilmsMiami} from "@/pages/OldPages";
+import {BehindTheScenes, FilmProductionCompanies, FortLauderdaleProduction, FortLauderdaleVideoProduction, MiamiBestVideoTrends, MusicVideoCompaniesPage, MusicVideoDirectorsMiamiPage, MusicVideoProductionCompanies, PackagesPage, PhantomCameraPage, RedDragonPage, RegulusFilmsMiami} from "@/pages/OldPages";
 import { AllBudgetsWelcomed } from "@/pages/OldPages";
 import { ColorGrading } from "@/pages/OldPages";
 import { CorporateVideoProductionMiami } from "@/pages/OldPages";
@@ -24,6 +24,8 @@ import { MiamiVideoProductionServices } from "@/pages/OldPages";
 import NotFound from "@/pages/not-found";
 import { MusicVideoProductionCompanyAtlanta, MusicVideoProductionCompanyLosAngeles, MusicVideoProductionCompanyNewYork, MiamiVideoProduction, MusicVideoProduction } from './pages/OldPages';
 import { RegulusFilms, AboutRegulus, VideoProductionMiami, MusicVideoPromotion } from "@/pages/OldPages";
+import SiteMap from "./pages/SiteMap";
+import path from 'path';
 
 function Router() {
   useScrollToTop();
@@ -65,6 +67,8 @@ function Router() {
         <Route path="/miami-music-video-production" component={VideoProductionMiami} />
         <Route path="/music-video-promotion" component={MusicVideoPromotion} />
         <Route path="/behind-the-scenes" component={BehindTheScenes} />
+        <Route path="/fort-lauderdale-video-production" component={FortLauderdaleVideoProduction} />
+        <Route path="/site-map" component={SiteMap} />
         <Route component={NotFound} />
       </Switch>
     </div>
