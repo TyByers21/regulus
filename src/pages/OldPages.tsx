@@ -2544,7 +2544,7 @@ export function RegulusFilms() {
         <p className="mb-6 text-gray-700 leading-relaxed">
           <strong>Regulus Films</strong> is one of the leading{" "}
           <a
-            href="http://www.themiamistudio.com/media/"
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline"
