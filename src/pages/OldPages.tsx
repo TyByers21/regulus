@@ -2339,8 +2339,8 @@ export  function MusicVideoProductionCompanies() {
           <ul className="list-disc pl-8 space-y-4 mb-8">
             <li>
               <strong>
-                Below are a few ideas to keep in mind when seeking out the best
-                Film Production Miami Company to work with:
+                Below are a few ideas to keep in mind when seeking out the best 
+                {" "}<u>Film Production Miami</u> Company to work with:
               </strong>
             </li>
             <li>
@@ -3042,17 +3042,16 @@ export function FortLauderdaleVideoProduction() {
           From creative brainstorming to post production, we see projects
           through from start to finish. And we stay on the job until you are
           completely satisfied – guaranteed. We believe our work speaks for
-          itself. Visit our{" "}
+          itself. Visit our <strong>Music Video Page</strong> to see why we have been rated as one of the{" "}
           <a
             href="https://musicvideoproduction.guru/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
-            Music Video Page
+            <strong>Best Video Companies</strong>
           </a>{" "}
-          to see why we have been rated as one of the <strong>Best Video
-          Companies</strong> in the U.S. and why you must hire us for your next
+           in the U.S. and why you must hire us for your next
           video production Fort Lauderdale.
         </p>
 
