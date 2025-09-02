@@ -25,6 +25,7 @@ import NotFound from "@/pages/not-found";
 import { MusicVideoProductionCompanyAtlanta, MusicVideoProductionCompanyLosAngeles, MusicVideoProductionCompanyNewYork, MiamiVideoProduction, MusicVideoProduction } from './pages/OldPages';
 import { RegulusFilms, AboutRegulus, VideoProductionMiami, MusicVideoPromotion } from "@/pages/OldPages";
 import SiteMap from "./pages/SiteMap";
+import Blog from "./pages/Blog";
 import path from 'path';
 
 function Router() {
@@ -69,6 +70,7 @@ function Router() {
         <Route path="/behind-the-scenes" component={BehindTheScenes} />
         <Route path="/fort-lauderdale-video-production" component={FortLauderdaleVideoProduction} />
         <Route path="/site-map" component={SiteMap} />
+        <Route path="/blog" component={Blog} />
         <Route component={NotFound} />
       </Switch>
     </div>
