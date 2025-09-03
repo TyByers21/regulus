@@ -26,7 +26,7 @@ const HeroImage = () => {
             asChild
             className="px-2 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm md:text-base lg:text-lg rounded-lg sm:rounded-xl"
           >
-            <a href="/corporate-video-production">Learn More</a>
+            <a href="/corporate-videos">Learn More</a>
           </Button>
         </div>
 
@@ -40,7 +40,7 @@ const HeroImage = () => {
             asChild
             className="px-2 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm md:text-base lg:text-lg rounded-lg sm:rounded-xl"
           >
-            <a href="/music-video-production">Learn More</a>
+            <a href="/music-videos">Learn More</a>
           </Button>
         </div>
       </div>
