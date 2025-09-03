@@ -17,7 +17,7 @@ export default function About() {
   const { ref: textRef, inView: textInView } = useScrollAnimation();
   const { ref: featuresRef, inView: featuresInView } = useScrollAnimation();
   const { ref: expertiseRef, inView: expertiseInView } = useScrollAnimation();
-  
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -25,11 +25,21 @@ export default function About() {
         <div className="absolute inset-0 bg-[url('/attached_assets/miami-bridge.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-5xl drop-shadow md:text-6xl font-bold mb-6" data-testid="about-title">
-              About <span className="text-miami-teal drop-shadow" style={{
-                textShadow: '0 0 20px rgba(20, 184, 166, 0.5), 0 0 40px rgba(20, 184, 166, 0.3)',
-                filter: 'drop-shadow(0 0 8px rgba(20, 184, 166, 0.4))'
-              }}>Regulus Films</span>
+            <h1
+              className="text-5xl drop-shadow md:text-6xl font-bold mb-6"
+              data-testid="about-title"
+            >
+              About{" "}
+              <span
+                className="text-miami-teal drop-shadow"
+                style={{
+                  textShadow:
+                    "0 0 20px rgba(20, 184, 166, 0.5), 0 0 40px rgba(20, 184, 166, 0.3)",
+                  filter: "drop-shadow(0 0 8px rgba(20, 184, 166, 0.4))",
+                }}
+              >
+                Regulus Films
+              </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto drop-shadow leading-relaxed">
               Miami's premier video production company with over 20 years of
@@ -44,12 +54,12 @@ export default function About() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div 
+            <div
               ref={textRef}
               className={`transition-all duration-1000 ${
-                textInView 
-                  ? 'opacity-100 translate-x-0' 
-                  : 'opacity-0 -translate-x-10'
+                textInView
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-10"
               }`}
             >
               <h2 className="text-4xl font-bold text-navy mb-6">Our Story</h2>
@@ -108,10 +118,12 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section 
+      <section
         ref={featuresRef}
         className={`py-20 bg-gray-50 transition-all duration-1000 ${
-          featuresInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          featuresInView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4">
@@ -180,9 +192,9 @@ export default function About() {
         </div>
       </section>
 
-            {/* Meet The Team */}
+      {/* Meet The Team */}
       <section className="py-16 bg-gradient-to-br from-navy to-deep-navy text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy to-deep-navy "></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-navy to-deep-navy"></div>
         <div className="max-w-7xl mx-auto px-4 relative">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">
@@ -193,66 +205,180 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {[
               {
                 name: "Gary",
-                title: "CEO",
+                title: "Executive Producer",
                 quote: "Vision is everything.",
                 img: "/images/garyProfile.png",
-                    special: true, // <-- flag for custom styling
+                special: true,
               },
               {
                 name: "Antwan",
-                title: "LEAD CINEMATOGRAPHER",
+                title: "Creative Director",
                 quote: "Every frame tells a story.",
                 img: "/images/twanProfile.png",
               },
+            
               {
-                name: "Vadeem",
-                title: "CHIEF EDITOR",
+                name: "Tatiana",
+                title: "Location Coordinator",
+                quote: "Creativity meets precision.",
+                img: "/images/tanyaProfile2.png",
+                special: true,
+              },
+                {
+                name: "Vadim",
+                title: "Kids Program Manager (not a real department)",
                 quote: "Editing is the hidden art of film.",
                 img: "/images/vadeemProfile.jpg",
               },
               {
-                name: "Tanya",
-                title: "DIRECTOR",
-                quote: "Creativity meets precision.",
-                img: "/images/tanyaProfile2.png",
-                    special: true, // <-- flag for custom styling
+                name: "Gerald",
+                title: "Cinematographer",
+                quote: "Capturing emotion through the lens.",
+                img: "/images/GeraldWEB.png",
+              },
+              {
+                name: "Alex",
+                title: "Gaffer / Key Grip",
+                quote: "Lighting brings stories to life.",
+                img: "/images/AlexKeyWEB.png",
+                special: true,
+              },
+              {
+                name: "Steve",
+                title: "Cinematographer",
+                quote: "Every shot has its own rhythm.",
+                img: "/images/SteveWEB.png",
+              },
+              {
+                name: "Jonathan",
+                title: "Production Assistant",
+                quote: "No detail is too small.",
+                img: "/images/JonathanWEB2.png",
+              },
+              {
+                name: "Alex",
+                title: "Key Production Assistant",
+                quote: "Supporting the vision from the ground up.",
+                img: "/images/alexProfile2.jpg",
+              },
+              {
+                name: "Alisha",
+                title: "Makeup Artist",
+                quote: "Beauty is in the details.",
+                img: "/images/AlishaWEB.png",
+              },
+              {
+                name: "Warrick",
+                title: "Makeup Artist",
+                quote: "Every look tells a story.",
+                img: "/images/WarrickWEB.png",
+              },
+              {
+                name: "Patrick",
+                title: "Gaffer / Key Grip",
+                quote: "Lighting sets the mood for storytelling.",
+                img: "/images/Patrick.png",
+              },
+              {
+                name: "Carlos",
+                title: "Grip",
+                quote: "Strength and precision behind the scenes.",
+                img: "/images/carlosProfile.jpg",
+              },
+              {
+                name: "Isaac",
+                title: "DIT Department",
+                quote: "Data is the backbone of production.",
+                img: "/images/IsaacWEB.png",
+              },
+              {
+                name: "Chin",
+                title: "Technical Director / Streaming Department",
+                quote: "Innovation meets flawless execution.",
+                img: "/images/ChinWEB.png",
+              },
+              {
+                name: "Sardou",
+                title: "Post Production Department",
+                quote: "Polishing stories to perfection.",
+                img: "/images/SardouWEB.png",
+              },
+              {
+                name: "Smitty",
+                title: "Cinematographer / Post Production",
+                quote: "Crafting images from set to screen.",
+                img: "/images/SmittyWEB.png",
+              },
+              {
+                name: "Wiggy",
+                title: "Makeup Artist",
+                quote: "Transforming vision into reality.",
+                img: "/images/wig.png",
+                special: true,
+              },
+              {
+                name: "Rory",
+                title: "Hair and Makeup Department",
+                quote: "Style completes the story.",
+                img: "/images/RoryWEB.png",
+                
+              },
+              {
+                name: "Chris",
+                title: "Casting Director",
+                quote: "The right talent makes the story believable.",
+                img: "/images/ChrisWEB.png",
+              },
+              {
+                name: "Shazz",
+                title: "Casting Director",
+                quote: "Casting is the heart of storytelling.",
+                img: "/images/ShazzWEB.png",
               },
             ].map((member) => (
-  <div
-    key={member.name}
-    className="group text-white bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg rounded-2xl hover:shadow-2xl overflow-hidden transition-all duration-500 transform hover:-translate-y-2"
-  >
-    <div className="overflow-hidden h-72">
-      <img
-        src={member.img}
-        alt={member.name}
-        className={`h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 
-          ${member.special ? "object-top" : ""}`} 
-      />
-    </div>
-    <div className="p-6 text-center">
-      <h3 className="text-2xl font-bold text-navy mb-1">
-        {member.name}
-      </h3>
-      <p className="text-white drop-shadow-md font-medium mb-3">{member.title}</p>
-      <p className="text-gray-900 drop-shadow-sm italic">"{member.quote}"</p>
-    </div>
-  </div>
-))}
+              <div
+                key={member.name + member.title}
+                className="group text-white bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg rounded-2xl hover:shadow-2xl overflow-hidden transition-all duration-500 transform hover:-translate-y-2"
+              >
+                {/* Background Image with overlay */}
+                <div
+                  className={`h-72 w-full bg-cover bg-center relative ${
+                    member.special ? "bg-top" : ""
+                  }`}
+                  style={{ backgroundImage: `url(${member.img})` }}
+                >
+                  {/* Transparent overlay to block right-click / drag */}
+                  <div className="absolute inset-0 bg-transparent"></div>
+                </div>
+
+                <div className="p-6 text-center">
+                  <h3 className="text-2xl font-bold text-navy mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-white drop-shadow-md font-medium mb-3">
+                    {member.title}
+                  </p>
+                  <p className="text-gray-900 drop-shadow-sm italic">
+                    "{member.quote}"
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-
       {/* Our Expertise */}
-      <section 
+      <section
         ref={expertiseRef}
         className={`py-20 bg-white transition-all duration-1000 ${
-          expertiseInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          expertiseInView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4">

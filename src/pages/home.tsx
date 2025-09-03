@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import { featuredVideos } from "@/data/videos";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Play, Award, Users, Zap, Star, Shield, TrendingUp, CheckCircle, MapPin, Phone, Globe } from "lucide-react";
+import HeroImage from "@/components/hero-image";
 
 export default function Home() {
   const { ref: featuredRef, inView: featuredInView } = useScrollAnimation();
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <HeroSection />
+      <HeroImage />
 
       {/* Awards & Credentials Section */}
       <section className="py-16 bg-gradient-to-br from-navy to-deep-navy text-white relative overflow-hidden">
