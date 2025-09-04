@@ -25,7 +25,47 @@ export default function Home() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-miami-teal/20 rounded-full px-6 py-2 mb-4">
               <Star className="w-5 h-5 text-miami-teal mr-2" />
-              <span className="text-miami-teal font-semibold">Miami's #1 Video Production Team</span>
+              <span className="text-miami-teal text-3xl font-semibold">Miami's #1 Video Production Team</span>
+            </div>
+            <div>
+              
+              <h2 className="text-gray-300">
+                We are proud to have received numerous awards for our work, including:
+              </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 pb-12 pt-5">
+  <img
+    src="/images/badge1.png"
+    alt="Our Awards"
+    className="mx-auto w-32 mt-4 rounded-lg shadow-lg"
+  />
+  <img
+    src="/images/badge2.png"
+    alt="Our Awards"
+    className="mx-auto w-32 mt-4 rounded-lg shadow-lg"
+  />
+  <img
+    src="/images/badge3.png"
+    alt="Our Awards"
+    className="mx-auto w-32 mt-4 rounded-lg shadow-lg"
+  />
+  <img
+    src="/images/badge4.png"
+    alt="Our Awards"
+    className="mx-auto w-32 mt-4 rounded-lg shadow-lg"
+  />
+  <img
+    src="/images/badge5.png"
+    alt="Our Awards"
+    className="mx-auto w-32 mt-4 rounded-lg shadow-lg"
+  />
+  <img
+    src="/images/badge6.png"
+    alt="Our Awards"
+    className="mx-auto w-32 mt-4 rounded-lg shadow-lg"
+  />
+</div>
+
+              
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="awards-heading">
               Your Trusted Video <span className="text-miami-teal">Production Experts</span>
@@ -108,13 +148,38 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Button asChild size="lg" className="bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/30 hover:to-miami-teal text-white shadow-lg shadow-miami-teal/30 scale-105 text-white hover:text-black">
-              <Link href="/music-videos" data-testid="button-view-all-work">
-                View All Our Work
-              </Link>
-            </Button>
-          </div>
+         <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6">
+  <Button
+    asChild
+    size="lg"
+    className="bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/30 hover:to-miami-teal text-white scale-105 hover:text-black w-full sm:w-auto"
+  >
+    <Link href="/music-videos" data-testid="button-view-all-work">
+      View Music Video Portfolio
+    </Link>
+  </Button>
+
+  <Button
+    asChild
+    size="lg"
+    className="bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/30 hover:to-miami-teal text-white scale-105 hover:text-black w-full sm:w-auto"
+  >
+    <Link href="/corporate-videos" data-testid="button-view-all-work">
+      View Corporate Video Portfolio
+    </Link>
+  </Button>
+
+  <Button
+    asChild
+    size="lg"
+    className="bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/30 hover:to-miami-teal text-white scale-105 hover:text-black w-full sm:w-auto"
+  >
+    <Link href="/movies" data-testid="button-view-all-work">
+      View Indie Film Portfolio
+    </Link>
+  </Button>
+</div>
+
         </div>
       </section>
 

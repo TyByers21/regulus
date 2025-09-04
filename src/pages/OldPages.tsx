@@ -999,7 +999,8 @@ Now the question arises that why should you go for Regulus Films from amongst ma
 
 // Movies Page
 
-export  function MoviesPage() {
+
+export function MoviesPage() {
   return (
     <div className="wrap ha-waypoint" id="main-content">
       <a className="ut-offset-anchor" id="to-main-content" />
@@ -1018,6 +1019,19 @@ export  function MoviesPage() {
               .
             </p>
           </header>
+
+          
+              {/* Antwan Profile Image */}
+              <div className="flex flex-col justify-center my-8">
+                <img
+                  src="/images/twanProfile.png"
+                  alt="Antwan Smith - Creative Director"
+                  className="rounded-2xl w-full shadow-lg"
+                />
+                <p className="text-center mt-2">Antwan Smith - Creative Director</p>
+              </div>
+
+             
 
           {/* Content */}
           <div className="max-w-5xl mx-auto prose prose-lg text-gray-700">
@@ -1040,48 +1054,66 @@ export  function MoviesPage() {
               recognized as a leader in{" "}
               <span className="font-semibold">Miami film production</span>.
             </p>
-<div className="entry-content">
-      <p>
-        When you hire Regulus Films and Entertainment you are hiring the best!
-        Here in this section you will you find movies directed by the extremely
-        talented Antwan Smith. Antwan is one of the best directors that we have
-        employed with us so If you are looking for a great director that is easy
-        to work with and can take your ideal and convey it to film then please
-        do not hesitate to contact us today at 786-429-4511 ext 305.
-      </p>
 
-      <p>
-        <iframe
-          src="https://player.vimeo.com/video/255802338"
- className="w-full h-96"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </p>
+            <div className="entry-content">
+              <p>
+                When you hire Regulus Films and Entertainment you are hiring the
+                best! Here in this section you will you find movies directed by
+                the extremely talented Antwan Smith. Antwan is one of the best
+                directors that we have employed with us so If you are looking
+                for a great director that is easy to work with and can take your
+                ideal and convey it to film then please do not hesitate to
+                contact us today at 786-429-4511 ext 305.
+              </p>
 
-      <p>
-        <iframe
-          src="https://player.vimeo.com/video/255813964"
-        className="w-full h-96"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </p>
+<div className="grid grid-cols-2 gap-8">
+  {/* Video 1 */}
+  <div>
+    <iframe
+      src="https://player.vimeo.com/video/255802338"
+      className="w-full h-96"
+      frameBorder="0"
+      allowFullScreen
+    ></iframe>
+    <p className="mt-2 text-center font-semibold">Project 1</p>
+  </div>
 
-      <h1>
-        <span style={{ color: "#000000" }}>
-          Bloodline 2007
-          <br />
-          <iframe
-            src="https://player.vimeo.com/video/255817309"
-           className="w-full h-96"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </span>
-      </h1>
-    </div>
-            
+  {/* Video 2 */}
+  <div>
+    <iframe
+      src="https://player.vimeo.com/video/255813964"
+      className="w-full h-96"
+      frameBorder="0"
+      allowFullScreen
+    ></iframe>
+    <p className="mt-2 text-center font-semibold">Project 2</p>
+  </div>
+
+  {/* Video 3 */}
+  <div>
+    <iframe
+      src="https://player.vimeo.com/video/255817309"
+      className="w-full h-96"
+      frameBorder="0"
+      allowFullScreen
+    ></iframe>
+    <p className="mt-2 text-center font-semibold">Bloodline</p>
+  </div>
+
+  {/* Video 4 */}
+  <div>
+    <iframe
+      src="https://player.vimeo.com/video/1115339442?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      className="w-full h-96"
+      frameBorder="0"
+      allowFullScreen
+    ></iframe>
+    <p className="mt-2 text-center font-semibold">Cuzzo</p>
+  </div>
+</div>
+
+              
+            </div>
           </div>
         </div>
       </section>
@@ -1104,6 +1136,7 @@ export  function MoviesPage() {
     </div>
   );
 }
+
 
 
 

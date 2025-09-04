@@ -21,7 +21,7 @@ export function Footer() {
             </p>
             <div className="flex justify-center space-x-4">
               <a
-                href="https://facebook.com/regulusfilms"
+                href="https://www.facebook.com/profile.php?id=100059320725106"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-miami-teal hover:bg-miami-dark text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors hover-glow"
@@ -30,7 +30,7 @@ export function Footer() {
                 <FaFacebookF className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com/regulusfilms"
+                href="https://www.instagram.com/regulusfilmsportfolio?igsh=MWlhbXc4eWVrMmlxcg%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-miami-teal hover:bg-miami-dark text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors hover-glow"
@@ -39,7 +39,7 @@ export function Footer() {
                 <FaInstagram className="w-5 h-5" />
               </a>
               <a
-                href="https://youtube.com/@regulusfilms"
+                href="https://www.youtube.com/@REGULUSFILMZ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-miami-teal hover:bg-miami-dark text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors hover-glow"
@@ -48,7 +48,7 @@ export function Footer() {
                 <FaYoutube className="w-5 h-5" />
               </a>
               <a
-                href="https://vimeo.com/regulusfilms"
+                href="https://vimeo.com/user27858759"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-miami-teal hover:bg-miami-dark text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors hover-glow"
@@ -78,6 +78,15 @@ export function Footer() {
                   data-testid="footer-link-corporate"
                 >
                   Corporate Videos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/movies"
+                  className="text-gray-400 hover:text-miami-teal transition-colors"
+                  data-testid="footer-link-movies"
+                >
+                  Movies
                 </a>
               </li>
               <li>

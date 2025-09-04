@@ -645,5 +645,28 @@ export const corporateVideos: VideoData[] = [
 ];
 
 
+
 // Featured videos for homepage (first 3 videos)
-export const featuredVideos = musicVideos.slice(0, 3);
+export const featuredVideos = [
+  {
+    id: "1",
+    title: "Flex Storage",
+    vimeoId: "1111412108",
+    description: "Creative music video production showcasing artistic vision and professional cinematography.",
+    category: "music"
+  },
+  {
+    id: "2", 
+    title: "Raise Your Glass",
+    vimeoId: "1096747053",
+    description: "Professional music video with compelling storytelling and visual effects.",
+    category: "music"
+  },
+  {
+    id: "3",
+    title: "Celebration",
+    vimeoId: "298485055",
+    description: "High-energy music video featuring dynamic cinematography and creative direction.",
+    category: "music"
+  },
+]
