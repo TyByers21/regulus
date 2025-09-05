@@ -1066,12 +1066,12 @@ export function MoviesPage() {
                 contact us today at 786-429-4511 ext 305.
               </p>
 
-<div className="grid grid-cols-2 gap-8">
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
   {/* Video 1 */}
   <div>
     <iframe
       src="https://player.vimeo.com/video/255802338"
-      className="w-full h-96"
+      className="w-full aspect-video"
       frameBorder="0"
       allowFullScreen
     ></iframe>
@@ -1082,7 +1082,7 @@ export function MoviesPage() {
   <div>
     <iframe
       src="https://player.vimeo.com/video/255813964"
-      className="w-full h-96"
+      className="w-full aspect-video"
       frameBorder="0"
       allowFullScreen
     ></iframe>
@@ -1093,22 +1093,22 @@ export function MoviesPage() {
   <div>
     <iframe
       src="https://player.vimeo.com/video/255817309"
-      className="w-full h-96"
+      className="w-full aspect-video"
       frameBorder="0"
       allowFullScreen
     ></iframe>
-    <p className="mt-2 text-center font-semibold">Bloodline</p>
+    <p className="mt-2 text-center font-semibold">Bloodline  - 2007</p>
   </div>
 
   {/* Video 4 */}
   <div>
     <iframe
       src="https://player.vimeo.com/video/1115339442?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-      className="w-full h-96"
+      className="w-full aspect-video"
       frameBorder="0"
       allowFullScreen
     ></iframe>
-    <p className="mt-2 text-center font-semibold">Cuzzo</p>
+    <p className="mt-2 text-center font-semibold">Cuzo</p>
   </div>
 </div>
 

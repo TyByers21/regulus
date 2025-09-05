@@ -4,12 +4,14 @@ type Post = {
   id: number;
   title: string;
   contentHtml: string;
+  date: string;
 };
 
 const posts: Post[] = [
 {
     id: 1,
     title: `Regulus Films – Freelance Miami Video Production Company`,
+    date: "13 May 2016",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/regulus-films-freelance-miami-video-production-company/" target="_blank" rel="noopener noreferrer">Regulus Films – Freelance Miami Video Production Company</a></p>
 <p>Full service freelance Miami video production company,  <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Regulus Films</a> is an online <a href="http://musicvideoproduction.guru/music-video-production-companies-in-miami/" target="_blank" rel="noopener noreferrer">music video production Company</a> that produces, shoots and uploads video content across any platform on the web.Regulus Films is well known for our cinematic and stylish cinematography. Our company is a coalition of Directors,cinematographers, producers and makeup artist that can accommodate any and all budgets..Our quality standards apply also in terms of service, technical expertise and advice.Our dedicated employees are happy to assist you with know-how and experience in your daily business needs.</p>
 <p><img src="/blog-media/blog-image-9.jpg" alt="" style="max-width:100%;height:auto;width:300px"/></p>
@@ -18,6 +20,7 @@ const posts: Post[] = [
 {
     id: 2,
     title: `Step Up Your Brand Promotion with Miami Video Production Company`,
+    date: "16 May 2016",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/ep-up-your-brand-promotion-with-miami-video-production-company/" target="_blank" rel="noopener noreferrer">Step Up Your Brand Promotion with Miami Video Production Company</a></p>
 <p>It’s very hard for business to get recognised. As an entrepreneur if you are looking to promote your business then videos are best to go with as this is the best way to reach the legions of clients at one go. Regulus Films, <a href="http://musicvideoproduction.guru/music-video-production-companies-in-miami" target="_blank" rel="noopener noreferrer">Miami Video Production</a> House is one of the best Music Video Companies in Miami that can help you to create a video that can create accurate visual impression on targeted clients. Regulus Films, one of the <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">best miami video production company</a><a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer"> </a>have 100% satisfaction record.</p>
 <p>In this competitive business environment, it’s really important to refresh the client’s knowledge with new updates regarding your new products and services. If you are a start-up, you can take the opportunity to make a video that shows your products as well as services. Miami is the hub for <a href="http://musicvideoproduction.guru/music-video-production-companies-in-miami" target="_blank" rel="noopener noreferrer">video production companies</a> <a href="https://kuyhaa-me.id/avast-cleanup-premium-gigapurbalingga/" target="_blank" rel="noopener noreferrer">avast kuyhaa</a> and you can find great <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">music video directors</a> here to create perfect video which helps you to grow your business.</p>
@@ -31,6 +34,7 @@ const posts: Post[] = [
 {
     id: 3,
     title: `Miami Video Production – For New Millennium Music Videos`,
+    date: "21 May 2016",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/miami-video-production-for-new-millennium-music-videos/" target="_blank" rel="noopener noreferrer">Miami Video Production – For New Millennium Music Videos</a></p>
 <p>Miami Video Production – No doubt the world is changing quickly and so as internet speeds. The new millennium came with a faster Internet allowing people to share any digital media. Now days, anyone with a DSLR camera and an idea can be another <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">music video director</a> but keep one thing in mind that quality matters a lot. You can create a video yourself but it’s not sure that would be attractive enough to appeal audience. To create attractive music videos you always need professional and experienced <a href="http://musicvideoproduction.guru/music-video-production-companies-in-miami/" target="_blank" rel="noopener noreferrer">music video companies</a>.</p>
 <p><img src="/blog-media/blog-image-8.jpg" alt="" style="max-width:100%;height:auto;width:624px"/></p>
@@ -44,6 +48,7 @@ const posts: Post[] = [
 {
     id: 4,
     title: `Affordable Miami Video Production Services`,
+    date: "15 Apr 2018",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/affordable-miami-video-production-services/" target="_blank" rel="noopener noreferrer">Affordable Miami Video Production Services</a></p>
 <p><a href="http://themiamistudio.com/" target="_blank" rel="noopener noreferrer">The Miami Studio</a> welcomes all budgets because one of the amazing things about modern video production is how affordable miami video production services it is becoming. In the past, only big brands had the budget to make television commercials and advertisements for a wide range of audiences. With the decrease in prices of video equipments and the rise of social media, it is now possible to make affordable and impactful promos to spread the word about your company’s products and services.</p>
 <p><img src="/blog-media/blog-image-7.jpg" alt="" style="max-width:100%;height:auto;width:300px"/></p>
@@ -59,6 +64,7 @@ const posts: Post[] = [
 {
     id: 5,
     title: `Regulus Films – Best Miami Video Production Company`,
+    date: "06 Oct 2018",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/regulus-films-best-miami-video-production-company/" target="_blank" rel="noopener noreferrer">Regulus Films – Best Miami Video Production Company</a></p>
 <p><img src="/blog-media/blog-image-6.png" alt="" style="max-width:100%;height:auto;width:597px"/></p>
 <p>Of course, not all Miami video production companies are equal. Regulus Films offers complete video production solutions with a wide range of production services and the ability to seamlessly move from concept to creation. Having over 2 decades of experience in video production and interactive media, we’ll work with you to create the most captivating campaigns and promotions possible for your business. In short, we are #1 video production Miami Company.</p>
@@ -76,6 +82,7 @@ const posts: Post[] = [
 {
     id: 6,
     title: `360 Miami Video Production Company – Call to Action`,
+    date: "06 Oct 2018",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/360-miami-video-production-company-call-to-action/" target="_blank" rel="noopener noreferrer">360 Miami Video Production Company – Call to Action</a></p>
 <p><img src="/blog-media/blog-image-5.png" alt="" style="max-width:100%;height:auto;width:575px"/></p>
 <p>Whenever you ask a <a href="http://musicvideoproduction.guru/regulus-films-best-miami-video-production-company/" target="_blank" rel="noopener noreferrer">miami video production company</a> to create a video, you likely have marketing in your mind. Right approach is required to promote a product, an event, a special cause. But even the videos that look awesome and provide a lot of information are often missing one key component “call to action”.</p>
@@ -91,16 +98,17 @@ const posts: Post[] = [
 {
     id: 7,
     title: `Put Aside Your Next Miami Video Production from Failing`,
+    date: "07 Oct 2018",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/put-aside-your-next-miami-video-production-from-failing/" target="_blank" rel="noopener noreferrer">Put Aside Your Next Miami Video Production from Failing</a></p>
 <p><img src="/blog-media/blog-image-4.png" alt="" style="max-width:100%;height:auto;width:590px"/></p>
 <p>You might have had the bad experience in your last <a href="http://themiamistudio.com/" target="_blank" rel="noopener noreferrer">miami</a><a href="http://themiamistudio.com/" target="_blank" rel="noopener noreferrer"> </a><a href="http://themiamistudio.com/" target="_blank" rel="noopener noreferrer">video production</a> project as it didn’t achieve what you hoped it would and it failed badly. Regulus Films – #1 <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Miami Video Production</a> Company assures you the best and successful video production. Below are some tips which will put aside your video production from failing:</p>
-<p>Video with capability to engage audience: If your video is dull and if you don’t use video effectively then you will quickly lose your audience. You need a good story to engage the audience.Your video should illustrate how your product/service solves your customer’s problem and it should do so in an engaging fashion. Before choosing a <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Miami Video Production Company</a> look at their previous work and if it seems not engaging, yours video won’t be either.</p>
-<p>Video should convey clear message: The video should not contain much about you because no one cares about you, they only care about how you will solve their problem. Deliver the strong and concise message as per the audience need.</p>
-<p>Define business objective: Your video should be able to answer the following questions:</p>
+<p><strong>Video with capability to engage audience</strong>: If your video is dull and if you don’t use video effectively then you will quickly lose your audience. You need a good story to engage the audience.Your video should illustrate how your product/service solves your customer’s problem and it should do so in an engaging fashion. Before choosing a <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Miami Video Production Company</a> look at their previous work and if it seems not engaging, yours video won’t be either.</p>
+<p><strong>Video should convey clear message</strong>: The video should not contain much about you because no one cares about you, they only care about how you will solve their problem. Deliver the strong and concise message as per the audience need.</p>
+<p><strong>Define business objective</strong>: Your video should be able to answer the following questions:</p>
 <ul><li>What audience will be benefited from your video?</li><li>What problem our product/service solve?</li><li>What will be the benefits of our product/service?</li></ul>
-<p>Video should be creative:  The video should be creative so that it could even go viral, making your brand an instant sensation. To get the best results, you have to let your creative juices flow freely as this is the only way to make your video stand out.</p>
-<p>Video should contain Call to Action: Ask yourself what do you want people to do after watching your video? If you don’t know, your viewers won’t either. The “call to action” is one of the most important component for any kind of marketing because the ultimate aim of the video is to grab the peoples’ attention. So adding a call to action in your video is a must.</p>
-<p>Contact Regulus Films for any kind of video production in Miami. Call us today at 786-429-4511 and leverage the best <a href="http://musicvideoproduction.guru/regulus-films-best-miami-video-production-company/" target="_blank" rel="noopener noreferrer">Miami video production</a> experience.</p>
+<p><strong>Video should be creative</strong>:  The video should be creative so that it could even go viral, making your brand an instant sensation. To get the best results, you have to let your creative juices flow freely as this is the only way to make your video stand out.</p>
+<p><strong>Video should contain Call to Action</strong>: Ask yourself what do you want people to do after watching your video? If you don’t know, your viewers won’t either. The “call to action” is one of the most important component for any kind of marketing because the ultimate aim of the video is to grab the peoples’ attention. So adding a call to action in your video is a must.</p>
+<p>Contact <strong>Regulus Films</strong> for any kind of <strong>video production in Miami</strong>. Call us today at 786-429-4511 and leverage the best <a href="http://musicvideoproduction.guru/regulus-films-best-miami-video-production-company/" target="_blank" rel="noopener noreferrer">Miami video production</a> experience.</p>
 <p>06</p>
 <p>Oct 2018</p>
 <p>By <a href="http://musicvideoproduction.guru/author/giga305/" target="_blank" rel="noopener noreferrer">giga305</a></p>
@@ -110,6 +118,7 @@ const posts: Post[] = [
 {
     id: 8,
     title: `Avoid Video Editing Fiasco with Miami Video Production Specialist`,
+    date: "14 Oct 2018",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/avoid-video-editing-fiasco-with-miami-video-production-specialist/" target="_blank" rel="noopener noreferrer">Avoid Video Editing Fiasco with Miami Video Production Specialist</a></p>
 <p><img src="/blog-media/blog-image-3.png" alt="" style="max-width:100%;height:auto;width:590px"/></p>
 <p>Editing is the art of manipulating a lot of information and cherry picking only what is needed to make something concise and adding some creativity to make it beautiful. Whether it’s a major corporation or a grassroots, quality is the essence for videos. Because today video is dominating search engines and social media, so if you are compromising with your video quality then it’s gonna affect your ROI.  Here are five common video editing mistakes people make – and why it is a good idea to bring in <a href="https://themiamistudio.com/" target="_blank" rel="noopener noreferrer">Miami Video Production</a><a href="https://themiamistudio.com/" target="_blank" rel="noopener noreferrer"> </a>specialists to avoid them.</p>
@@ -118,16 +127,17 @@ const posts: Post[] = [
 <p>Simple edits: If you are using the simple editing techniques that can be found on the free programs, viewers may take notice and it can create bad impact. So rather than using the free programs, you should opt program having nice editing effects.</p>
 <p>Being too extravagant: Being too extravagant can also backfire. Some businesses are so scared that they invest a lot more into video editing to accommodate every effect possible in a short clip. But the professional know where the sweet spot is between too little and too much in video editing.</p>
 <p>Video mistakes: Video mistakes can cost you time as well as money. Everyone tries to create a perfect video and there is no harm rather it’s good. But when a company tries to spend too much time on it they take away resources from other areas of their business. Bringing in the professionals is a smart move to create a great video in less time.</p>
-<p>Regulus Films – #1 <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Video Production Miami</a> helps you to produce high quality <a href="http://musicvideoproduction.guru/regulus-films-best-miami-video-production-company/" target="_blank" rel="noopener noreferrer">video production</a><a href="http://musicvideoproduction.guru/regulus-films-best-miami-video-production-company/" target="_blank" rel="noopener noreferrer">﻿&gt; in a cost efficient and time efficient manner. Remember, subscribe and give us two thumbs up. Contact &lt;br/&gt;</a><a href="http://musicvideoproduction.guru/regulus-films-best-miami-video-production-company/" target="_blank" rel="noopener noreferrer">Regulus Films–#1 </a><a href="http://musicvideoproduction.guru/put-aside-your-next-miami-video-production-from-failing/" target="_blank" rel="noopener noreferrer">Miami Video Production Company</a> today and don’t let these errors bring your good video concept.</p>
+<p>Regulus Films – #1 <a href="https://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Video Production Miami</a> helps you to produce high quality <a href="https://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">video production</a><a href="https://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">in a cost efficient and time efficient manner. Remember, subscribe and give us two thumbs up. Contact <a href="https://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Regulus Films–#1 </a><a href="https://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Miami Video Production Company</a> today and don’t let these errors bring your good video concept.</p>
 <p>07</p>
 <p>Oct 2018</p>
-<p>By <a href="http://musicvideoproduction.guru/author/giga305/" target="_blank" rel="noopener noreferrer">giga305</a></p>
-<p>Posted in <a href="http://musicvideoproduction.guru/category/blog/" target="_blank" rel="noopener noreferrer">Blog</a></p>
-<p><a href="http://musicvideoproduction.guru/put-aside-your-next-miami-video-production-from-failing/" target="_blank" rel="noopener noreferrer">Permalink</a></p>`
+<p>By <a href="https://musicvideoproduction.guru/author/giga305/" target="_blank" rel="noopener noreferrer">giga305</a></p>
+<p>Posted in <a href="https://musicvideoproduction.guru/category/blog/" target="_blank" rel="noopener noreferrer">Blog</a></p>
+<p><a href="https://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Permalink</a></p>`
 },
 {
     id: 9,
     title: `Video Production Companies in Miami`,
+    date: "12 Dec 2019",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/video-production-companies-in-miami/" target="_blank" rel="noopener noreferrer">Video Production Companies in Miami</a></p>
 <p><img src="/blog-media/blog-image-2.png" alt="" style="max-width:100%;height:auto;width:400px"/></p>
 <p>To effectively promote your music or business in today’s detailed and digital marketplace, you need a visual presence. After deciding to add a video to your website or digital resume, the next step is to find the right video production company in Miami. You only need to answer one question. Who can best present my story to my current and potential audience? At <a href="http://musicvideoproduction.guru/" target="_blank" rel="noopener noreferrer">Regulus Films and Entertainment</a>, we’re well-known for being that company.</p>
@@ -155,6 +165,7 @@ const posts: Post[] = [
 {
     id: 10,
     title: `Create an Amazing Corporate Video with These Tips.`,
+    date: "12 Dec 2019",
     contentHtml: `<p><a href="http://musicvideoproduction.guru/create-an-amazing-corporate-video-with-these-tips-2/" target="_blank" rel="noopener noreferrer">Create an Amazing Corporate Video with These Tips.</a></p>
 <p><img src="/blog-media/blog-image-1.jpg" alt="" style="max-width:100%;height:auto;width:624px"/></p>
 <p>When you hear the words “corporate video” what comes to mind? Do your eyes glaze over a bit? If so, you aren’t alone. Unfortunately, to date, corporate videos have gotten the reputation of being both bland and boring.</p>
@@ -181,7 +192,7 @@ const posts: Post[] = [
 }
 ];
 
-function cleanContent(html: string) {
+function cleanContent(html: string, title?: string) {
   let cleaned = html
     // remove the first two <p> tags that contain the date
     .replace(/<p>\d{1,2}<\/p>\s*<p>[A-Za-z]+\s+\d{4}<\/p>/, "")
@@ -190,7 +201,22 @@ function cleanContent(html: string) {
     // remove "By ..." author lines
     .replace(/<p>By[\s\S]*?<\/p>/gi, "")
     // remove "Permalink"
-    .replace(/<p><a[^>]*>Permalink<\/a><\/p>/gi, "");
+    .replace(/<p><a[^>]*>Permalink<\/a><\/p>/gi, "")
+    // remove spam links (kuyhaa + blonde-core)
+    .replace(/<a[^>]*href="[^"]*kuyhaa[^"]*"[^>]*>.*?<\/a>/gi, "")
+    .replace(/<a[^>]*href="[^"]*blonde-core[^"]*"[^>]*>.*?<\/a>/gi, "")
+    // replace Miami Studio links with new domain
+    .replace(/https:\/\/themiamistudio\.com\/contact-us-today/gi, "https://musicvideoproduction.guru")
+    .replace(/https:\/\/themiamistudio\.com\//gi, "https://musicvideoproduction.guru/");
+
+  // remove duplicate title links
+  if (title) {
+    const titleRegex = new RegExp(
+      `<p>\\s*<a[^>]*>${title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}<\\/a>\\s*<\\/p>`,
+      "gi"
+    );
+    cleaned = cleaned.replace(titleRegex, "");
+  }
 
   // Force all images to be responsive full width
   cleaned = cleaned.replace(/<img([^>]*)>/gi, (match, attrs) => {
@@ -204,15 +230,10 @@ function cleanContent(html: string) {
   return cleaned;
 }
 
-function extractDate(html: string) {
-  const match = html.match(/<p>(\d{1,2})<\/p>\s*<p>([A-Za-z]+\s+\d{4})<\/p>/);
-  if (match) {
-    return { day: match[1], monthYear: match[2] };
-  }
-  return null;
-}
 
 export default function Blog() {
+  
+
   return (
     <div className="min-h-screen pt-32 bg-gray-50">
       <div className="mx-auto max-w-3xl px-4 py-10">
@@ -225,22 +246,19 @@ export default function Blog() {
 
         <div className="space-y-12">
           {[...posts].reverse().map((post) => {
-            const date = extractDate(post.contentHtml);
-            const cleanedHtml = cleanContent(post.contentHtml);
+            const cleanedHtml = cleanContent(post.contentHtml, post.title);
 
             return (
               <article
                 key={post.id}
                 className="rounded-2xl bg-white shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
               >
-                {date && (
-                  <div className="px-6 pt-6 text-gray-500 text-sm font-medium">
-                    <span className="text-4xl font-extrabold text-gray-900 mr-2">
-                      {date.day}
-                    </span>
-                    {date.monthYear}
-                  </div>
-                )}
+                <div className="px-6 pt-6 text-gray-500 text-sm font-medium">
+                  <span className="text-4xl font-extrabold text-gray-900 mr-2">
+                    {post.date.split(" ")[0]}
+                  </span>
+                  {post.date.split(" ").slice(1).join(" ")}
+                </div>
                 <div className="p-6">
                   <h2 className="text-2xl font-bold mb-4 text-gray-900">
                     {post.title}

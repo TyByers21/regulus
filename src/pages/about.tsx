@@ -371,14 +371,14 @@ export default function About() {
               {
                 name: "Jessie",
                 title: "DP/Drone Operator",
-                quote: "Bringing stories to life through animation.",
+                quote: "Director of photography, a drone specialist.",
                 img: "/images/JessieWEB.png",
                 special: true,
               },
               {
                 name: "Lenny",
                 title: "Cinematographer/Post Production",
-                quote: "Bringing stories to life through animation.",
+                quote: "Crafting cinematic stories before HD.",
                 img: "/images/LennyWEB.png",
                 special: true,
               },
