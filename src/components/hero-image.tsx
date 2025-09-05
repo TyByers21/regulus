@@ -50,8 +50,8 @@ const HeroImage = () => {
       </div>
 
       {/* Top-right title */}
-      <div className="absolute pt-24 md:pt-32 top-6 text-center right-6 w-full">
-        <h1 className="font-display text-white text-xl sm:text-2xl md:text-4xl  font-extrabold text-center md:text-right  drop-shadow-2xl">
+      <div className="absolute pt-24 md:pt-16 top-6 text-center right-4 w-full">
+        <h1 className="font-display text-white text-xl sm:text-2xl md:text-2xl  font-extrabold text-center md:text-right  drop-shadow-2xl">
   Regulus Films<br/> & Entertainment
 </h1>
       </div>
