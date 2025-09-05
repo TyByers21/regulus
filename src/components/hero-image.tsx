@@ -50,9 +50,9 @@ const HeroImage = () => {
       </div>
 
       {/* Top-right title */}
-      <div className="absolute pt-24 md:pt-32 top-6 right-6">
-        <h1 className="font-display text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-extrabold text-center md:text-right drop-shadow-2xl">
-  Regulus Films & Entertainment
+      <div className="absolute pt-24 md:pt-32 top-6 text-center right-6 w-full">
+        <h1 className="font-display text-white text-xl sm:text-2xl md:text-4xl  font-extrabold text-center md:text-right  drop-shadow-2xl">
+  Regulus Films<br/> & Entertainment
 </h1>
       </div>
     </section>
