@@ -402,7 +402,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="flex text-center p-2 bg-gray-100 text-xs text-gray-100">
+      <div className="flex justify-center text-center p-2 gap-5 bg-gray-100 text-xs text-black">
         <a href="/video-production-miami-film-production-companies">
           <p><strong>film production companies in Miami </strong></p>
         </a>
