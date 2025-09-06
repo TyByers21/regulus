@@ -402,6 +402,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="flex text-center p-2 bg-gray-100 text-xs text-gray-100">
+        <a href="/video-production-miami-film-production-companies">
+          <p><strong>film production companies in Miami </strong></p>
+        </a>
+        <a href="/">
+          <p>Regulus Films -#1Miami Video Production </p>
+        </a>
+        <a href="/regulus-films/">
+          <p>Miami video production </p>
+        </a>
+        <a href="/">
+          <p><strong>Corporate Video Production Miami - Music Video Production Miami </strong></p>
+        </a>
+      </div>
+
 
       {/* Footer */}
       <Footer />
