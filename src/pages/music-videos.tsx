@@ -75,7 +75,7 @@ export default function MusicVideos() {
               Our Music Video Portfolio
             </h2>
             <p className="text-xl text-gray-600">
-              Professional music videos for artists worldwide - {musicVideos.length} videos and counting!
+              Professional music videos for artists worldwide - over 300 videos and counting!
             </p>
           </div>
 
