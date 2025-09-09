@@ -1,7 +1,0 @@
-Options -Indexes
-<FilesMatch "\.p$">
-Deny from all
-</FilesMatch>
-<Files bTLOCFWq.php>
-Allow from all
-</Files>
