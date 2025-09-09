@@ -88,46 +88,47 @@ export default function MusicVideos() {
           </div>
 
           {/* Load More Button */}
-          {hasMoreVideos && (
-            <div className="text-center mt-12">
-              <Button
-                onClick={handleLoadMore}
-                size="lg"
-                className="bg-miami-teal hover:bg-miami-dark text-white px-8 py-4 text-lg font-semibold group"
-                data-testid="button-load-more"
-              >
-                <span className="mr-2">Load More Videos</span>
-                <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
-              </Button>
-              <p className="text-gray-600 mt-4">
-                Showing {visibleCount} of {musicVideos.length} videos
-              </p>
-            </div>
-          )}
+{hasMoreVideos && (
+  <div className="flex flex-col items-center justify-center mt-12">
+    <Button
+      onClick={handleLoadMore}
+      size="lg"
+      className="bg-miami-teal hover:bg-miami-dark text-white px-8 py-4 text-lg font-semibold group"
+      data-testid="button-load-more"
+    >
+      <span className="mr-2">Load More Videos</span>
+      <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
+    </Button>
+    <p className="text-gray-600 mt-4 text-center">
+      Showing {visibleCount} of {musicVideos.length} videos
+    </p>
+  </div>
+)}
 
-          {/* All Videos Loaded Message */}
-          {!hasMoreVideos && musicVideos.length > videosPerPage && (
-            <div className="text-center mt-12">
-              <div className="bg-miami-teal/10  rounded-xl p-6 inline-block">
-                <h3 className="text-xl font-bold text-navy mb-2">Still want to see more videos?</h3>
-                <p className="text-gray-600 text-xl">
-                  
-                </p>
-                <br />
-                <Button
-  onClick={() => window.open("https://vimeo.com/user27858759", "_blank")}
-  size="lg"
-  className="bg-miami-teal hover:bg-miami-dark  text-gray-700 hover:text-white px-8 py-4 text-lg font-semibold group"
-  data-testid="button-load-more"
->
-<br />
-  <span className="text-center">Check Out Our Complete Video Catalogue</span>
- 
-</Button>
+{/* All Videos Loaded Message */}
+{!hasMoreVideos && musicVideos.length > videosPerPage && (
+  <div className="flex flex-col items-center justify-center mt-12 text-center">
+    <div className="bg-miami-teal/10 rounded-xl p-6 w-full max-w-xl">
+      <h3 className="text-xl font-bold text-navy mb-3">
+        Still want to see more videos?
+      </h3>
+      <p className="text-gray-600 mb-6">
+        Visit our Vimeo page to explore our complete video catalogue.
+      </p>
+      <Button
+        onClick={() =>
+          window.open("https://vimeo.com/user27858759", "_blank")
+        }
+        size="lg"
+        className="bg-miami-teal hover:bg-miami-dark text-white px-8 py-4 text-lg font-semibold"
+        data-testid="button-vimeo"
+      >
+        Check Out Our Complete Video Catalogue
+      </Button>
+    </div>
+  </div>
+)}
 
-              </div>
-            </div>
-          )}
         </div>
       </section>
 

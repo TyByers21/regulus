@@ -39,73 +39,81 @@ export function ContactForm() {
     },
   });
 
- const onSubmit = async (data: ContactFormData) => {
-  setIsSubmitting(true);
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true);
 
-  try {
-    const res = await fetch("/sendmail.php", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-
-    const result = await res.json();
-
-    if (result.success) {
-      toast({
-        title: "Message Received!",
-        description: "Thanks for contacting us. We'll reply soon.",
+    try {
+      const res = await fetch("/sendmail.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
-      form.reset();
-    } else {
-      throw new Error(result.message || "Unknown error");
-    }
-  } catch (error) {
-    toast({
-      title: "Error",
-      description: "There was a problem sending your message. Please call us directly.",
-      variant: "destructive",
-    });
-  } finally {
-    setIsSubmitting(false);
-  }
-};
 
+      const result = await res.json();
+
+      if (result.success) {
+        toast({
+          title: "Message Received!",
+          description: "Thanks for contacting us. We'll reply soon.",
+        });
+        form.reset();
+      } else {
+        throw new Error(result.message || "Unknown error");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description:
+          "There was a problem sending your message. Please call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" data-testid="contact-form">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-6"
+        data-testid="contact-form"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* First Name */}
           <FormField
             control={form.control}
             name="firstName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white font-semibold">First Name</FormLabel>
+                <FormLabel className="text-white font-semibold">
+                  First Name
+                </FormLabel>
                 <FormControl>
-                  <Input 
-                    {...field} 
-                    placeholder="John" 
+                  <Input
+                    {...field}
+                    placeholder="John"
                     className="bg-white bg-opacity-10 border-gray-600 text-white placeholder-gray-400 focus:border-miami-teal"
-                    data-testid="input-first-name"
                   />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
+          {/* Last Name */}
           <FormField
             control={form.control}
             name="lastName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white font-semibold">Last Name</FormLabel>
+                <FormLabel className="text-white font-semibold">
+                  Last Name
+                </FormLabel>
                 <FormControl>
-                  <Input 
-                    {...field} 
-                    placeholder="Doe" 
+                  <Input
+                    {...field}
+                    placeholder="Doe"
                     className="bg-white bg-opacity-10 border-gray-600 text-white placeholder-gray-400 focus:border-miami-teal"
-                    data-testid="input-last-name"
                   />
                 </FormControl>
                 <FormMessage />
@@ -114,6 +122,7 @@ export function ContactForm() {
           />
         </div>
 
+        {/* Email */}
         <FormField
           control={form.control}
           name="email"
@@ -121,12 +130,11 @@ export function ContactForm() {
             <FormItem>
               <FormLabel className="text-white font-semibold">Email</FormLabel>
               <FormControl>
-                <Input 
-                  {...field} 
-                  type="email" 
-                  placeholder="john@example.com" 
+                <Input
+                  {...field}
+                  type="email"
+                  placeholder="john@example.com"
                   className="bg-white bg-opacity-10 border-gray-600 text-white placeholder-gray-400 focus:border-miami-teal"
-                  data-testid="input-email"
                 />
               </FormControl>
               <FormMessage />
@@ -134,6 +142,7 @@ export function ContactForm() {
           )}
         />
 
+        {/* Phone */}
         <FormField
           control={form.control}
           name="phone"
@@ -141,12 +150,11 @@ export function ContactForm() {
             <FormItem>
               <FormLabel className="text-white font-semibold">Phone</FormLabel>
               <FormControl>
-                <Input 
-                  {...field} 
-                  type="tel" 
-                  placeholder="(555) 123-4567" 
+                <Input
+                  {...field}
+                  type="tel"
+                  placeholder="(555) 123-4567"
                   className="bg-white bg-opacity-10 border-gray-600 text-white placeholder-gray-400 focus:border-miami-teal"
-                  data-testid="input-phone"
                 />
               </FormControl>
               <FormMessage />
@@ -154,15 +162,18 @@ export function ContactForm() {
           )}
         />
 
+        {/* Project Type */}
         <FormField
           control={form.control}
           name="projectType"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white font-semibold">Project Type</FormLabel>
+              <FormLabel className="text-white font-semibold">
+                Project Type
+              </FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="bg-white bg-opacity-10 border-gray-600 text-white focus:border-miami-teal" data-testid="select-project-type">
+                  <SelectTrigger className="bg-white bg-opacity-10 border-gray-600 text-white focus:border-miami-teal">
                     <SelectValue placeholder="Select Project Type" />
                   </SelectTrigger>
                 </FormControl>
@@ -180,15 +191,18 @@ export function ContactForm() {
           )}
         />
 
+        {/* Budget Range */}
         <FormField
           control={form.control}
           name="budgetRange"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white font-semibold">Budget Range</FormLabel>
+              <FormLabel className="text-white font-semibold">
+                Budget Range
+              </FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="bg-white bg-opacity-10 border-gray-600 text-white focus:border-miami-teal" data-testid="select-budget-range">
+                  <SelectTrigger className="bg-white bg-opacity-10 border-gray-600 text-white focus:border-miami-teal">
                     <SelectValue placeholder="Select Budget Range" />
                   </SelectTrigger>
                 </FormControl>
@@ -206,19 +220,21 @@ export function ContactForm() {
           )}
         />
 
+        {/* Project Details */}
         <FormField
           control={form.control}
           name="projectDetails"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white font-semibold">Project Details</FormLabel>
+              <FormLabel className="text-white font-semibold">
+                Project Details
+              </FormLabel>
               <FormControl>
-                <Textarea 
-                  {...field} 
-                  rows={4} 
-                  placeholder="Tell us about your project vision, timeline, and any specific requirements..." 
+                <Textarea
+                  {...field}
+                  rows={4}
+                  placeholder="Tell us about your project vision, timeline, and any specific requirements..."
                   className="bg-white bg-opacity-10 border-gray-600 text-white placeholder-gray-400 focus:border-miami-teal"
-                  data-testid="textarea-project-details"
                 />
               </FormControl>
               <FormMessage />
@@ -226,11 +242,11 @@ export function ContactForm() {
           )}
         />
 
-        <Button 
-          type="submit" 
+        {/* Submit Button */}
+        <Button
+          type="submit"
           disabled={isSubmitting}
           className="w-full bg-miami-teal hover:bg-miami-dark text-white text-lg py-4"
-          data-testid="button-submit-form"
         >
           {isSubmitting ? "Sending..." : "Get Free Quote"}
         </Button>
