@@ -21,7 +21,7 @@ export function Navigation() {
   };
 
   return (
-    <nav className="backdrop-blur-lg bg-white/10  shadow-xl fixed top-0 left-0 w-full z-50">
+    <nav className="backdrop-blur-lg bg-white/40  shadow-xl fixed top-0 left-0 w-full z-50">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
@@ -47,7 +47,7 @@ export function Navigation() {
                   className={`relative px-6 py-2 font-semibold transition-all duration-300 mr-2 rounded-xl ${
                     location === item.href
                       ? "text-white bg-gradient-to-r from-miami-teal to-miami-dark shadow-lg shadow-miami-teal/30 scale-105"
-                      : "text-yellow-500 drop-shadow-md hover:text-miami-teal hover:bg-white/10"
+                      : "text-black drop-shadow-md hover:text-miami-teal hover:bg-white/10"
                   }`}
                   data-testid={`nav-link-${item.label
                     .toLowerCase()

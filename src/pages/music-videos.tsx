@@ -108,11 +108,23 @@ export default function MusicVideos() {
           {/* All Videos Loaded Message */}
           {!hasMoreVideos && musicVideos.length > videosPerPage && (
             <div className="text-center mt-12">
-              <div className="bg-miami-teal/10 rounded-xl p-6 inline-block">
-                <h3 className="text-xl font-bold text-navy mb-2">All Videos Loaded!</h3>
-                <p className="text-gray-600">
-                  You've viewed all {musicVideos.length} music videos in our portfolio.
+              <div className="bg-miami-teal/10  rounded-xl p-6 inline-block">
+                <h3 className="text-xl font-bold text-navy mb-2">Still want to see more videos?</h3>
+                <p className="text-gray-600 text-xl">
+                  
                 </p>
+                <br />
+                <Button
+  onClick={() => window.open("https://vimeo.com/user27858759", "_blank")}
+  size="lg"
+  className="bg-miami-teal hover:bg-miami-dark  text-gray-700 hover:text-white px-8 py-4 text-lg font-semibold group"
+  data-testid="button-load-more"
+>
+<br />
+  <span className="text-center">Check Out Our Complete Video Catalogue</span>
+ 
+</Button>
+
               </div>
             </div>
           )}

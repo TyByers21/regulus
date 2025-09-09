@@ -39,37 +39,38 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = async (data: ContactFormData) => {
-    setIsSubmitting(true);
-    
-    try {
-      // For WordPress hosting - contact form ready for integration
-      // You can integrate with:
-      // 1. Formspree: https://formspree.io/f/YOUR_FORM_ID
-      // 2. Contact Form 7 WordPress plugin
-      // 3. Any other contact form service
-      
-      console.log("Contact form submitted:", data);
-      
-      // Simulate form processing
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+ const onSubmit = async (data: ContactFormData) => {
+  setIsSubmitting(true);
+
+  try {
+    const res = await fetch("/sendmail.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
       toast({
         title: "Message Received!",
-        description: "Thank you for contacting Regulus Films! We'll get back to you within 24 hours. For immediate assistance, call 786-429-4511.",
+        description: "Thanks for contacting us. We'll reply soon.",
       });
       form.reset();
-      
-    } catch (error) {
-      toast({
-        title: "Contact Form",
-        description: "For immediate assistance, please call us directly at 786-429-4511. We're here to help!",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
+    } else {
+      throw new Error(result.message || "Unknown error");
     }
-  };
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "There was a problem sending your message. Please call us directly.",
+      variant: "destructive",
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <Form {...form}>

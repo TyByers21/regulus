@@ -12,7 +12,7 @@ const HeroImage = () => {
       />
 
       {/* Transparent overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/20" />
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-row">

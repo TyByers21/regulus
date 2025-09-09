@@ -225,21 +225,21 @@ export function CorporateVideoProductionMiami() {
 
         <div className="flex flex-wrap items-center gap-4 mb-8 justify-center">
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
+            src="/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
             alt="Miami video production badge – corporate video production Miami"
             width={235}
             height={235}
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2021/07/miami-video-production-companies.png"
+            src="/uploads/2021/07/miami-video-production-companies.png"
             alt="Regulus Films – Miami corporate video production company"
             width={225}
             height={235}
             loading="lazy"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2021/07/Music-Video-Directors.png"
+            src="/uploads/2021/07/Music-Video-Directors.png"
             alt="High end video companies in Miami"
             width={234}
             height={234}
@@ -1619,13 +1619,13 @@ export  function PackagesPage() {
             {/* Badges */}
             <div className="flex flex-wrap justify-center gap-6">
               <img
-                src="https://musicvideoproduction.guru/wp-content/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
+                src="/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
                 alt="Miami Video Production Badge"
                 width={250}
                 height={250}
               />
               <img
-                src="https://musicvideoproduction.guru/wp-content/uploads/2019/09/badge-2019-local-excellence-full-e1567895448794.png"
+                src="/uploads/2019/09/badge-2019-local-excellence-full-e1567895448794.png"
                 alt="Music Video Directors Badge"
                 width={250}
                 height={250}
@@ -1663,7 +1663,7 @@ export  function PackagesPage() {
                 Hours Added To Your Shoot Free.
               </h4>
               <img
-                src="https://musicvideoproduction.guru/wp-content/uploads/2019/01/Screen-Shot-2019-01-02-at-4.55.46-PM.png"
+                src="/uploads/2019/01/Screen-Shot-2019-01-02-at-4.55.46-PM.png"
                 alt="Companies that accept Crypto"
                 className="mx-auto"
                 width={725}
@@ -2269,7 +2269,7 @@ Call Us today for a Free Quote 786-429-4511</h2>
         </p>
 
         <img
-          src="https://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-12.58.16-PM.png"
+          src="/uploads/2014/08/Screen-Shot-2014-09-11-at-12.58.16-PM.png"
           alt="Music Video Directors in Miami"
           className="rounded-2xl shadow-lg mx-auto my-8"
         />
@@ -2359,7 +2359,7 @@ export  function MusicVideoProductionCompanies() {
           {/* Image with caption */}
           <figure className="mb-8 text-center">
             <img
-              src="https://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
+              src="/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
               alt="Music Video Production Miami, Fl"
               className="rounded-lg shadow-lg mx-auto"
             />
@@ -2419,7 +2419,7 @@ export  function MusicVideoProductionCompanies() {
           {/* Second Image with caption */}
           <figure className="mb-8 text-center">
             <img
-              src="https://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
+              src="/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
               alt="Miami Music Video Production Companies"
               className="rounded-lg shadow-lg mx-auto"
             />
@@ -2495,9 +2495,9 @@ export function FilmProductionCompanies() {
 
         {/* Image with Caption */}
         <div className="my-8 text-center">
-          <a href="https://musicvideoproduction.guru/wp-content/uploads/2018/09/log-transparent-background-1024x751.png">
+          <a href="/uploads/2018/09/log-transparent-background-1024x751.png">
             <img
-              src="https://musicvideoproduction.guru/wp-content/uploads/2018/09/log-transparent-background-1024x751.png"
+              src="/uploads/2018/09/log-transparent-background-1024x751.png"
               alt="Miami film production companies"
               className="mx-auto rounded-lg shadow-md w-[443px] h-[325px] object-contain"
             />
@@ -2778,12 +2778,12 @@ export function VideoProductionMiami() {
         {/* Image Example */}
         <div className="mb-6 text-center">
           <a
-            href="http://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
+            href="/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src="http://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
+              src="/uploads/2014/08/Screen-Shot-2014-09-11-at-1.00.39-PM.png"
               alt="Miami Music Video Production"
               className="rounded-lg shadow-md mx-auto"
             />
@@ -2811,12 +2811,12 @@ export function VideoProductionMiami() {
         <h2 className="text-2xl font-semibold mb-4">Explainer Music Video Production</h2>
         <div className="mb-6 text-center">
           <a
-            href="http://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
+            href="/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src="http://musicvideoproduction.guru/wp-content/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
+              src="/uploads/2014/08/Screen-Shot-2014-09-11-at-1.04.11-PM.png"
               alt="Music Video Production Miami, FL"
               className="rounded-lg shadow-md mx-auto"
             />
@@ -2994,21 +2994,21 @@ export function BehindTheScenes() {
         {/* Badges */}
         <div className="flex flex-wrap justify-center gap-6 mb-12">
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
+            src="/uploads/2019/02/UpCity-Badge-Transparent-BG-07-11-2018-1-e1550024650204.png"
             alt="Miami Video Production"
             width={235}
             height={235}
             className="rounded-lg shadow-md"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2021/07/miami-video-production-companies.png"
+            src="/uploads/2021/07/miami-video-production-companies.png"
             alt="Regulus Films"
             width={225}
             height={235}
             className="rounded-lg shadow-md"
           />
           <img
-            src="https://musicvideoproduction.guru/wp-content/uploads/2021/07/Music-Video-Directors.png"
+            src="/uploads/2021/07/Music-Video-Directors.png"
             alt="High end video companies in Miami"
             width={234}
             height={234}
