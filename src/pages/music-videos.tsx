@@ -108,24 +108,25 @@ export default function MusicVideos() {
 {/* All Videos Loaded Message */}
 {!hasMoreVideos && musicVideos.length > videosPerPage && (
   <div className="flex flex-col items-center justify-center mt-12 text-center">
-    <div className="bg-miami-teal/10 rounded-xl p-6 w-full max-w-xl">
-      <h3 className="text-xl font-bold text-navy mb-3">
-        Still want to see more videos?
-      </h3>
-      <p className="text-gray-600 mb-6">
-        Visit our Vimeo page to explore our complete video catalogue.
-      </p>
-      <Button
-        onClick={() =>
-          window.open("https://vimeo.com/user27858759", "_blank")
-        }
-        size="lg"
-        className="bg-miami-teal hover:bg-miami-dark text-white px-8 py-4 text-lg font-semibold"
-        data-testid="button-vimeo"
-      >
-        Check Out Our Complete Video Catalogue
-      </Button>
-    </div>
+    <div className="bg-miami-teal/10 rounded-xl p-6 w-full max-w-xl text-center">
+  <h3 className="text-xl font-bold text-navy mb-3">
+    Still want to see more videos?
+  </h3>
+  <p className="text-gray-600 mb-6">
+    Visit our Vimeo page to explore our complete video catalogue.
+  </p>
+  <Button
+    onClick={() =>
+      window.open("https://vimeo.com/user27858759", "_blank")
+    }
+    size="lg"
+    className="bg-miami-teal hover:bg-miami-dark text-white w-full sm:w-auto px-6 py-4 text-lg font-semibold"
+    data-testid="button-vimeo"
+  >
+    Check Out Our Complete Video Catalogue
+  </Button>
+</div>
+
   </div>
 )}
 
